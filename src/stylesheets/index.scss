@@ -1,8 +1,10 @@
 .index {
+  background-color: black;
   .title {
     min-height: calc(100vh - 60px);
 
-    .top-line, .bottom-line>h1 {
+    .top-line,
+    .bottom-line > h1 {
       font-size: 130px;
     }
 

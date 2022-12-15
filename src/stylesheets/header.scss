@@ -1,7 +1,7 @@
 @import 'wireframe.scss';
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
   background-color: black;
   position: fixed;
   top: 0;
@@ -14,11 +14,15 @@ header {
     margin: 0 auto;
 
     display: flex;
-
+    ul {
+      display: flex;
+      align-items: center;
+    }
     li {
+      position: relative;
       list-style-type: none;
       line-height: 59px;
-      border-left: 1px solid White;
+      color: white;
       padding: 0 15px;
       min-width: 140px;
       font-size: 16px;
@@ -26,6 +30,23 @@ header {
 
       &:first-of-type {
         margin-left: auto;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        top: 0;
+        left: 0;
+        background-color: white;
+      }
+
+      &:nth-child(1)::before {
+        width: 100px;
+      }
+
+      &:nth-child(2)::before {
+        width: 50px;
       }
 
       &:hover {
@@ -48,8 +69,8 @@ header {
       }
     }
   }
-}
 
-.header-filler {
-  height: 60px;
+  .header-filler {
+    height: 60px;
+  }
 }

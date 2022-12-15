@@ -3,13 +3,20 @@
 }
 
 @mixin wireframe-bg {
-  background:
-    linear-gradient(to top right,
-      transparent calc(50% - 0.5px), black calc(50% - 0.5px),
-      black calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(to bottom right,
-      transparent calc(50% - 0.5px), black calc(50% - 0.5px),
-      black calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  background: linear-gradient(
+      to top right,
+      transparent calc(50% - 0.5px),
+      black calc(50% - 0.5px),
+      black calc(50% + 0.5px),
+      transparent calc(50% + 0.5px)
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent calc(50% - 0.5px),
+      black calc(50% - 0.5px),
+      black calc(50% + 0.5px),
+      transparent calc(50% + 0.5px)
+    );
 }
 
 .wireframe-bg {

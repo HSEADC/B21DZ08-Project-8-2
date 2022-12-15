@@ -1,5 +1,6 @@
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
+  background-color: black;
 
   h3 {
     font-size: 20px;
@@ -8,10 +9,10 @@ footer {
 
   .columnsContainer {
     display: flex;
-
-    &>div {
+    color: white;
+    & > div {
       flex: 1;
-  
+
       padding: 15px;
     }
   }
@@ -25,10 +26,10 @@ footer {
       margin-right: 10px;
     }
 
-    &>div {
+    & > div {
       flex: 1;
 
-      &>div {
+      & > div {
         height: 24px;
         line-height: 24px;
         display: flex;
@@ -39,5 +40,6 @@ footer {
 
   .copyright {
     padding: 15px;
+    color: white;
   }
 }
