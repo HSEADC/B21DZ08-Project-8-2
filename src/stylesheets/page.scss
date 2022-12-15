@@ -1,0 +1,17 @@
+body.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > div,
+  & > a {
+    margin: 10px 0;
+  }
+}
+
+main {
+  min-height: calc(100vh - 60px - 199px);
+  max-width: 1250px;
+  margin: 60px auto 0;
+}

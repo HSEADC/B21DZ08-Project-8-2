@@ -1,0 +1,38 @@
+.reach-us {
+  h1 {
+    font-size: 130px;
+    padding: 15px;
+  }
+
+  p {
+    padding: 15px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+
+    input,
+    textarea,
+    button {
+      display: block;
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 15px;
+      outline: none;
+      padding: 5px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+}

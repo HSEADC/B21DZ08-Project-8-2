@@ -1,0 +1,26 @@
+@mixin wireframe-border {
+  border: 1px solid black;
+}
+
+@mixin wireframe-bg {
+  background:
+    linear-gradient(to top right,
+      transparent calc(50% - 0.5px), black calc(50% - 0.5px),
+      black calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom right,
+      transparent calc(50% - 0.5px), black calc(50% - 0.5px),
+      black calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+.wireframe-bg {
+  @include wireframe-bg;
+}
+
+@mixin wireframe {
+  @include wireframe-border;
+  @include wireframe-bg;
+}
+
+.wireframe {
+  @include wireframe;
+}
