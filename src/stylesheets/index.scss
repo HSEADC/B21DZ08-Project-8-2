@@ -1,8 +1,11 @@
 .index {
   background-color: black;
+  hr {
+    width: 100%;
+  }
   .title {
     min-height: calc(100vh - 60px);
-
+    color: white;
     .top-line,
     .bottom-line > h1 {
       font-size: 130px;
@@ -20,6 +23,24 @@
         }
       }
     }
+  }
+
+  .ghost-button-rounded-corners {
+    display: inline-block;
+    width: 355px;
+    padding: 12px;
+    margin: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+  }
+  .ghost-button-rounded-corners:hover,
+  .ghost-button-rounded-corners:active {
+    background-color: #fff;
+    color: #000;
   }
 
   .grid {
