@@ -1,8 +1,6 @@
 .index {
   background-color: black;
-  hr {
-    width: 100%;
-  }
+
   .title {
     min-height: calc(100vh - 60px);
     color: white;
@@ -25,6 +23,9 @@
     }
   }
 
+  .buttons_title {
+    margin-top: 74px;
+  }
   .ghost-button-rounded-corners {
     display: inline-block;
     width: 355px;
@@ -50,7 +51,7 @@
 
     border: 1px solid black;
     border-bottom: none;
-    grid-gap: 1px;
+    grid-gap: 20px;
     background-color: black;
 
     .cell {
@@ -60,36 +61,52 @@
     .cell-1 {
       grid-column: 1 / 4;
       grid-row: 1 / 3;
+      color: white;
+      background-color: #e93323;
+      border-radius: 20px;
     }
 
     .cell-2 {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
+      background-color: #aa86d4;
+      height: 250px;
+      border-radius: 20px;
     }
 
     .cell-3 {
       grid-column: 2/4;
       grid-row: 3/4;
+      border-radius: 20px;
+      width: 476px;
+      background-image: url(../src/images/segato.jpg);
     }
 
     .cell-4 {
       grid-column: 1 / 4;
       grid-row: 4 / 6;
+      width: 725px;
+      height: 476px;
+      border-radius: 20px;
+      background-image: url(../src/images/sonic.jpg);
     }
 
-    .cell-5 {
-      grid-column: 1 / 3;
-      grid-row: 6 / 7;
-    }
-
-    .cell-6 {
-      grid-column: 3 / 4;
-      grid-row: 6 / 7;
-    }
+    // .cell-5 {
+    //   grid-column: 1 / 3;
+    //   grid-row: 6 / 7;
+    // }
+    //
+    // .cell-6 {
+    //   grid-column: 3 / 4;
+    //   grid-row: 6 / 7;
+    // }
 
     .cell-7 {
       grid-column: 4 / 6;
       grid-row: 1 / 2;
+
+      border-radius: 20px;
+      background-image: url(../src/images/mariotest.jpg);
     }
 
     .cell-8 {
@@ -100,6 +117,8 @@
     .cell-9 {
       grid-column: 4 / 5;
       grid-row: 2 / 4;
+      border-radius: 20px;
+      background-color: #fdf050;
     }
 
     .cell-10 {
@@ -120,6 +139,8 @@
     .cell-13 {
       grid-column: 4 / 5;
       grid-row: 4 / 5;
+      border-radius: 20px;
+      background-color: #5ecd9c;
     }
 
     .cell-14 {
@@ -135,6 +156,8 @@
     .cell-16 {
       grid-column: 4 / 6;
       grid-row: 5 / 7;
+      background-color: #aa86d4;
+      border-radius: 20px;
     }
 
     .cell-17 {
