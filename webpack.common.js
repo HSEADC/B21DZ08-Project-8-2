@@ -83,7 +83,13 @@ module.exports = {
       filename: './index.html',
       chunks: ['index']
     }),
-
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/fiveseven_minutes.html',
+      filename: './fiveseven_minutes.html',
+      chunks: ['index']
+    }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
