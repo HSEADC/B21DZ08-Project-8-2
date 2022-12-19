@@ -1,38 +1,950 @@
-.reach-us {
-  h1 {
-    font-size: 130px;
-    padding: 15px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+}
+
+.wrapper {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* обложка */
+.main-block {
+  background: url('./images/main-bg.png') center left no-repeat;
+  background-size: contain;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-block__title {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 280px;
+  line-height: 1;
+  color: #ffffff;
+  padding: 44px 0 0 10px;
+}
+
+.main-block__subtitle {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1;
+  color: #ffffff;
+  padding: 0px 0px 89px 24px;
+}
+
+/* Advantages */
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+
+  display: grid;
+  grid-template-columns: 50% 33.7% 16.3%;
+  grid-template-rows: 269px 318px;
+}
+
+.advantages-list__advantage {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+
+  position: relative;
+  border: 2px dotted #d500cc;
+  border-top: none;
+  border-left: none;
+  padding: 22px 23px 0;
+}
+
+.advantages-list__advantage p {
+  margin: 0;
+}
+
+.advantages-list__advantage:nth-child(1) p {
+  max-width: 580px;
+}
+
+.advantages-list__advantage:nth-child(4) div {
+  border-right: 2px dotted #d500cc;
+}
+
+.advantages-list__advantage:nth-child(4) p {
+  padding: 22px 23px 0;
+  max-width: 450px;
+}
+
+.advantages-list__advantage:nth-child(5) p {
+  max-width: 600px;
+}
+
+.advantages-list__advantage:nth-child(3) {
+  border-right: none;
+}
+
+.advantages-list__advantage:nth-child(4) {
+  padding: 0;
+  display: flex;
+}
+
+.advantages-list__advantage:nth-child(5) {
+  border-right: none;
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.advantages-list__advantage::before {
+  position: absolute;
+  counter-increment: item;
+  content: counter(item);
+
+  width: 55px;
+  height: 138px;
+  bottom: 2px;
+  right: 18px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 110px;
+  line-height: 138px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.advantages-list__advantage::after {
+  position: absolute;
+  content: '';
+
+  width: 233px;
+  height: 28px;
+  bottom: 22px;
+  right: 18px;
+
+  background: url(./images/pink-pattern.png) 0 0 repeat;
+  z-index: 1;
+}
+
+.advantages-list__advantage:nth-child(odd)::after {
+  width: 58px;
+}
+
+/* Бегущая строка тянется на всю ширину экрана */
+.running-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0094ff;
+  height: 91px;
+  border-top: 1px solid #ffffff;
+  margin-top: -1px;
+  z-index: 1;
+  position: relative;
+}
+
+.running-line__text {
+  display: inline-block;
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 43px;
+  padding-bottom: 4px;
+  color: #000000;
+}
+
+/*Блок о проекте*/
+.about-project {
+  display: flex;
+  border-bottom: 2px solid #ffffff;
+}
+
+.about-project__part--left {
+  border-right: 2px dashed #0094ff;
+}
+
+.about-project__title {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 65px;
+  padding: 84px 0px 0px 24px;
+  max-width: 698px;
+  color: #ffffff;
+}
+
+.about-project__subtitle {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 65px;
+  padding: 46px 0px 0px 308px;
+  color: #ffffff;
+}
+
+.about-project__paragraph {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  padding: 23px 0px 0px 308px;
+  color: #ffffff;
+}
+
+.about-project__part--right {
+}
+
+.about-project__values {
+  display: flex;
+  flex-direction: column;
+  padding: 141px 48px 149px 46px;
+}
+
+.about-project__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.about-project__value p {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.value__paragraph {
+  align-self: flex-start;
+  padding-bottom: 8px;
+}
+
+.value__percent {
+  align-self: flex-end;
+  padding-top: 6px;
+}
+
+/*Блок с подпиской*/
+.subscription {
+  display: grid;
+  grid-template-columns: 16.5% 33.5% 50%;
+  grid-template-rows: 265px 321px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.subscription__item {
+  padding: 22px 0 0 24px;
+  position: relative;
+  border: 1px dashed #7aff55;
+}
+
+.subscription__text {
+  max-width: 627px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.subscription__item:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.subscription__item:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.subscription__item:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.subscription__item:nth-child(4) {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.subscription__item:nth-child(4) p {
+  max-width: 478px;
+}
+
+.subscription__item:nth-child(5) {
+  grid-area: 2 / 3 / 3 / 4;
+  border: none;
+  padding: 110px 105px 0 0px;
+}
+
+/* Стилизация формы */
+
+form {
+  position: relative;
+  width: 759px;
+  box-sizing: border-box;
+  border: 1px dashed #7aff55;
+}
+
+.subscription_input {
+  display: block;
+  width: 100%;
+  background-color: #1e1e1e;
+  height: 105px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 32px 0 38px 24px;
+  box-sizing: border-box;
+}
+
+.subscription_input:focus {
+  outline: 0;
+  background-color: #071b01;
+}
+
+button {
+  position: absolute;
+  background-color: #1e1e1e;
+  top: 0px;
+  right: 0px;
+  height: 105px;
+  width: 319px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  border-left: 1px dashed #7aff55;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.subscription__header {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 65px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.no-top-brd {
+  border-top: none;
+}
+
+.subscription__item:nth-child(1),
+.subscription__item:nth-child(3) {
+  border-left: none;
+}
+
+.subscription__item:nth-child(2),
+.subscription__item:nth-child(4) {
+  border-right: none;
+}
+
+@media (max-width: 1366px) {
+  /* обложка */
+
+  .main-block__title {
+    font-size: 223px;
+    line-height: 1;
+    padding: 16px 0 0 7px;
   }
 
-  p {
-    padding: 15px;
+  .main-block__subtitle {
+    font-size: 23px;
+    line-height: 1;
+    padding: 0px 0px 69px 19px;
   }
+
+  /* Advantages */
+  .advantages-list {
+    grid-template-columns: 50% 33.7% 16.3%;
+    grid-template-rows: 248px 251px;
+  }
+
+  .advantages-list__advantage {
+    font-size: 23px;
+    line-height: 29px;
+    text-shadow: none;
+    padding: 17px 18px 0;
+  }
+
+  .advantages-list__advantage:nth-child(1) p {
+    max-width: 498px;
+  }
+
+  .advantages-list__advantage:nth-child(4) div {
+    width: 100%;
+    max-width: 226px;
+  }
+
+  .advantages-list__advantage:nth-child(4) p {
+    padding: 28px 17px 0;
+  }
+
+  .advantages-list__advantage:nth-child(5) {
+    padding: 25px 0 0 17px;
+  }
+
+  .advantages-list__advantage::before {
+    width: 55px;
+    height: 113px;
+    bottom: -4px;
+    right: 18px;
+
+    font-size: 90px;
+    line-height: 112px;
+  }
+
+  .advantages-list__advantage::after {
+    bottom: 16px;
+  }
+
+  /* Бегущая строка на экранах меньше 1366 px */
+  .running-line {
+    height: 91px;
+  }
+
+  .running-line__text {
+    font-size: 43px;
+  }
+
+  /* блок о нас на экранах меньше 1366 px */
+
+  .about-project__title {
+    font-size: 45px;
+    line-height: 56px;
+    padding: 100px 0px 0px 24px;
+    max-width: 603px;
+    color: #ffffff;
+  }
+
+  .about-project__subtitle {
+    font-size: 45px;
+    line-height: 56px;
+    padding: 70px 0px 0px 245px;
+    color: #ffffff;
+  }
+
+  .about-project__paragraph {
+    font-size: 23px;
+    line-height: 28px;
+    padding: 25px 0px 0px 245px;
+    color: #ffffff;
+  }
+
+  /* блок с ценностями на экранах меньше 1366px*/
+  .about-project__values {
+    padding: 83px 52px 110px 37px;
+  }
+
+  .about-project__value {
+    margin-bottom: 50px;
+  }
+
+  .about-project__value p {
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  .value__paragraph {
+    align-self: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .value__percent {
+    align-self: flex-end;
+    padding-top: 0px;
+  }
+  /* блок с подпиской на экранах меньше 1366px*/
+  .subscription {
+    grid-template-rows: 250px 250px;
+  }
+
+  .subscription__item {
+    padding: 20px 0 0 24px;
+  }
+
+  .subscription__text {
+    max-width: 451px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .subscription__item:nth-child(4) p {
+    max-width: 312px;
+  }
+
+  .subscription__item:nth-child(5) {
+    padding: 83px 45px 0 0px;
+  }
+
+  /* Стилизация формы на экранах меньше 1366px*/
 
   form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 15px;
+    width: 637px;
+  }
 
-    input,
-    textarea,
-    button {
-      display: block;
-      width: 100%;
-      font-size: 20px;
-      margin-bottom: 15px;
-      outline: none;
-      padding: 5px;
-      font-family: inherit;
-    }
+  .subscription_input {
+    height: 88px;
+    font-size: 23px;
+    line-height: 28px;
+    padding: 25px 0 34px 22px;
+  }
 
-    textarea {
-      resize: none;
-    }
+  button {
+    height: 88px;
+    width: 181px;
+    font-size: 23px;
+    line-height: 28px;
+  }
 
-    button {
-      background-color: black;
-      color: white;
-      border: none;
-    }
+  .subscription__header {
+    font-size: 43px;
+    line-height: 53px;
+  }
+}
+
+/* на экранах меньше 1024 px */
+@media (max-width: 1024px) {
+  /* обложка */
+  .main-block__title {
+    font-size: 164px;
+    line-height: 1;
+    padding: 20px 0 0 27px;
+  }
+
+  .main-block__subtitle {
+    font-size: 20px;
+    line-height: 1;
+    padding: 0px 0px 65px 35px;
+  }
+
+  /* блок с преимуществами для экранов от 1024px */
+  .advantages-list {
+    grid-template-rows: 166px 183px;
+  }
+
+  .advantages-list__advantage {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 15px 0;
+  }
+
+  .advantages-list__advantage:nth-child(1) {
+    padding: 15px 36px 0;
+  }
+
+  .advantages-list__advantage:nth-child(1) p {
+    max-width: 345px;
+  }
+
+  .advantages-list__advantage:nth-child(4) div {
+    width: 100%;
+    max-width: 164px;
+  }
+
+  .advantages-list__advantage:nth-child(4) div img {
+    width: 164px;
+  }
+
+  .advantages-list__advantage:nth-child(4) p {
+    padding: 23px 17px 0 50px;
+  }
+
+  .advantages-list__advantage:nth-child(5) {
+    padding: 23px 0 0 16px;
+  }
+
+  .advantages-list__advantage:nth-child(5) p {
+    max-width: 346px;
+  }
+
+  .advantages-list__advantage::before {
+    width: 35px;
+    height: 75px;
+    bottom: -4px;
+    right: 18px;
+
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  .advantages-list__advantage::after {
+    width: 163px;
+    height: 20px;
+    bottom: 14px;
+    right: 18px;
+  }
+
+  .advantages-list__advantage:nth-child(odd)::after {
+    width: 41px;
+  }
+
+  /* Бегущая строка на экранах меньше 1024 px */
+  .running-line {
+    height: 46px;
+  }
+
+  .running-line__text {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  /* блок о нас на экранах меньше 1024 px */
+
+  .about-project__title {
+    font-size: 28px;
+    line-height: 35px;
+    padding: 56px 0px 0px 34px;
+    max-width: 429px;
+  }
+
+  .about-project__subtitle {
+    font-size: 28px;
+    line-height: 35px;
+    padding: 56px 0px 0px 216px;
+  }
+
+  .about-project__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 0px 0px 217px;
+  }
+
+  /* блок с ценностями на экранах меньше 1024px*/
+  .about-project__values {
+    padding: 73px 38px 40px 31px;
+  }
+
+  .about-project__value {
+    margin-bottom: 20px;
+  }
+
+  .about-project__value p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .value__paragraph {
+    padding-bottom: 5px;
+  }
+
+  .value__percent {
+    padding-top: 4px;
+  }
+  /* блок с подпиской на экранах меньше 1024px*/
+  .subscription {
+    grid-template-rows: 220px 198px;
+  }
+
+  .subscription__item {
+    padding: 34px 0 0 30px;
+  }
+
+  .subscription__text {
+    max-width: 315px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .subscription__item:nth-child(4) p {
+    max-width: 262px;
+  }
+
+  .subscription__item:nth-child(5) {
+    padding: 74px 52px 0 0px;
+  }
+
+  /* Стилизация формы на экранах меньше 1024px*/
+
+  form {
+    width: 460px;
+  }
+
+  .subscription_input {
+    height: 67px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 22px 0 25px 16px;
+  }
+
+  button {
+    height: 67px;
+    width: 164px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .subscription__header {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+/* на экранах меньше 768px*/
+@media (max-width: 768px) {
+  /* обложка */
+  .main-block__title {
+    font-size: 60px;
+    line-height: 1;
+    padding: 4px 0 0 7px;
+  }
+
+  .main-block__subtitle {
+    font-size: 11px;
+    line-height: 1;
+    padding: 9px 0 33px 10px;
+  }
+
+  .advantages-list {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .advantages-list__advantage {
+    font-size: 13.5px;
+    line-height: 17px;
+    padding: 10px 11px 0;
+  }
+
+  .advantages-list__advantage:nth-child(1) {
+    grid-area: 1 / 1 / 2 / -1;
+    padding: 10px 11px 42px;
+    border-left: 2px dotted #d500cc;
+  }
+
+  .advantages-list__advantage:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 9;
+    border-left: 2px dotted #d500cc;
+  }
+
+  .advantages-list__advantage:nth-child(3) {
+    grid-area: 2 / 9 / 3 / 13;
+    padding: 10px 11px 59px;
+    border-right: 2px dotted #d500cc;
+  }
+
+  .advantages-list__advantage:nth-child(4) {
+    grid-area: 3 / 1 / 4 / -1;
+    border-left: 2px dotted #d500cc;
+  }
+
+  .advantages-list__advantage:nth-child(5) {
+    grid-area: 4 / 1 / 5 / -1;
+    padding: 10px 0 53px 10px;
+    border-left: 2px dotted #d500cc;
+    border-right: 2px dotted #d500cc;
+    border-bottom: none;
+  }
+
+  .advantages-list__advantage:nth-child(1) p {
+    max-width: 291px;
+  }
+
+  .advantages-list__advantage:nth-child(4) div {
+    width: 100%;
+    max-width: 126px;
+    height: 117px;
+  }
+
+  .advantages-list__advantage:nth-child(4) div img {
+    max-width: 126px;
+    height: 117px;
+  }
+
+  .advantages-list__advantage:nth-child(4) p {
+    padding: 9px 0 0 11px;
+  }
+
+  .advantages-list__advantage::before {
+    width: 21px;
+    height: 50px;
+    bottom: 5px;
+    right: 11px;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .advantages-list__advantage::after {
+    width: 110px;
+    height: 20px;
+    bottom: 14px;
+    right: 5px;
+  }
+
+  .advantages-list__advantage:nth-child(odd)::after {
+    width: 27px;
+  }
+}
+
+/* на экранах меньше 375 px */
+@media (max-width: 375px) {
+  /* Бегущая строка на экранах меньше 375 px */
+  .running-line {
+    height: 46px;
+  }
+
+  .running-line__text {
+    font-size: 20px;
+  }
+
+  /* блок о нас на экранах меньше 375 px */
+
+  .about-project {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .about-project__title {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 27px 0px 0px 11px;
+    max-width: 357px;
+  }
+
+  .about-project__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 24px 0px 0px 65px;
+  }
+
+  .about-project__paragraph {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 6px 0px 32px 65px;
+    max-width: 275px;
+  }
+
+  .about-project__values {
+    padding: 23px 52px 28px 46px;
+    border-top: 2px dashed #0094ff;
+    border-bottom: 2px dashed #0094ff;
+  }
+
+  .about-project__value {
+    margin-bottom: 15px;
+  }
+
+  .about-project__value p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .value__paragraph {
+    padding-bottom: 5px;
+  }
+
+  .value__percent {
+    padding-top: 4px;
+  }
+
+  /*Блок с подпиской на экранах меньше 375px*/
+  .subscription {
+    display: grid;
+    grid-template-columns: 33.3% 66.7%;
+    grid-template-rows: 91px 145px 119px 120px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .subscription__item {
+    border: none;
+  }
+
+  .subscription__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .subscription__item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 22px 0 0 10px;
+    max-width: 273px;
+  }
+
+  .subscription__item:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 3;
+    padding: 0 0 70px 68px;
+    border-bottom: 2px dashed #7aff55;
+  }
+
+  .subscription__item:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+    border-right: 2px dashed #7aff55;
+  }
+
+  .subscription__item:nth-child(4) {
+    grid-area: 3 / 2 / 4 / 3;
+    padding: 14px 0 0px 18px;
+  }
+
+  .subscription__item:nth-child(4) p {
+    max-width: 194px;
+  }
+
+  .subscription__item:nth-child(5) {
+    grid-area: 4 / 1 / 5 / 3;
+    border-top: 1px solid #ffffff;
+    padding: 42px 66px;
+  }
+
+  /* Стилизация формы на экранах меньше 375px*/
+
+  form {
+    width: 243px;
+  }
+
+  .subscription_input {
+    height: 32px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 0 9px 8px;
+  }
+
+  button {
+    height: 32px;
+    width: 87px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .subscription__header {
+    font-size: 20px;
+    line-height: 25px;
   }
 }

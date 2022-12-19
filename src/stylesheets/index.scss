@@ -22,7 +22,6 @@
       }
     }
   }
-
   .buttons_title {
     margin-top: 74px;
   }
@@ -50,6 +49,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 476px repeat(4, 228px);
   grid-gap: 20px;
+  margin-bottom: 22px;
 }
 .cell-1 {
   // ПЕРВАЯ ЦИФРА(grid row start) И ТРЕТЬЯ СВЯЗАНЫ(grid row end)
