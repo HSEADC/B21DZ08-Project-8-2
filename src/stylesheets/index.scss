@@ -123,3 +123,18 @@
     bottom: 15px;
   }
 }
+.upinfo {
+  display: flex;
+  flex-direction: row;
+}
+.heartmail {
+  padding: 54px;
+  width: 355px;
+  height: 355px;
+}
+.upinfo p {
+  padding: 121px;
+  color: #f3f3f3;
+  max-width: 865px;
+  font-size: 36px;
+}

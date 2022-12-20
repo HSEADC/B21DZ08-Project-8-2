@@ -105,7 +105,13 @@ module.exports = {
       filename: './reach-us.html',
       chunks: ['index']
     }),
-
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/mailer.html',
+      filename: './mailer.html',
+      chunks: ['index']
+    }),
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
