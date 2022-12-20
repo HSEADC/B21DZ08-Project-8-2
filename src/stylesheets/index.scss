@@ -139,7 +139,7 @@
   font-size: 36px;
 }
 .blue {
-  background-color: blue;
+  background-color: #265bee;
   height: 500px;
 }
 .blueline {
@@ -183,4 +183,31 @@
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+//forms
+.formsend {
+  float: right;
+  margin-right: 150px;
+  width: 871px;
+  border-style: none;
+  box-sizing: border-box;
+}
+
+input[type='text'] {
+  width: 353px;
+  height: 54px;
+  border-radius: 10px;
+}
+input[type='email'] {
+  width: 495px;
+  height: 54px;
+  border-radius: 10px;
+  margin: 20px;
+}
+textarea {
+  width: 871px;
+  height: 305px;
+  border-radius: 10px;
+  margin-top: 20px;
 }

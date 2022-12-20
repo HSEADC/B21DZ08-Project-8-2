@@ -33,7 +33,29 @@
           общаться го общаться го общаться го общаться</span
         >
       </div>
-      <div class="blue"></div>
+      <div class="blue">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <div class="formsend">
+          <form
+            class="formemail"
+            action="https://formspree.io/f/mdojzwyp"
+            method="POST"
+          >
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Твое имя" />
+            <label>
+              <input type="email" name="email" placeholder="email" />
+            </label>
+            <br />
+            <label class="textarea1">
+              <textarea name="message" placeholder="Ваше сообщение:"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+
+            <!-- <button type="submit"></button> -->
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="columnsContainer">
