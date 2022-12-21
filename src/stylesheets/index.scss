@@ -200,19 +200,32 @@ input[type='text'] {
   border-radius: 10px;
   border-color: none;
 }
+input[type='text']::placeholder {
+  color: #265bee;
+  padding: 10px;
+}
+input[type='email']::placeholder {
+  color: #265bee;
+  padding: 10px;
+}
+
 input[type='email'] {
   width: 495px;
   height: 54px;
   border-radius: 10px;
   margin: 20px;
 }
+
 textarea {
   width: 871px;
   height: 305px;
   border-radius: 10px;
   margin-top: 20px;
 }
-
+textarea::placeholder {
+  color: #265bee;
+  padding: 10px;
+}
 .checkboxes {
   font-family: 'TT Hoves';
   font-style: normal;
@@ -227,17 +240,18 @@ textarea {
 }
 
 // кнопка
-.formmailer_btn {
-  display: flex;
-  position: relative;
+.mailerbtn {
   width: 355px;
   padding: 12px;
-  margin: 10px;
+  font-size: 26px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  line-height: 126%;
   margin-top: 49px;
+  border-radius: 10px;
+  border: 2px solid #fff;
   color: #fff;
-  border: 1px solid #fff;
-
-  text-align: center;
+  background: transparent;
   outline: none;
   text-decoration: none;
 }
