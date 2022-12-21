@@ -140,7 +140,7 @@
 }
 .blue {
   background-color: #265bee;
-  height: 500px;
+  height: 1000px;
 }
 .blueline {
   width: 100%;
@@ -191,13 +191,14 @@
   margin-right: 150px;
   width: 871px;
   border-style: none;
-  box-sizing: border-box;
+  margin-top: 151px;
 }
 
 input[type='text'] {
   width: 353px;
   height: 54px;
   border-radius: 10px;
+  border-color: none;
 }
 input[type='email'] {
   width: 495px;
@@ -210,4 +211,32 @@ textarea {
   height: 305px;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+.checkboxes {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.ch2 {
+  margin-top: 25px;
+}
+
+// кнопка
+.formmailer_btn {
+  display: inline-block;
+  width: 355px;
+  padding: 12px;
+  margin: 10px;
+  margin-top: 49px;
+  color: #fff;
+  border: 1px solid #fff;
+
+  text-align: center;
+  outline: none;
+  text-decoration: none;
 }
