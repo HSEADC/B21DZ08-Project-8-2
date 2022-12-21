@@ -228,7 +228,8 @@ textarea {
 
 // кнопка
 .formmailer_btn {
-  display: inline-block;
+  display: flex;
+  position: relative;
   width: 355px;
   padding: 12px;
   margin: 10px;

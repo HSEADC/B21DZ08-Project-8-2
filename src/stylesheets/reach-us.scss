@@ -328,7 +328,7 @@ ul {
   background-color: #071b01;
 }
 
-button {
+.reach_us_button {
   position: absolute;
   background-color: #1e1e1e;
   top: 0px;
@@ -514,7 +514,7 @@ button {
 
   /* Стилизация формы на экранах меньше 1366px*/
 
-  form {
+  .reach_us_form {
     width: 637px;
   }
 
@@ -525,7 +525,7 @@ button {
     padding: 25px 0 34px 22px;
   }
 
-  button {
+  .reach_us_button {
     height: 88px;
     width: 181px;
     font-size: 23px;
@@ -691,7 +691,7 @@ button {
 
   /* Стилизация формы на экранах меньше 1024px*/
 
-  form {
+  .reach_us_form {
     width: 460px;
   }
 
@@ -702,7 +702,7 @@ button {
     padding: 22px 0 25px 16px;
   }
 
-  button {
+  .reach_us_button {
     height: 67px;
     width: 164px;
     font-size: 16px;
@@ -925,7 +925,7 @@ button {
 
   /* Стилизация формы на экранах меньше 375px*/
 
-  form {
+  .reach_us_form {
     width: 243px;
   }
 
@@ -936,7 +936,7 @@ button {
     padding: 7px 0 9px 8px;
   }
 
-  button {
+  .reach_us_button {
     height: 32px;
     width: 87px;
     font-size: 13px;
