@@ -164,13 +164,19 @@
 
   width: 350px;
 }
+.greencard-arrow img {
+  padding-top: 436px;
+  padding-bottom: 15px;
+
+  padding-right: 23px;
+}
 .greencard p {
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 300;
   font-size: 26px;
   line-height: 31px;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   padding-left: 21px;
   padding-top: 12px;
@@ -183,19 +189,97 @@
 }
 .cell-4 {
   grid-area: 4 / 1 / 6 / 2;
-  background-color: orange;
+  background-color: #265bee;
   border-radius: 20px;
+  display: flex;
+}
+.sonic-card {
+  display: flex;
+  border-radius: 20px;
+  background-image: url(./images/sonic.png);
+
+  width: 350px;
+}
+.bluecard {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sonic-p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 12px;
+}
+.sonic-to-read {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+  padding-left: 22px;
+  padding-bottom: 15px;
 }
 .cell-5 {
   grid-area: 2 / 2 / -4 / 3;
   background-color: #265bee;
   border-radius: 20px;
   color: white;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
 }
 .cell-6 {
   grid-area: 3 / 2 / -2 / 3;
-  background-color: green;
+  background-color: #aa86d4;
   border-radius: 20px;
+  display: flex;
+}
+.violet-card {
+  background-color: #aa86d4;
+  border-radius: 20px;
+  display: flex;
+  width: 350px;
+  color: white;
+}
+.violet-card p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 21px;
+  padding-top: 12px;
+}
+.violet-arrow img {
+  padding-top: 436px;
+  padding-bottom: 15px;
+
+  padding-right: 23px;
+}
+.time-read-nintendo {
+  position: absolute;
+  padding-left: 21px;
+  bottom: 15px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+}
+.nintendo-card {
+  background-image: url(./images/nintendo.png);
+  display: flex;
+  border-radius: 20px;
+  width: 520px;
 }
 .cell-7 {
   grid-area: 5 / 2 / -1 / 3;
@@ -258,7 +342,7 @@
   }
   .time-read-segato {
     position: absolute;
-    left: 15px;
+    padding-left: 21px;
     bottom: 15px;
     font-family: 'TT Hoves';
     font-style: normal;
