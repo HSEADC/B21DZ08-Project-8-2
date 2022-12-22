@@ -113,38 +113,73 @@
   // ВТОРАЯ (grid column start) ЧЕТВЕРТАЯ (grid column end)
   // ряд (горизонтальная)это высота - колонка это ширина (вертикальная линия)
   grid-area: 1 / 2 / 2 / 3;
-  background-color: #fdf050;
+  // background-color: #fdf050;
   border-radius: 20px;
   display: flex;
+  width: 864px;
   // F0A1C1
 }
-// .yellowcard {
-//   display: flex;
-//   border-radius: 20px;
-//   background-color: #fdf050;
-//   width: 250px;
-// }
-// .mariocard {
-//   display: flex;
-//   // width: 476px;
-//   border-radius: 20px;
-//   background-image: url(./images/mariocard.png);
-//   background-repeat: no-repeat;
-// }
-// .mariocard img {
-//   width: 609px;
-//
-//   background-image: no-repeat;
-//   border-radius: 20px;
-// }
+.yellowcard {
+  display: flex;
+  border-radius: 20px;
+  background-color: #fdf050;
+  width: 388px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-left: 21px;
+  padding-bottom: 15px;
+}
+.yellowcard p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  margin: 0;
+}
+.mariocard {
+  display: flex;
+  width: 476px;
+  border-radius: 20px;
+  // align-self: flex-start;
+  background-image: url(./images/mariocard.png);
+}
+
 .cell-3 {
   // ПЕРВАЯ ЦИФРА(grid row start) И ТРЕТЬЯ СВЯЗАНЫ(grid row end)
   // ВТОРАЯ (grid column start) ЧЕТВЕРТАЯ (grid column end)
   // ряд (горизонтальная)это высота - колонка это ширина (вертикальная линия)
   grid-area: 2 / 1 / 4 / 2;
-  background-color: blue;
+  // background-color: #5ecd9c;
   border-radius: 20px;
+  display: flex;
   // F0A1C1
+}
+.greencard {
+  display: flex;
+  border-radius: 20px;
+  background-color: #5ecd9c;
+
+  width: 350px;
+}
+.greencard p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  margin: 0;
+  padding-left: 21px;
+  padding-top: 12px;
+}
+.segato-card {
+  display: flex;
+  width: 530px;
+  border-radius: 20px;
+  background-image: url(./images/segatochb.png);
 }
 .cell-4 {
   grid-area: 4 / 1 / 6 / 2;
@@ -218,6 +253,15 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+  }
+  .time-read-segato {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: 'TT Hoves';
+    font-style: normal;
   }
 
   .arrow {
@@ -225,6 +269,11 @@
     right: 15px;
     bottom: 15px;
   }
+}
+.cell-arrow {
+  padding-top: 199px;
+  padding-bottom: 15px;
+  margin-left: 446px;
 }
 // mailer page
 .upinfo {
