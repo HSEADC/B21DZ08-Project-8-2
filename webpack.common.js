@@ -101,6 +101,38 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/games.html',
+      filename: './games.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/article.html',
+      filename: './article.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/mailer.html',
+      filename: './mailer.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/fiveseven_minutes.html',
+      filename: './fiveseven_minutes.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/reach-us.html',
       filename: './reach-us.html',
       chunks: ['index']

@@ -1,76 +1,89 @@
 @import 'wireframe.scss';
 
-header {
-  border-bottom: 1px white solid;
-  background-color: black;
+/* ----------- Header ---------------- */
+
+.header {
+  display: flex;
+  padding: 25px 24px 20px;
+  background-color: #000000;
+  border-bottom: 1px solid white;
   position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 10;
   width: 100%;
-  z-index: 100;
+  top: 0;
+}
 
-  nav {
-    max-width: 1250px;
-    margin: 0 auto;
+.wrapper--header {
+  display: flex;
+  justify-content: space-between;
+}
 
-    display: flex;
-    ul {
-      display: flex;
-      align-items: center;
-    }
-    li {
-      position: relative;
-      list-style-type: none;
-      line-height: 59px;
-      color: white;
-      padding: 0 15px;
-      min-width: 140px;
-      font-size: 16px;
-      cursor: pointer;
+.header__link {
+  margin: 0 0 0 24px;
+}
 
-      &:first-of-type {
-        margin-left: auto;
-      }
+.navigation {
+  margin: 0 100px 0 auto;
+}
 
-      &::before {
-        position: absolute;
-        content: '';
-        height: 2px;
-        top: 0;
-        left: 0;
-        background-color: white;
-      }
+.navigation-list {
+  margin: 0;
+  padding: 4px 0 0 0;
+  list-style: none;
+  display: flex;
+}
 
-      &:nth-child(1)::before {
-        width: 100px;
-      }
+.navigation-list__item {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0px 159px 0 0;
+  position: relative;
+}
 
-      &:nth-child(2)::before {
-        width: 50px;
-      }
+.navigation-list__item::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  top: 16px;
+  left: 73px;
+  background-color: #ffffff;
+}
 
-      &:hover {
-        background-color: black;
-        color: white;
-      }
-    }
+.navigation-list__item:first-child {
+  margin: 0 210px 0 0;
+}
 
-    .logoContainer {
-      display: flex;
-      height: 59px;
-      align-items: center;
-      margin-left: 15px;
+.navigation-list__item:first-child::before {
+  width: 180px;
+}
 
-      .logo {
-        width: 100px;
-        height: 30px;
+.navigation-list__item:nth-child(2) {
+  margin: 0 109px 0 0;
+}
 
-        @include wireframe;
-      }
-    }
-  }
+.navigation-list__item:nth-child(2):before {
+  width: 72px;
+  left: 165px;
+}
 
-  .header-filler {
-    height: 60px;
-  }
+.navigation-list__item:nth-child(3) {
+  margin: 0 173px 0 0;
+}
+
+.navigation-list__item:nth-child(3):before {
+  width: 136px;
+  left: 99px;
+}
+
+.navigation-list__item:last-child {
+  margin: 0;
+}
+
+.navigation-list__link {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #ffffff;
 }

@@ -2,6 +2,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
   background: #1e1e1e;
 }
 
@@ -301,7 +304,7 @@ ul {
 
 /* Стилизация формы */
 
-form {
+.reach_us_form {
   position: relative;
   width: 759px;
   box-sizing: border-box;
@@ -328,7 +331,7 @@ form {
   background-color: #071b01;
 }
 
-button {
+.reach_us_button {
   position: absolute;
   background-color: #1e1e1e;
   top: 0px;

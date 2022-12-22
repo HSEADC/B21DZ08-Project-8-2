@@ -1,69 +1,267 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Главная</title>
-    <analytics></analytics>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>сборщик имейла</title>
   </head>
 
-  <body class="index">
-    <header>
-      <nav>
-        <div class="logoContainer">
-          <div class="logo"></div>
-        </div>
-        <li>Игры</li>
-        <li>История игр</li>
-        <li>Студии</li>
-        <li>Приставки</li>
-      </nav>
-    </header>
-    <main>
-      lorem ipsum lre\
-    </main>
-    <footer>
-      <div class="columnsContainer">
-        <div class="contacts">
-          <h3>Пиши нам!</h3>
-          <div>hello@savecomrade.com</div>
-        </div>
-        <div class="links">
-          <div>
-            <h3>Дизайнили и&nbsp;[ш]кодили</h3>
-            <div>Ксюша Здоренко</div>
-            <div>Ира Рыбина</div>
-            <div>Оля Алешина</div>
-          </div>
-          <div>
-            <h3>Social media</h3>
-            <div>
-              <div class="wireframe"></div>
-              Twitch
-            </div>
-            <div>
-              <div class="wireframe"></div>
-              Telegram
-            </div>
-            <div>
-              <div class="wireframe"></div>
-              vc.ru
-            </div>
-          </div>
-          <div>
-            <h3>Donate</h3>
-            <div>
-              <div class="wireframe"></div>
-              Patreon
-            </div>
-            <div>
-              <div class="wireframe"></div>
-              Donate.Steam
-            </div>
-          </div>
-        </div>
+  <body class="mailer">
+    <!-- шапка -->
+    <header class="header">
+      <div class="wrapper--header">
+        <a class="header__link" href="#">
+          <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Игры</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">История игр</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Студии</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Приставки</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="copyright">
-        HSE Art, Design and Code | 2022
+    </header>
+    <!-- основное содержимое -->
+    <main>
+      <div class="exp"><p>lorem ipsum lre\</p></div>
+    </main>
+    <!--footer-->
+
+    <footer class="footer">
+      <div class="wrapper wrapper--footer">
+        <div class="footer-inner-wrapper">
+          <div class="feedback">
+            <h2 class="feedback__title">Будем рады пообщаться!</h2>
+            <a class="feedback__link" href="mailto:hello@np.com"
+              >hello@np.com</a
+            >
+          </div>
+          <div class="footer__right-column">
+            <div class="footer-column">
+              <h3 class="footer-column__title">Дизайнили<br />и [ш]кодили</h3>
+              <ul class="footer-column-list">
+                <li class="footer-column-list__item">Ксюша Здоренко</li>
+                <li class="footer-column-list__item">Ира Рыбина</li>
+                <li class="footer-column-list__item">Оля Алешина</li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column__title">Social media</h3>
+              <ul class="footer-column-list">
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="footer-column-list__link" href="#">
+                    <svg
+                      width="56"
+                      height="51"
+                      viewBox="0 0 56 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.9"
+                        y="0.9"
+                        width="52.2"
+                        height="49.2"
+                        rx="9.1"
+                        stroke="white"
+                        stroke-width="1.8"
+                      />
+                      <rect x="43" y="14" width="13" height="31" fill="black" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M29.2355 36.001C19.9993 36.001 14.7312 29.6691 14.5117 19.1328H19.1382C19.2902 26.8662 22.7009 30.1419 25.4025 30.8173V19.1328H29.759V25.8024C32.4268 25.5154 35.2294 22.4761 36.175 19.1328H40.5314C39.8053 23.2528 36.766 26.2921 34.6047 27.5416C36.766 28.5547 40.2276 31.2056 41.5447 36.001H36.7492C35.7192 32.7928 33.1529 30.3107 29.759 29.973V36.001H29.2355Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="footer-column-list__item-name">VK group</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="footer-column-list__link" href="#">
+                    <svg
+                      width="58"
+                      height="51"
+                      viewBox="0 0 58 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.9"
+                        y="0.9"
+                        width="52.2"
+                        height="49.2"
+                        rx="9.1"
+                        stroke="white"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M37.8043 14.3292C37.3731 13.9484 36.6957 13.894 35.9954 14.1867H35.9942C35.2576 14.4945 15.1441 23.478 14.3253 23.845C14.1763 23.8989 12.8757 24.4042 13.0097 25.5298C13.1293 26.5447 14.1746 26.965 14.3023 27.0135L19.4158 28.8367C19.755 30.0126 21.0056 34.3511 21.2822 35.2779C21.4547 35.8557 21.7359 36.6149 22.2287 36.7712C22.6611 36.9448 23.0912 36.7861 23.3695 36.5586L26.4958 33.5392L31.5425 37.6375L31.6627 37.7124C32.0054 37.8705 32.3337 37.9495 32.6471 37.9495C32.8892 37.9495 33.1215 37.9022 33.3435 37.8076C34.0996 37.4843 34.402 36.7341 34.4337 36.649L38.2034 16.2458C38.4334 15.1561 38.1137 14.6017 37.8043 14.3292ZM23.9255 29.5659L22.2005 34.3559L20.4755 28.3685L33.7005 18.1899L23.9255 29.5659Z"
+                        fill="white"
+                      />
+                      <rect x="45" y="14" width="13" height="31" fill="black" />
+                    </svg>
+                    <span class="footer-column-list__item-name">Telegram</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="footer-column-list__link" href="#">
+                    <svg
+                      width="61"
+                      height="51"
+                      viewBox="0 0 61 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.9"
+                        y="0.9"
+                        width="52.2"
+                        height="49.2"
+                        rx="9.1"
+                        stroke="white"
+                        stroke-width="1.8"
+                      />
+                      <rect x="48" y="14" width="13" height="31" fill="black" />
+                      <g clip-path="url(#clip0_1357_7)">
+                        <path
+                          d="M26.9961 29.3872V27.0781H31.4335C31.4335 27.3046 31.4335 27.5038 31.4335 27.7031C31.4335 30.1913 31.4221 32.681 31.4421 35.1693C31.4464 35.7139 31.5006 36.2715 31.632 36.7975C32.0134 38.324 33.273 39.0665 34.8055 38.7196C36.2623 38.3899 37.5448 37.1229 37.6419 35.5606C37.7676 33.531 37.6733 31.4885 37.6733 29.3901H35.4296V27.0781H40.1927V38.3469H41.9993V40.5686H38.3631C38.2589 39.9107 38.1518 39.2385 38.0318 38.4845C37.919 38.6279 37.8361 38.7196 37.769 38.8228C36.6207 40.57 34.884 41.2982 32.8474 40.8868C30.8537 40.4826 29.5297 39.141 29.1541 37.0971C29.0584 36.5768 29.0213 36.0407 29.017 35.5118C29.0013 33.6757 29.0113 31.8382 29.0113 30.0021V29.3872H26.9961Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M39.3455 20.0909C39.9625 20.5625 40.5438 21.0083 41.1579 21.4784C40.0053 23.0106 38.5286 23.9265 36.6691 24.2232C32.8372 24.8338 29.2324 22.3054 28.5012 18.4885C27.5729 13.6496 31.7518 9.32523 36.6148 10.0878C38.0044 10.3056 39.3141 10.7256 40.4109 11.6429C40.578 11.782 40.7166 12.0557 40.7237 12.2707C40.7566 13.2611 40.738 14.253 40.738 15.2735H38.4172C38.4172 14.6285 38.4415 13.9821 38.4029 13.3385C38.3915 13.145 38.2501 12.8784 38.0887 12.7881C35.8878 11.5555 33.0457 12.2478 31.7346 14.3118C30.2979 16.5736 30.8092 19.6581 32.8686 21.1487C34.7053 22.4774 37.3317 22.2022 38.9585 20.5095C39.0756 20.3876 39.1884 20.2601 39.3455 20.0909Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M27.8352 10.3489V12.6666C27.2639 12.6666 26.7183 12.6953 26.1771 12.6566C25.7672 12.6279 25.5815 12.7684 25.4387 13.1597C24.1576 16.6484 22.8451 20.1242 21.5654 23.6129C21.4183 24.0142 21.2412 24.192 20.8042 24.149C20.2657 24.0959 19.5959 24.2866 19.216 24.0286C18.8575 23.7849 18.7904 23.0969 18.6133 22.5995C17.4993 19.4878 16.3767 16.3789 15.2913 13.2571C15.1242 12.777 14.8957 12.6236 14.4158 12.658C13.8588 12.6981 13.2961 12.6666 12.7148 12.6666V10.3489C13.8788 10.3489 15.0214 10.3833 16.1597 10.3346C16.7452 10.3088 17.0066 10.475 17.198 11.0613C18.162 14.0067 19.1874 16.9322 20.1915 19.8648C20.2443 20.0167 20.3029 20.1672 20.4028 20.4381C20.7656 19.3918 21.0912 18.4601 21.4126 17.5256C22.1795 15.291 22.9508 13.0565 23.7034 10.8162C23.8162 10.4779 23.9562 10.3274 24.3433 10.3374C25.4872 10.369 26.6327 10.3489 27.8366 10.3489H27.8352Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M15.8826 38.37V29.1753H13.7031V27.0941H17.892C17.9435 27.8982 17.9963 28.7123 18.0577 29.6655C18.8075 28.5632 19.6516 27.7548 20.8099 27.3177C21.9738 26.8791 23.1692 27.0797 24.3875 27.0195V31.1432H22.1267V29.1423C21.2854 29.1294 20.5613 29.3831 19.9372 29.8934C18.8846 30.7548 18.3205 31.8713 18.3105 33.2445C18.3005 34.771 18.3076 36.2989 18.3076 37.8254C18.3076 37.9931 18.3076 38.1622 18.3076 38.3887H24.0633V40.5688H13.7031V38.3686H15.8826V38.37Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M11.3023 40.6335H9V38.3086H11.3023V40.6335Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1357_7">
+                          <rect
+                            width="33"
+                            height="31"
+                            fill="white"
+                            transform="translate(9 10)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="footer-column-list__item-name">VC.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column__title">Donate</h3>
+              <ul class="footer-column-list">
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="footer-column-list__link" href="#">
+                    <svg
+                      width="56"
+                      height="51"
+                      viewBox="0 0 56 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.9"
+                        y="0.9"
+                        width="52.2"
+                        height="49.2"
+                        rx="9.1"
+                        stroke="white"
+                        stroke-width="1.8"
+                      />
+                      <rect x="43" y="14" width="13" height="31" fill="black" />
+                      <path
+                        d="M19.2014 14.7617H15.1214C14.7454 14.7617 14.4414 15.0657 14.4414 15.4417V37.8817C14.4414 38.2578 14.7454 38.5617 15.1214 38.5617H19.2014C19.5774 38.5617 19.8814 38.2578 19.8814 37.8817V15.4417C19.8814 15.0657 19.5774 14.7617 19.2014 14.7617ZM30.0814 14.7617C27.7369 14.7617 25.4884 15.6931 23.8306 17.3509C22.1728 19.0087 21.2414 21.2572 21.2414 23.6017C21.2414 25.9462 22.1728 28.1947 23.8306 29.8525C25.4884 31.5104 27.7369 32.4417 30.0814 32.4417C32.4259 32.4417 34.6744 31.5104 36.3322 29.8525C37.9901 28.1947 38.9214 25.9462 38.9214 23.6017C38.9214 21.2572 37.9901 19.0087 36.3322 17.3509C34.6744 15.6931 32.4259 14.7617 30.0814 14.7617Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="footer-column-list__item-name">Patreon</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="footer-column-list__link" href="#">
+                    <svg
+                      width="55"
+                      height="51"
+                      viewBox="0 0 55 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.9"
+                        y="0.9"
+                        width="52.2"
+                        height="49.2"
+                        rx="9.1"
+                        stroke="white"
+                        stroke-width="1.8"
+                      />
+                      <rect x="42" y="14" width="13" height="31" fill="black" />
+                      <g clip-path="url(#clip0_1357_9)">
+                        <path
+                          d="M26.1247 29.3059H24.2394C24.1297 29.3064 24.0248 29.2648 23.951 29.1916C23.8772 29.1184 23.8413 29.0203 23.8523 28.9219L24.0187 27.2114C24.0349 27.0295 24.2036 26.8896 24.4059 26.8902H26.2912C26.4009 26.8897 26.5058 26.9312 26.5796 27.0045C26.6534 27.0777 26.6893 27.1757 26.6783 27.2742L26.5119 28.9847C26.4957 29.1665 26.327 29.3065 26.1247 29.3059ZM26.4269 25.9569H24.5065C24.2944 25.9569 24.1224 25.7903 24.1224 25.5848L24.6448 19.8059C24.6682 19.618 24.8335 19.4771 25.0289 19.4784H26.9493C27.1614 19.4784 27.3333 19.645 27.3333 19.8506L26.7956 25.6331C26.7712 25.814 26.6151 25.9511 26.4269 25.9569ZM37.7185 19.2179C37.9229 19.4567 38.0228 19.7676 37.9956 20.0807L37.245 28.6658C37.221 28.9467 37.0964 29.2094 36.8943 29.4058L30.7562 35.3677C30.5371 35.5798 30.2439 35.698 29.9389 35.6974H23.4045L17.6522 41L18.0977 35.6939H15.1724C14.8439 35.6941 14.5303 35.5564 14.3082 35.3144C14.0861 35.0723 13.9759 34.7481 14.0044 34.4208L15.7897 14.0521C15.851 13.4535 16.3559 12.9987 16.9577 13H31.854C32.1967 12.9999 32.5223 13.1498 32.7449 13.4103L37.7185 19.2179ZM33.1693 27.0281L33.6463 21.729C33.6649 21.4148 33.5561 21.1064 33.3447 20.8732L30.5387 17.6328C30.3164 17.3768 29.9939 17.2296 29.6548 17.2295H20.816C20.2142 17.2281 19.7092 17.683 19.648 18.2816L18.5957 30.2054C18.5715 30.5317 18.6832 30.8534 18.9044 31.0945C19.1256 31.3356 19.4366 31.4745 19.7637 31.4785H28.4553C28.7568 31.4792 29.047 31.3636 29.2655 31.1558L32.8186 27.7715C33.0215 27.5742 33.1461 27.3101 33.1693 27.0281Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1357_9">
+                          <rect
+                            width="24"
+                            height="28"
+                            fill="white"
+                            transform="translate(14 13)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="footer-column-list__item-name"
+                      >DonationAlerts</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">HSE Art, Design and Code | 2022</p>
+        </div>
       </div>
     </footer>
   </body>
