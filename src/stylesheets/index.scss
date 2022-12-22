@@ -1,30 +1,77 @@
 .index {
-  background-color: black;
+  background-color: #000000;
 
-  .title {
-    min-height: calc(100vh - 60px);
-    color: white;
-    .top-line,
-    .bottom-line > h1 {
-      font-size: 130px;
-    }
-
-    .bottom-line {
-      display: flex;
-
-      .title-link {
-        margin-left: 50px;
-        max-width: 150px;
-
-        h3 {
-          margin-bottom: 5px;
-        }
-      }
-    }
+  .wrapper {
+    max-width: 1728px;
+    padding: 0;
+    margin: 0 auto;
   }
-  .buttons_title {
-    margin-top: 74px;
+  .main-title {
+    position: relative;
+    margin: 16px 0 0 0;
   }
+
+  .main-cover__title {
+    font-family: 'TT Hoves';
+    font-style: italic;
+    font-weight: 275;
+    font-size: 196px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .main-cover__separator {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+  }
+
+  .main-cover__separator:nth-of-type(1) {
+    top: 69px;
+  }
+
+  .main-cover__separator:nth-of-type(2) {
+    top: 166px;
+  }
+
+  .main-cover__separator:nth-of-type(3) {
+    top: 266px;
+  }
+
+  .main-cover__separator:nth-of-type(4) {
+    top: 365px;
+  }
+
+  // .title {
+  //   min-height: calc(100vh - 60px);
+  //   color: white;
+  //   .top-line,
+  //   .bottom-line > h1 {
+  //     font-size: 196px;
+  //     font-family: 'TT Hoves';
+  //     font-style: italic;
+  //   }
+  //
+  //   .bottom-line {
+  //     display: flex;
+  //
+  //     .title-link {
+  //       margin-left: 50px;
+  //       max-width: 150px;
+  //       font-family: 'TT Hoves';
+  //       h3 {
+  //         margin-bottom: 5px;
+  //       }
+  //     }
+  //   }
+  // }
+  // .buttons_title {
+  //   margin-top: 74px;
+  // }
   .ghost-button-rounded-corners {
     display: inline-block;
     width: 355px;
@@ -58,6 +105,7 @@
   grid-area: 1 / 1 / 2 / 2;
   background-color: #e93323;
   border-radius: 20px;
+  color: #fff;
   // F0A1C1
 }
 .cell-2 {
@@ -65,10 +113,30 @@
   // ВТОРАЯ (grid column start) ЧЕТВЕРТАЯ (grid column end)
   // ряд (горизонтальная)это высота - колонка это ширина (вертикальная линия)
   grid-area: 1 / 2 / 2 / 3;
-  background-color: #ffffff;
+  background-color: #fdf050;
   border-radius: 20px;
+  display: flex;
   // F0A1C1
 }
+// .yellowcard {
+//   display: flex;
+//   border-radius: 20px;
+//   background-color: #fdf050;
+//   width: 250px;
+// }
+// .mariocard {
+//   display: flex;
+//   // width: 476px;
+//   border-radius: 20px;
+//   background-image: url(./images/mariocard.png);
+//   background-repeat: no-repeat;
+// }
+// .mariocard img {
+//   width: 609px;
+//
+//   background-image: no-repeat;
+//   border-radius: 20px;
+// }
 .cell-3 {
   // ПЕРВАЯ ЦИФРА(grid row start) И ТРЕТЬЯ СВЯЗАНЫ(grid row end)
   // ВТОРАЯ (grid column start) ЧЕТВЕРТАЯ (grid column end)
@@ -85,8 +153,9 @@
 }
 .cell-5 {
   grid-area: 2 / 2 / -4 / 3;
-  background-color: #fdf050;
+  background-color: #265bee;
   border-radius: 20px;
+  color: white;
 }
 .cell-6 {
   grid-area: 3 / 2 / -2 / 3;
@@ -95,8 +164,38 @@
 }
 .cell-7 {
   grid-area: 5 / 2 / -1 / 3;
-  background-color: #aa86d4;
+  column-gap: 20px;
+  display: flex;
+}
+.purplecard {
+  display: flex;
+  background-color: #f0a1c1;
   border-radius: 20px;
+  width: 476px;
+}
+.blackcard {
+  display: flex;
+  border-radius: 20px;
+  background-color: #000;
+  width: 229px;
+  border: 1px solid #fff;
+}
+.blackcard-paragraph {
+  color: #fff;
+  font-size: 26px;
+  font-family: 'TT Hoves';
+  font-style: italic;
+  max-width: 138px;
+  padding-top: 16px;
+  padding-left: 17px;
+}
+// при наведении
+.blackcard:hover {
+  display: flex;
+  border-radius: 20px;
+  background-color: #e93323;
+  width: 229px;
+  border: 1px solid #e93323;
 }
 
 .article-cell {
@@ -104,11 +203,15 @@
   cursor: pointer;
 
   h4 {
-    font-size: 20px;
+    font-size: 26px;
+    font-family: 'TT Hoves';
+    font-style: normal;
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: max(50%, 150px);
+    font-weight: 300;
+
+    top: 12px;
+    left: 21px;
+    width: max(65%, 200px);
   }
 
   .time-to-read {
@@ -123,6 +226,7 @@
     bottom: 15px;
   }
 }
+// mailer page
 .upinfo {
   display: flex;
   flex-direction: row;
@@ -135,8 +239,8 @@
 .upinfo p {
   padding: 121px;
   color: #f3f3f3;
-  max-width: 865px;
   font-size: 36px;
+  // margin-left: 514px;
 }
 .blue {
   background-color: #265bee;
@@ -193,12 +297,16 @@
   border-style: none;
   margin-top: 151px;
 }
-
+.datamailer {
+  display: flex;
+  position: relative;
+}
 input[type='text'] {
   width: 353px;
   height: 54px;
   border-radius: 10px;
   border-color: none;
+  border: none;
 }
 input[type='text']::placeholder {
   color: #265bee;
@@ -213,7 +321,8 @@ input[type='email'] {
   width: 495px;
   height: 54px;
   border-radius: 10px;
-  margin: 20px;
+  margin-left: 20px;
+  border: none;
 }
 
 textarea {
@@ -231,9 +340,23 @@ textarea::placeholder {
   font-style: normal;
   font-weight: 300;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 33px;
   color: #ffffff;
   margin-top: 30px;
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  border-radius: 2px;
 }
 .ch2 {
   margin-top: 25px;
@@ -255,3 +378,8 @@ textarea::placeholder {
   outline: none;
   text-decoration: none;
 }
+.mailerbtn:hover {
+  cursor: pointer;
+}
+
+//

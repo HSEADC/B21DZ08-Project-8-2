@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.five-seven {
+  display: grid;
+  grid-template-columns: repeat(6, 228px);
+  grid-template-rows: repeat(4, 476px);
+  max-width: 1688px;
+  gap: 20px;
+}
+.five-seven__card:nth-of-type(1) {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: red;
+}
