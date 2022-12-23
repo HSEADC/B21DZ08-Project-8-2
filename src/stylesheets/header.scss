@@ -13,6 +13,10 @@
   top: 0;
 }
 
+.header__logo {
+  opacity: 0;
+}
+
 .wrapper--header {
   display: flex;
   justify-content: space-between;
