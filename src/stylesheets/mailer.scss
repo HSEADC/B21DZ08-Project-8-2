@@ -5,11 +5,183 @@
   margin: 0 auto;
 }
 
-.mailer {
-  background-color: pink;
+.upinfo {
+  display: flex;
+  flex-direction: row;
 }
 
-.exp {
+.upinfo p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+  color: #f3f3f3;
+  padding: 116px 121px;
+}
+
+.heartmail {
+  padding: 54px;
+  width: 355px;
+  height: 355px;
+}
+
+.blue_mailer {
+  background-color: #265bee;
   height: 1000px;
-  background-color: red;
+}
+.blueline {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #265bee;
+  padding: 18px 0 30px 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.blueline span {
+  display: inline-block;
+  padding-left: 100%;
+
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+
+  -webkit-animation: marquee 30s infinite linear;
+  animation: marquee 30s infinite linear;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+//forms
+.formsend {
+  float: right;
+  margin-right: 150px;
+  width: 871px;
+  border-style: none;
+  margin-top: 151px;
+}
+.datamailer {
+  display: flex;
+  position: relative;
+}
+input[type='text'] {
+  width: 353px;
+  height: 54px;
+  border-radius: 10px;
+  border-color: none;
+  border: none;
+}
+input[type='text']::placeholder {
+  color: #265bee;
+  padding: 10px 0 0 20px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #265bee;
+}
+.datamailer-email[type='email']::placeholder {
+  color: #265bee;
+  padding: 10px 0 0 20px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #265bee;
+}
+
+.datamailer-email[type='email'] {
+  width: 495px;
+  height: 54px;
+  border-radius: 10px;
+  margin-left: 20px;
+  border: none;
+}
+
+textarea {
+  width: 871px;
+  height: 305px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+textarea::placeholder {
+  color: #265bee;
+  padding: 14px 0 0 20px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #265bee;
+}
+.checkboxes {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  border-radius: 2px;
+}
+.ch2 {
+  margin-top: 25px;
+}
+
+// кнопка
+.mailerbtn {
+  width: 355px;
+  padding: 12px;
+  font-size: 26px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  line-height: 126%;
+  margin-top: 49px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+}
+.mailerbtn:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #265bee;
 }

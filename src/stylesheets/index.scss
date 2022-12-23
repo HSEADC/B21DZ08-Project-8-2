@@ -205,9 +205,15 @@
   padding-left: 22px;
   padding-bottom: 15px;
 }
+
 .cell-5 {
-  grid-area: 2 / 2 / -4 / 3;
   background-color: #265bee;
+  border-radius: 20px;
+}
+
+.cell-5 a {
+  grid-area: 2 / 2 / -4 / 3;
+
   border-radius: 20px;
   color: white;
   font-size: 26px;
@@ -329,6 +335,30 @@
     font-family: 'TT Hoves';
     font-style: normal;
   }
+
+  .time-to-read_article a {
+    position: absolute;
+    left: 21px;
+    bottom: 15px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+  }
+
+  .time_to_read_link a {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    top: 12px;
+    left: 21px;
+  }
+
   .time-read-segato {
     position: absolute;
     padding-left: 21px;

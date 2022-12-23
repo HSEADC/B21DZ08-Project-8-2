@@ -17,7 +17,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list__item">
-              <a class="navigation-list__link" href="#">Игры</a>
+              <a class="navigation-list__link" href="./games.html">Игры</a>
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="#">История игр</a>
@@ -32,9 +32,70 @@
         </nav>
       </div>
     </header>
+
     <!-- основное содержимое -->
     <main>
-      <div class="exp"><p>lorem ipsum lre\</p></div>
+      <div class="upinfo">
+        <img class="heartmail" src="./images/mail.png" alt="" />
+        <p>
+          Каждый день мы придумываем что-нибудь новое. Для быстрого роста нам
+          важен твой фидбэк. Напиши свои пожелания, идеи и впечатления от работы
+          медиа-сервиса.
+        </p>
+      </div>
+      <div class="blueline">
+        <span
+          >го общаться го общаться го общаться го общаться го общаться го
+          общаться го общаться го общаться го общаться</span
+        >
+      </div>
+      <div class="blue_mailer">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <div class="formsend">
+          <form
+            class="formemail"
+            action="https://formspree.io/f/mdojzwyp"
+            method="POST"
+          >
+            <div class="datamailer">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Твое имя" />
+              <label>
+                <input
+                  class="datamailer-email"
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                />
+              </label>
+            </div>
+            <label class="textarea1">
+              <textarea name="message" placeholder="Cообщение:"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <div class="checkboxes">
+              <div class="ch1">
+                <input type="checkbox" name="" value="" id="first" />
+                <label for="first"
+                  >Я согласен с правилами сервиса и даю согласие на
+                  обработку&nbsp; моих персональных данных в соответствии с
+                  законом РФ.</label
+                >
+              </div>
+              <div class="ch2">
+                <input type="checkbox" name="" value="" id="second" />
+                <label for="second"
+                  >Я хочу получать расслылку проекта «Назад в пиксель»на
+                  указанный адрес электронной почты.</label
+                >
+              </div>
+            </div>
+            <!-- <button type="submit"></button> -->
+
+            <button class="mailerbtn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
     </main>
     <!--footer-->
 
