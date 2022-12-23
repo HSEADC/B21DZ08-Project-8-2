@@ -438,7 +438,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../images/transparent-bg.png) 0 0 repeat;
+  background: url(./images/transparent-bg.png) 0 0 repeat;
 }
 
 .articles-list__article::before {
@@ -448,11 +448,11 @@ main {
   height: 25px;
   bottom: 10px;
   right: 17px;
-  background: url(../images/article-arrow-w.svg) 0 0 no-repeat;
+  background: url(./images/article-arrow-w.svg) 0 0 no-repeat;
 }
 
 .articles-list__article--black-content::before {
-  background: url(../images/article-arrow-b.svg) 0 0 no-repeat;
+  background: url(./images/article-arrow-b.svg) 0 0 no-repeat;
 }
 
 .articles-list__articlei--img::before {
