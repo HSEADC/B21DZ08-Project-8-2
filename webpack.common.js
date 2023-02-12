@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx'
+    page: './src/page.jsx',
+    game_note: './src/game_note.js',
   },
   output: {
     filename: '[name].js',
@@ -112,6 +113,12 @@ module.exports = {
       template: './src/article.html',
       filename: './article.html',
       chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/game_note.html',
+      filename: './game_note.html',
+      chunks: ['game_note']
     }),
 
     new HtmlWebpackPlugin({
