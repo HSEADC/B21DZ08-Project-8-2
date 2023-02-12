@@ -116,6 +116,8 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/game_note.html',
       filename: './game_note.html',
       chunks: ['game_note']
