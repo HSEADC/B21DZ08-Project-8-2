@@ -1,0 +1,55 @@
+
+.M_Navigation {
+  margin: 0 62px 0 auto;
+}
+
+.M_SummaryListItem {
+  display: flex;
+  align-items: flex-end;
+
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1;
+  color: #FFFFFF;
+  margin: 0 0 51px 0;
+}
+
+.M_SummaryListItem:last-child {
+  margin-bottom: 0;
+}
+
+.M_SummaryListItem .W_SummaryListItemWrapper {
+  position: relative;
+  flex: 1 auto;
+}
+
+.M_SummaryListItem .W_SummaryListItemWrapper::before {
+  content: '';
+  top: calc(100% - 5px);
+  right: 8px;
+  left: 0;
+  position: absolute;
+  border-bottom: 1px solid white;
+}
+
+.M_GameNoteCard {
+  padding: 54px 58px 43px 58px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 830px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.M_GameNoteCard-MainCard {
+  background-image: url(./images/M_Card_Game.png);
+}
+
+.M_GameNoteCard .A_GameNoteCardFooterText {
+  color: #000000;
+  opacity: 0.4;
+}

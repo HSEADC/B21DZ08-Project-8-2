@@ -11,7 +11,9 @@ module.exports = {
     index: './src/index.js',
     page: './src/page.jsx',
     game_note: './src/game_note.js',
+    games: './src/games.js'
   },
+
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
@@ -91,7 +93,7 @@ module.exports = {
       filename: './fiveseven_minutes.html',
       chunks: ['index']
     }),
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({ 
       hash: true,
       scriptLoading: 'blocking',
       template: './src/about.html',
@@ -104,7 +106,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/games.html',
       filename: './games.html',
-      chunks: ['index']
+      chunks: ['games']
     }),
 
     new HtmlWebpackPlugin({

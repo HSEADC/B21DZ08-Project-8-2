@@ -1,7 +1,7 @@
 @import './stylesheets/reset.scss';
 @import './stylesheets/vars.scss';
 @import './stylesheets/fonts.scss';
-@import './stylesheets/game_note.scss';
+@import './stylesheets/games.scss';
 @import './stylesheets/components/qwarcs.scss';
 @import './stylesheets/components/atoms.scss';
 @import './stylesheets/components/molecules.scss';
