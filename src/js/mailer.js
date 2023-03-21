@@ -1,0 +1,1 @@
+import '../css/mailer.css'

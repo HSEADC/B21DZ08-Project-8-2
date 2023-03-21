@@ -1,0 +1,46 @@
+
+.O_Header {
+  display: flex;
+  background-color: #000000;
+  border-bottom: 1px solid white;
+  /* position: fixed; */
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+.O_GameSummary {
+  width: 100%;
+  max-width: 567px;
+  padding: 56px 20px;
+  border-right: 1px solid white;
+}
+
+.O_GameNote {
+  padding: 64px 0 73px 0;
+  width: 100%;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.O_Footer {
+  padding: 24px 0 0 0;
+}
+
+/* Адаптив под 1512 */
+
+@media(max-width: 1512px) {
+/*блок с саммари game_note*/
+.O_GameSummary {
+  max-width: 518px;
+  padding: 43px 20px;
+}
+
+.O_GameNote {
+  padding: 58px 0 58px 0;
+  width: 100%;
+  width: 100%;
+  max-width: 994px;
+}
+
+}

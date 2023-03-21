@@ -8,10 +8,16 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
+    index: './src/js/index.js',
     page: './src/page.jsx',
-    game_note: './src/game_note.js',
-    games: './src/games.js'
+    game_note: './src/js/game_note.js',
+    games: './src/js/games.js',
+    about: './src/js/about.js',
+    article: './src/js/article.js',
+    fiveseven_minutes: './src/js/fiveseven_minutes.js',
+    mailer: './src/js/mailer.js',
+    header: './src/js/header.js',
+    footer: './src/js/footer.js'
   },
 
   output: {
@@ -89,22 +95,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/fiveseven_minutes.html',
+      template: './src/pages/fiveseven_minutes.html',
       filename: './fiveseven_minutes.html',
-      chunks: ['index']
+      chunks: ['fiveseven_minutes']
     }),
     new HtmlWebpackPlugin({ 
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/about.html',
+      template: './src/pages/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['about']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/games.html',
+      template: './src/pages/games.html',
       filename: './games.html',
       chunks: ['games']
     }),
@@ -112,15 +118,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/article.html',
+      template: './src/pages/article.html',
       filename: './article.html',
-      chunks: ['index']
+      chunks: ['article']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/game_note.html',
+      template: './src/pages/game_note.html',
       filename: './game_note.html',
       chunks: ['game_note']
     }),
@@ -128,25 +134,25 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/mailer.html',
+      template: './src/pages/mailer.html',
       filename: './mailer.html',
-      chunks: ['index']
+      chunks: ['mailer']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/fiveseven_minutes.html',
+      template: './src/pages/fiveseven_minutes.html',
       filename: './fiveseven_minutes.html',
-      chunks: ['index']
+      chunks: ['fiveseven_minutes']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/reach-us.html',
+      template: './src/pages/reach-us.html',
       filename: './reach-us.html',
-      chunks: ['index']
+      chunks: ['reach-us']
     }),
 
     // Internal pages

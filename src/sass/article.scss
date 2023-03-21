@@ -1,0 +1,616 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+main {
+  margin: 90px 0 0 0;
+}
+
+
+.wrapper--articles {
+  padding: 0 20px;
+}
+
+.wrapper--footer {
+  display: block;
+  padding: 0 16px;
+}
+
+/* ----------- Header ---------------- */
+
+.header {
+  display: flex;
+  padding: 25px 24px 20px;
+  background-color: #000000;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+.header__link {
+  margin: 0 0 0 24px;
+}
+
+.navigation {
+  margin: 0 100px 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 4px 0 0 0;
+  list-style: none;
+  display: flex;
+}
+
+.navigation-list__item {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0px 159px 0 0;
+  position: relative;
+}
+
+.navigation-list__item::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  top: 16px;
+  left: 73px;
+  background-color: #ffffff;
+}
+
+.navigation-list__item:first-child {
+  margin: 0 210px 0 0;
+}
+
+.navigation-list__item:first-child::before {
+  width: 180px;
+}
+
+.navigation-list__item:nth-child(2) {
+  margin: 0 109px 0 0;
+}
+
+.navigation-list__item:nth-child(2):before {
+  width: 72px;
+  left: 165px;
+}
+
+.navigation-list__item:nth-child(3) {
+  margin: 0 173px 0 0;
+}
+
+.navigation-list__item:nth-child(3):before {
+  width: 136px;
+  left: 99px;
+}
+
+.navigation-list__item:last-child {
+  margin: 0;
+}
+
+.navigation-list__link {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+/* main-article-info */
+/* Инфо */
+
+
+.author-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 335px;
+}
+
+.author-block__title {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.author__name,
+.author__surname {
+  margin: 0;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  max-width: 345px;
+  margin: 55px 0 87px 0;
+}
+
+.time p {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.key-words {
+  display: flex;
+  justify-content: space-between;
+  max-width: 370px;
+}
+
+.key-words__title {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.words-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.words-list__word {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.become-author-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 228px;
+  height: 52px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 327px 0 0 0;
+}
+
+/* ------------- Слайдер ----------------- */
+.article-content {
+  padding: 39px 0 0 0;
+  width: 100%;
+  width: 100%;
+  max-width: 996px;
+}
+
+.article-page {
+  padding: 54px 58px 43px 58px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 726px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.article-page--main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-page__title {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #265bee;
+  margin: 0 0 44px 0px;
+}
+
+.article-page__title--white {
+  color: #ffffff;
+}
+
+.article-page--no-title {
+  padding: 64px 58px 43px 58px;
+}
+
+.article-page__description {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.article-page__description--white {
+  color: #ffffff;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0 0 0;
+}
+
+.page-footer__text {
+  font-family: 'TT Hoves';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+.page-footer__text--white {
+  color: #ffffff;
+}
+
+.article-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.article-slider .swiper-slide {
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 726px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 52px !important;
+  height: 52px !important;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 56px !important;
+}
+
+.swiper-button-next {
+  right: 65px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '' !important;
+}
+
+.swiper-slide-prev {
+  transform: translate(-40px, 0) !important;
+}
+
+.swiper-slide-next {
+  transform: translate(24px, 0) !important;
+}
+
+/* ----------- Бегущая строка -------------- */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #5ecd9c;
+  padding: 28px 0 30px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+
+  -webkit-animation: marquee 30s infinite linear;
+  animation: marquee 30s infinite linear;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* ---------- Список статей ------------- */
+.white {
+  background-color: #ffffff;
+}
+
+.red {
+  background: #e93323;
+}
+
+.yellow {
+  background-color: #fdf050;
+}
+
+.green {
+  background-color: #5ecd9c;
+}
+
+.blue {
+  background-color: #265bee;
+}
+
+.pink {
+  background-color: #f0a1c1;
+}
+
+.articles {
+  padding: 22px 0 18px;
+  border-bottom: 1px solid #fff;
+}
+
+.articles-list {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 228px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.articles-list__article {
+  border-radius: 20px;
+  padding: 13px 14px 12px 22px;
+  position: relative;
+}
+
+.articles-list__article--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/transparent-bg.png) 0 0 repeat;
+}
+
+.articles-list__article::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  right: 17px;
+  background: url(../images/article-arrow-w.svg) 0 0 no-repeat;
+}
+
+.articles-list__article--black-content::before {
+  background: url(../images/article-arrow-b.svg) 0 0 no-repeat;
+}
+
+.articles-list__articlei--img::before {
+  background: none;
+}
+
+.articles-list__article:first-child {
+  grid-area: 1 / 1 / 3 / 7;
+}
+
+.articles-list__article:nth-child(2) {
+  grid-area: 1 / 7 / 2 / 9;
+}
+
+.articles-list__article:nth-child(3) {
+  grid-area: 1 / 9 / 2 / 13;
+}
+
+.articles-list__article:nth-child(4) {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.articles-list__article:nth-child(5) {
+  grid-area: 3 / 3 / 4 / 7;
+}
+
+.articles-list__article:nth-child(6) {
+  grid-area: 2 / 7 / 4 / 9;
+}
+
+.articles-list__article:nth-child(7) {
+  grid-area: 2 / 9 / 3 / 13;
+}
+
+.articles-list__article:nth-child(8) {
+  grid-area: 3 / 9 / 4 / 11;
+}
+
+.articles-list__article:nth-child(9) {
+  grid-area: 3 / 11 / 4 / 13;
+}
+
+.articles-list__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-decoration: none;
+}
+
+.articles-list__name {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.articles-list__time {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.articles-list__name--black,
+.articles-list__time--black {
+  color: #000000;
+}
+
+/* --------- Footer ---------------- */
+.footer {
+  padding: 24px 0 0 0;
+}
+
+.footer-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__title {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+}
+
+.feedback__link {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px 0 0 0;
+}
+
+.footer__right-column {
+  margin: 0 37px 0 0;
+  padding: 6px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 64px;
+  max-width: 694px;
+}
+
+.footer-column__title {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-column-list {
+  margin: 27px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column-list__item {
+  display: flex;
+  align-items: center;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+
+.footer-column-list__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-column-list__item--big {
+  margin: 0 0 26px 0;
+}
+
+.footer-column-list__item span {
+  margin: 0;
+}
+
+.copyright {
+  margin: -31px 0 0 0;
+  max-width: 25%;
+}
+
+.copyright__text {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+}

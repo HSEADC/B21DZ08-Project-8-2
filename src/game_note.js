@@ -1,1 +1,0 @@
-import './game_note.css'

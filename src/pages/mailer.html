@@ -26,7 +26,7 @@
       property="og:description"
       content="Назад в пиксель — возможность окунуться в мир легкой непосредственности и знакомой ретро-атмосферы через настроение видео игр 80-00х."
     />
-    <meta property="og:image" content="./images/share.png" />
+    <meta property="og:image" content="../images/share.png" />
     <meta property="og:site_name" content="Назад в пиксель" />
     <!-- отдельные мета теги для твиттера -->
     <meta name="twitter:card" content="summary" />
@@ -40,165 +40,104 @@
       content="Назад в пиксель — возможность окунуться в мир легкой непосредственности и знакомой ретро-атмосферы через настроение видео игр 80-00х."
     />
     <!-- Cсылка на изображение -->
-    <meta name="twitter:image" content="./images/share.png" />
+    <meta name="twitter:image" content="../images/share.png" />
 
     <!-- META TAGS -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <title>сборщик имейла</title>
   </head>
 
-  <body class="index">
+  <body class="mailer">
     <!-- шапка -->
-
-    <header class="O_header">  
-      <div class="W_headerWrapper"> 
-        <a class="Q_Logo" href="#">
-          <picture>
-            <source media="(min-width: 1727px)" srcset="images/Q_Logo.svg">
-            <source media="(min-width: 1512px)" srcset="images/Q_Logo-1512.svg">
-            <img src="images/Q_Logo-m.svg" alt="">
-          </picture>
+    <header class="header">
+      <div class="wrapper--header">
+        <a class="header__link" href="#">
+          <img class="header__logo" src="../images/logo.svg" alt="Логотип" />
         </a>
-
-        <nav class="C_Navigation"> 
-          <div class="M_NavigationControl">
-            <p class="A_NavigationControlText">меню</p>
-            <button class="A_NavigationControlButton" type="button">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(0.707107 0.707107 -0.473633 0.880722 0 1)" stroke="white"/>
-                  <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.473633 0.880722 16 1)" stroke="white"/>
-                </svg>
-            </button> 
-          </div>
-
-          <ul class="C_Nav_Text">
-            <li><a class="A_Nav_text" href="./games.html">Игры</a></li>
-            <li><a class="A_Nav_text" href="#">История игр</a></li>
-            <li><a class="A_Nav_text" href="#">Студии</a></li>
-            <li><a class="A_Nav_text" href="#">Приставки</a></li>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="./games.html">Игры</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">История игр</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Студии</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Приставки</a>
+            </li>
           </ul>
         </nav>
-
-        <button class="burger" type="button">
-          <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="0.5" x2="14" y2="0.5" stroke="white"/>
-            <line y1="4.5" x2="9" y2="4.5" stroke="white"/>
-            <line y1="8.5" x2="12" y2="8.5" stroke="white"/>
-            </svg>            
-        </button>
       </div>
     </header>
 
     <!-- основное содержимое -->
     <main>
-      <div class="wrapper">
-        <section class="main-title">
-          <div class="wrapper">
-            <div class="main-title-block>">
-              <h1 class="main-cover__title">о ретро играх <br />80—00х</h1>
+      <div class="upinfo">
+        <img class="heartmail" src="../images/mail.png" alt="" />
+        <p>
+          Каждый день мы придумываем что-нибудь новое. Для быстрого роста нам
+          важен твой фидбэк. Напиши свои пожелания, идеи и впечатления от работы
+          медиа-сервиса.
+        </p>
+      </div>
+      <div class="blueline">
+        <span
+          >го общаться го общаться го общаться го общаться го общаться го
+          общаться го общаться го общаться го общаться</span
+        >
+      </div>
+      <div class="blue_mailer">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <div class="formsend">
+          <form
+            class="formemail"
+            action="https://formspree.io/f/mdojzwyp"
+            method="POST"
+          >
+            <div class="datamailer">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Твое имя" />
+              <label>
+                <input
+                  class="datamailer-email"
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                />
+              </label>
             </div>
-          </div>
-          <span class="main-cover__separator"></span>
-          <span class="main-cover__separator"></span>
-          <span class="main-cover__separator"></span>
-          <span class="main-cover__separator"></span>
-        </section>
-        <section class="title">
-          <section class="buttons_title">
-            <a class="ghost-button-rounded-corners" href="./about.html"
-              >больше узнать о проекте</a
-            >
-            <a class="ghost-button-rounded-corners" href="./mailer.html"
-              >стать постоянным читателем</a
-            >
-          </section>
-        </section>
+            <label class="textarea1">
+              <textarea name="message" placeholder="Cообщение:"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <div class="checkboxes">
+              <div class="ch1">
+                <input type="checkbox" name="" value="" id="first" />
+                <label for="first"
+                  >Я согласен с правилами сервиса и даю согласие на
+                  обработку&nbsp; моих персональных данных в соответствии с
+                  законом РФ.</label
+                >
+              </div>
+              <div class="ch2">
+                <input type="checkbox" name="" value="" id="second" />
+                <label for="second"
+                  >Я хочу получать расслылку проекта «Назад в пиксель»на
+                  указанный адрес электронной почты.</label
+                >
+              </div>
+            </div>
+            <!-- <button type="submit"></button> -->
+
+            <button class="mailerbtn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </main>
-    <section class="grid">
-      <div class="cell cell-1 article-cell">
-        <h4 сaccesskey="cell-title-4">
-          История игровой журналистики в России: <br />от публикаций в советской
-          пресседо популярных интернет-ресурсов
-        </h4>
-        <div class="time-to-read_article">
-          <a href="./fiveseven_minutes.html">5–7 минут</a>
-        </div>
-        <img class="arrow" src="./images/arrow_2.svg" />
-      </div>
-      <div class="cell cell-2 article-cell">
-        <div class="mariocard"></div>
-        <div class="yellowcard">
-          <p class="big-text-yellow">
-            Супер Марио: спасти девушку из высшего общества
-          </p>
-          <p class="time-read">5-7 минут</p>
-          <img class="arrow" src="./images/arrow_2.svg" />
-        </div>
-      </div>
-      <div class="cell cell-3 article-cell">
-        <div class="greencard">
-          <p class="big-text-green">
-            Сегата Санширо. <br />Лучший маскот игровой консоли в&nbsp;истории
-          </p>
-          <p class="time-read-segato">5-7 минут</p>
-          <div class="greencard-arrow">
-            <img class="" src="./images/arrow_2.svg" />
-          </div>
-        </div>
-        <div class="segato-card"></div>
-      </div>
-
-      <div class="cell cell-4 article-cell">
-        <div class="sonic-card"></div>
-        <div class="bluecard">
-          <p class="sonic-p">
-            Sega Mega Drive. Ретро-обзор<br />на Sonic the Hedgehog
-          </p>
-          <div class="sonic-to-read">5–7 минут</div>
-          <img class="arrow" src="./images/arrow_2.svg" />
-        </div>
-      </div>
-      <div class="cell cell-5 article-cell">
-        <a class="cell-5__link" href="./article.html">
-          <h4>Как Doom повлиял на игровую индустрию</h4>
-          <div class="time-to-read">7+ минут</div>
-          <img class="arrow" src="./images/arrow_2.svg" />
-        </a>
-      </div>
-      <div class="cell cell-6 article-cell">
-        <div class="violet-card">
-          <p class="big-text-violet">
-            Сегата Санширо. <br />Лучший маскот игровой консоли в&nbsp;истории
-          </p>
-
-          <p class="time-read-nintendo">5-7 минут</p>
-          <div class="violet-arrow">
-            <img class="" src="./images/arrow_2.svg" />
-          </div>
-        </div>
-        <div class="nintendo-card"></div>
-      </div>
-
-      <div class="cell cell-7 article-cell">
-        <div class="purplecard">
-          <h4>О чем нам хочет поведать тамагочи?</h4>
-          <div class="time-to-purple">7+ минут</div>
-          <div class="purple-arrow">
-            <img class="" src="./images/arrow_2.svg" />
-          </div>
-        </div>
-        <div class="blackcard">
-          <p class="blackcard-paragraph">Стать автором</p>
-        </div>
-      </div>
-    </section>
-
     <!--footer-->
 
     <footer class="footer">
@@ -427,21 +366,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      const nav = document.querySelector('.C_Navigation');
-      const burger = document.querySelector('.burger');
-      const closeMenuBtn = document.querySelector('.close-menu-btn');
-  
-      burger.addEventListener('click', () => {
-        nav.classList.add('open');
-      });
-  
-      closeMenuBtn.addEventListener('click', () => {
-        nav.classList.remove('open');
-      })
-  
-    </script>
-
   </body>
 </html>
