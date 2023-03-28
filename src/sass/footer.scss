@@ -1,45 +1,729 @@
-footer {
-  border-top: 1px solid white;
-  background-color: black;
+.W_WrapperFooter {
+  max-width: 1728px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
-  h3 {
-    font-size: 20px;
-    min-height: 50px;
+.O_Footer {
+  padding: 25px 0 0 0;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__right-column {
+  display: flex;
+  padding: 7px 41px 0 0;
+}
+
+.A_Footer_ContactUs {
+ font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  color: #FFFFFF;
+
+  h2 {
+    margin: 0 0 22px 0;
   }
 
-  .columnsContainer {
-    display: flex;
-    color: white;
-    & > div {
-      flex: 1;
+  a {
+    text-decoration: none;
+  }
+}
 
-      padding: 15px;
-    }
+// Авторы
+.M_Footer_TextHeader {
+  display: flex;
+  flex-direction: column;
+  margin: 0 85px 0 0;
+
+  .A_Footer_Header {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
   }
 
-  .links {
-    display: flex;
+  .A_Footer_Text {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
 
-    .wireframe {
-      height: 16px;
-      width: 16px;
-      margin-right: 10px;
+  .footer-column-list {
+    margin: 26px 0 0 0;
+
+    .A_Footer_Text {
+      margin: 0 0px 18px 0;
     }
+  }
+}
 
-    & > div {
-      flex: 1;
+// Соцсети
 
-      & > div {
-        height: 24px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
+.M_Footer_SocialMedia {
+  display: flex;
+  flex-direction: column;
+  margin: 0 114px 0 0;
+
+  .A_Footer_Header {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+
+  .footer-column-list {
+    margin: 36px 0 0 0;
+
+    .footer-column-list__item {
+      margin: 0 0 31px 0;
+
+      &:last-child {
+        margin: 0;
       }
     }
   }
 
-  .copyright {
-    padding: 15px;
-    color: white;
+  // VK
+  .A_Footer_SocialMedia_Icon_Comment_VK {
+    display: flex;
+    align-items: center;
+
+    .A_Footer_Text {
+      font-family: 'TT Hoves';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37px;
+      color: #FFFAFA;
+      margin: 3px 0 0 -5px;
+      background: #000;
+    }
+
+    svg {
+      width: 63px;
+      height: 60px;
+    }
+  }
+
+ // TG
+  .A_Footer_SocialMedia_Icon_Comment_Tg {
+    display: flex;
+    align-items: center;
+
+    .A_Footer_Text {
+      font-family: 'TT Hoves';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37px;
+      color: #FFFAFA;
+      margin: 3px 0 0 -5px;
+      background: #000;
+    }
+
+    svg {
+      width: 63px;
+      height: 60px;
+    }
+  }
+
+   // VC
+   .A_Footer_SocialMedia_Icon_Comment_VC {
+    display: flex;
+    align-items: center;
+
+    .A_Footer_Text {
+      font-family: 'TT Hoves';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37px;
+      color: #FFFAFA;
+      margin: 3px 0 0 -5px;
+      background: #000;
+    }
+
+    svg {
+      width: 63px;
+      height: 60px;
+    }
+  }
+}
+
+// Донат
+
+.M_Footer_Donate {
+  display: flex;
+  flex-direction: column;
+
+  .A_Footer_Header {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+
+  .footer-column-list {
+    margin: 39px 0 0 0;
+
+    .footer-column-list__item  {
+      margin: 0 0 33px 0;
+    }
+  }
+
+  .A_Footer_Donate_Icon_Comment_Patreon {
+    display: flex;
+    align-items: center;
+
+    .A_Footer_Text {
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37px;
+      color: #FFFAFA;
+      margin: 3px 0 0 -5px;
+      background: #000;
+    }
+
+    svg {
+      width: 63px;
+      height: 60px;
+    }
+  }
+
+  .A_Footer_Donate_Icon_Comment_DA {
+    display: flex;
+    align-items: center;
+
+    .A_Footer_Text {
+      font-family: "TT Hoves";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37px;
+      color: #FFFAFA;
+      margin: 3px 0 0 -5px;
+      background: #000;
+    }
+
+    svg {
+      width: 63px;
+      height: 59px;
+    }
+  }
+}
+
+.copyright{
+  margin: -13px 0 0 0;
+
+  .copyright__text {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+
+  .copyright__text-mob {
+    display: none;
+  }
+}
+
+@media(max-width: 1512px) {
+  .O_Footer {
+    padding: 18px 0 0 0;
+  }
+
+  .W_WrapperFooter {
+    padding: 0 17px;
+  }
+
+  .footer__right-column {
+    padding: 12px 41px 0 0;
+  }
+
+  .A_Footer_ContactUs {
+    font-size: 36px;
+    line-height: 48px;
+
+    h2 {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  // Авторы
+  .M_Footer_TextHeader {
+    margin: 0 79px 0 0;
+
+    .A_Footer_Header {
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    .A_Footer_Text {
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    .footer-column-list {
+      margin: 24px 0 0 0;
+
+      .A_Footer_Text {
+        margin: 0 0 8px 0;
+      }
+    }
+  }
+
+  // Соцсети
+
+  .M_Footer_SocialMedia {
+    margin: 0 108px 0 0;
+
+    .A_Footer_Header {
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    .footer-column-list {
+      margin: 30px 0 0 0;
+
+      .footer-column-list__item {
+        margin: 0 0 24px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    // VK
+    .A_Footer_SocialMedia_Icon_Comment_VK {
+      .A_Footer_Text {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 3px 0 0 -5px;
+      }
+
+      svg {
+        width: 54px;
+        height: 51px;
+      }
+    }
+
+  // TG
+    .A_Footer_SocialMedia_Icon_Comment_Tg {
+      .A_Footer_Text {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 3px 0 0 -5px;
+      }
+
+      svg {
+        width: 54px;
+        height: 51px;
+      }
+    }
+
+    // VC
+    .A_Footer_SocialMedia_Icon_Comment_VC {
+      .A_Footer_Text {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 3px 0 0 -5px;
+      }
+
+      svg {
+        width: 54px;
+        height: 51px;
+      }
+    }
+  }
+
+  // Донат
+
+  .M_Footer_Donate {
+    .A_Footer_Header {
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    .footer-column-list {
+      margin: 30px 0 0 0;
+
+      .footer-column-list__item  {
+        margin: 0 0 24px 0;
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_Patreon {
+      .A_Footer_Text {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 3px 0 0 -5px;
+      }
+
+      svg {
+        width: 54px;
+        height: 51px;
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_DA {
+      .A_Footer_Text {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 3px 0 0 -5px;
+      }
+
+      svg {
+        width: 54px;
+        height: 51px;
+      }
+    }
+  }
+
+  .copyright{
+    margin: -7px 0 0 0;
+  
+    .copyright__text {
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__right-column {
+    padding: 12px 0 0 0;
+  }
+
+  .M_Footer_TextHeader,
+  .M_Footer_SocialMedia {
+    margin: 0 50px 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .O_Footer {
+    padding: 17px 0 0 0;
+  }
+
+  .W_WrapperFooter {
+    padding: 0 20px;
+  }
+
+  .footer__right-column {
+    padding: 1px 15px 0 0;
+  }
+
+  .A_Footer_ContactUs {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+
+    h2 {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  .M_Footer_TextHeader {
+    display: none;
+  }
+
+  // Соцсети
+
+  .M_Footer_SocialMedia {
+    margin: 0 95px 0 0;
+
+    .A_Footer_Header {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-column-list {
+      margin: 9px 0 0 0;
+      display: flex;
+
+      .footer-column-list__item {
+        margin: 0 20px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    // VK
+    .A_Footer_SocialMedia_Icon_Comment_VK {
+      .A_Footer_Text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+
+        span {
+          display: none;
+        }
+      }
+
+      svg {
+        display: none;
+      }
+    }
+
+  // TG
+    .A_Footer_SocialMedia_Icon_Comment_Tg {
+      .A_Footer_Text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+
+    // VC
+    .A_Footer_SocialMedia_Icon_Comment_VC {
+      .A_Footer_Text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+  
+  // Донат
+
+  .M_Footer_Donate {
+    .A_Footer_Header {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-column-list {
+      margin: 9px 0 0 0;
+      display: flex;
+
+      .footer-column-list__item  {
+        margin: 0 20px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_Patreon {
+      .A_Footer_Text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_DA {
+      .A_Footer_Text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .copyright{
+    margin: 54px 0 0 0;
+  
+    .copyright__text {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .O_Footer {
+    padding: 15px 0 66px 0;
+  }
+
+  .W_WrapperFooter {
+    padding: 0 20px;
+  }
+
+  .footer-inner-wrapper {
+    flex-direction: column;
+  }
+
+  .footer__right-column {
+    flex-direction: column;
+    margin: 37px 0 0 0;
+  }
+
+  .A_Footer_ContactUs {
+    font-size: 24px;
+    line-height: 30px;
+
+    h2 {
+      margin: 0 0 6px 0;
+    }
+  }
+
+    // Соцсети
+
+    .M_Footer_SocialMedia {
+      margin: 0;
+  
+      .A_Footer_Header {
+        display: none;
+      }
+  
+      .footer-column-list {
+        margin: 9px 0 0 0;
+        display: flex;
+  
+        .footer-column-list__item {
+          margin: 0 10px 0 0;
+  
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+  
+      // VK
+      .A_Footer_SocialMedia_Icon_Comment_VK {
+        .A_Footer_Text {
+          display: none;
+        }
+  
+        svg {
+          display: block;
+          width: 38px;
+          height: 38px;
+        }
+      }
+  
+    // TG
+      .A_Footer_SocialMedia_Icon_Comment_Tg {
+        .A_Footer_Text {
+          display: none;
+        }
+  
+        svg {
+          display: block;
+          width: 38px;
+          height: 38px;
+        }
+      }
+  
+      // VC
+      .A_Footer_SocialMedia_Icon_Comment_VC {
+        .A_Footer_Text {
+          display: none;
+        }
+  
+        svg {
+          display: block;
+          width: 38px;
+          height: 38px;
+        }
+      }
+    }
+
+      // Донат
+
+  .M_Footer_Donate {
+    .A_Footer_Header {
+      display: none;
+    }
+
+    .footer-column-list {
+      margin: 15px 0 0 0;
+      display: flex;
+
+      .footer-column-list__item  {
+        margin: 0 10px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_Patreon {
+      .A_Footer_Text {
+        display: none;
+      }
+
+      svg {
+        display: block;
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    .A_Footer_Donate_Icon_Comment_DA {
+      .A_Footer_Text {
+        display: none;
+      }
+
+      svg {
+        display: block;
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+
+  .copyright{
+    margin: -15px 0 0 0;
+  
+    .copyright__text {
+      display: none;
+    }
+
+    .copyright__text-mob {
+      display: block;
+      font-family: 'TT Hoves';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #FFFFFF;
+    }
   }
 }

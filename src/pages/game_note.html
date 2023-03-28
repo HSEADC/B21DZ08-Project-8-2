@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- SEO тэги для поиска -->
     <meta name="description" content="Медиа-сервис о ретро играх 80-00х" />
     <meta
@@ -43,360 +43,647 @@
     <meta name="twitter:image" content="../images/share.png" />
 
     <!-- META TAGS -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game_note</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- шапка -->
 
-  <!-- шапка -->
-  <header class="O_header">  
-    <div class="W_headerWrapper"> 
-      <a class="Q_Logo" href="#">
-        <picture>
-          <source media="(min-width: 1727px)" srcset="../images/Q_Logo.svg">
-          <source media="(min-width: 1512px)" srcset="../images/Q_Logo-1512.svg">
-          <img src="../images/Q_Logo-m.svg" alt="">
-        </picture>
-      </a>
-
-      <nav class="C_Navigation"> 
-        <div class="M_NavigationControl">
-          <p class="A_NavigationControlText">меню</p>
-          <button class="A_NavigationControlButton" type="button">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(0.707107 0.707107 -0.473633 0.880722 0 1)" stroke="white"/>
-                <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.473633 0.880722 16 1)" stroke="white"/>
+    <header class="O_header">
+      <div class="W_headerWrapper">
+        <a class="Q_Logo" href="index.html">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="../images/Q_Logo-375.svg"
+            />
+            <source
+              media="(max-width: 1512px)"
+              srcset="../images/Q_Logo-1512.svg"
+            />
+            <img src="../images/Q_Logo.svg" alt="Логотип" />
+          </picture>
+        </a>
+        <nav class="C_Navigation">
+          <div class="M_NavigationControl">
+            <p class="A_NavigationControlText">меню</p>
+            <button class="A_NavigationControlButton" type="button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(0.707107 0.707107 -0.473633 0.880722 0 1)"
+                  stroke="white"
+                />
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(-0.707107 0.707107 0.473633 0.880722 16 1)"
+                  stroke="white"
+                />
               </svg>
-          </button> 
-        </div>
+            </button>
+          </div>
 
-        <ul class="C_Nav_Text">
-          <li><a class="A_Nav_text" href="./games.html">Игры</a></li>
-          <li><a class="A_Nav_text" href="#">История игр</a></li>
-          <li><a class="A_Nav_text" href="#">Студии</a></li>
-          <li><a class="A_Nav_text" href="#">Приставки</a></li>
-        </ul>
-      </nav>
+          <ul class="C_Nav_Text">
+            <li><a class="A_Nav_text" href="games.html">Игры</a></li>
+            <li>
+              <a class="A_Nav_text" href="gamehistory.html">История игр</a>
+            </li>
+            <li><a class="A_Nav_text" href="studios.html">Студии</a></li>
+            <li><a class="A_Nav_text" href="console.html">Приставки</a></li>
+          </ul>
+        </nav>
 
-      <button class="burger" type="button">
-        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line y1="0.5" x2="14" y2="0.5" stroke="white"/>
-          <line y1="4.5" x2="9" y2="4.5" stroke="white"/>
-          <line y1="8.5" x2="12" y2="8.5" stroke="white"/>
-          </svg>            
-      </button>
-    </div>
-  </header>  
+        <button class="burger" type="button">
+          <svg
+            width="14"
+            height="9"
+            viewBox="0 0 14 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="14" y2="0.5" stroke="white" />
+            <line y1="4.5" x2="9" y2="4.5" stroke="white" />
+            <line y1="8.5" x2="12" y2="8.5" stroke="white" />
+          </svg>
+        </button>
+      </div>
+    </header>
 
     <main>
-        <section class="main-article">
-            <div class="W_GameWrapper">
-
-                <!-- Инфо -->
-                <div class="O_GameSummary">
-                    <h3 class="A_GameSummaryTitle">Tamagotchi</h3>
-                    <ul class="C_SummaryList">
-                        <li class="M_SummaryListItem">
-                            <div class="W_SummaryListItemWrapper">
-                                <span class="A_SummaryListItemLabel">Год появления</span>
-                            </div>
-                            <span class="A_SummaryListItemValue">1996</span>
-                        </li>
-                        <li class="M_SummaryListItem">
-                            <div class="W_SummaryListItemWrapper">
-                                <span class="A_SummaryListItemLabel">Жанр[ы]</span>
-                            </div>
-                            <span class="A_SummaryListItemValue">simulation</span>
-                        </li>
-                        <li class="M_SummaryListItem">
-                            <div class="W_SummaryListItemWrapper">
-                                <span class="A_SummaryListItemLabel">Игровая модель</span>
-                            </div>
-                            <span class="A_SummaryListItemValue">digital pet</span>
-                        </li>
-                        <li class="M_SummaryListItem">
-                            <div class="W_SummaryListItemWrapper">
-                                <span class="A_SummaryListItemLabel">Разработчик</span>
-                            </div>
-                            <span class="A_SummaryListItemValue">Bandai | Япония</span>
-                        </li>
-                    </ul>
+      <section class="main-article">
+        <div class="W_GameWrapper">
+          <!-- Инфо -->
+          <div class="O_GameSummary">
+            <h3 class="A_GameSummaryTitle">Tamagotchi</h3>
+            <ul class="C_SummaryList">
+              <li class="M_SummaryListItem">
+                <div class="W_SummaryListItemWrapper">
+                  <span class="A_SummaryListItemLabel">Год появления</span>
                 </div>
+                <span class="A_SummaryListItemValue">1996</span>
+              </li>
+              <li class="M_SummaryListItem">
+                <div class="W_SummaryListItemWrapper">
+                  <span class="A_SummaryListItemLabel">Жанр[ы]</span>
+                </div>
+                <span class="A_SummaryListItemValue">simulation</span>
+              </li>
+              <li class="M_SummaryListItem">
+                <div class="W_SummaryListItemWrapper">
+                  <span class="A_SummaryListItemLabel">Игровая модель</span>
+                </div>
+                <span class="A_SummaryListItemValue">digital pet</span>
+              </li>
+              <li class="M_SummaryListItem">
+                <div class="W_SummaryListItemWrapper">
+                  <span class="A_SummaryListItemLabel">Разработчик</span>
+                </div>
+                <span class="A_SummaryListItemValue">Bandai | Япония</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Articles -->
-                <div class="O_GameNote">
-                    <div class="swiper article-slider">
-                        <div class="swiper-wrapper">
-                             <!-- Slide 1  -->
-                            <div class="swiper-slide">
-                                <div class="M_GameNoteCard M_GameNoteCard-MainCard">
-                                    <h3 class="A_GameNoteCardTitle article-page__title--white">Tamagotchi</h3>
-                                    <div class="W_GameNoteCardFooterWrapper">
-                                        <p class="A_GameNoteCardFooterLogo">
-                                            <img src="../images/Q_Card_Game_Copyright-b.svg" alt="">
-                                        </p>
-                                        <p class="A_GameNoteCardFooterText">Настя Носкова</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- Slide 2  -->
-                            <div class="swiper-slide">
-                                <div class="M_GameNoteCard white">
-                                    <h3 class="A_GameNoteCardTitle">Тамагочи</h3>
-                                    <p class="A_GameNoteCardText">
-                                        Тамагочи — это игрушка, виртуальный домашний питомец. Идея создания принадлежала компании Bandai — третьему по величине производителю игрушек планеты.
-                                    </p>
-                                    <p class="A_GameNoteCardText">
-                                        Слово произошло от двух слов: японского тамаго (яп. たまご, «яйцо») и англицизма уотти (яп. ウォッチ, от «Watch» — часы).
-                                    </p>
-
-                                    <div class="Japan">
-                                        <div class="JapanItem">
-                                            <img src="../images/Q_A_Card_Game_Japan-1.svg" alt="">
-                                            <p>тамаго — «яйцо»</p>
-                                        </div>
-                                        <div class="JapanItem">
-                                            <img src="../images/Q_A_Card_Game_Japan-2.svg" alt="">
-                                            <p>уотти — «часы»</p>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="W_GameNoteCardFooterWrapper">
-                                        <p class="A_GameNoteCardFooterLogo">
-                                            <img src="../images/Q_Card_Game_Copyright-g.svg" alt="">
-                                        </p>
-                                        <p class="A_GameNoteCardFooterText">[2]</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Slide 3  -->
-                            <div class="swiper-slide">
-                                <div class="M_GameNoteCard white">
-                                    <h3 class="A_GameNoteCardTitle">История тамагочи</h3>
-                                    <p class="A_GameNoteCardText">
-                                        Появились тамагочи 23 ноября 1996 года. 
-                                    </p>
-                                    <p class="A_GameNoteCardText">
-                                        Смысл игры заключается в интерактивном наблюдении за жизнью питомца, от вылупления из яйца и до смерти. В первой версии были заложены основы игры: после «детской» стадии питомец вырастал в разных персонажей-подростков, а затем и взрослых, в зависимости от того, насколько хорошо за ним ухаживают. Питомца можно было кормить, играть с ним, следить за его здоровьем, убирать за ним, то есть электронная игрушка напоминала взаимодействие с настоящим существом.
-                                    </p>
-
-
-                                    <div class="W_GameNoteCardFooterWrapper">
-                                        <p class="A_GameNoteCardFooterLogo">
-                                            <img src="../images/Q_Card_Game_Copyright-g.svg" alt="">
-                                        </p>
-                                        <p class="A_GameNoteCardFooterText">[3]</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.66 26.59V24.978L27.38 17.646L26.08 18.946L31.956 24.822H16.98V26.746H31.904L26.08 32.57L27.406 33.896L34.66 26.59Z" fill="white"/>
-                                <path d="M34.66 26.59H34.86V26.6724L34.8019 26.7309L34.66 26.59ZM34.66 24.978L34.8019 24.8371L34.86 24.8956V24.978H34.66ZM27.38 17.646L27.2386 17.5046L27.3805 17.3627L27.5219 17.5051L27.38 17.646ZM26.08 18.946L25.9386 19.0874L25.7972 18.946L25.9386 18.8046L26.08 18.946ZM31.956 24.822L32.0974 24.6806L32.4388 25.022H31.956V24.822ZM16.98 24.822H16.78V24.622H16.98V24.822ZM16.98 26.746V26.946H16.78V26.746H16.98ZM31.904 26.746V26.546H32.3868L32.0454 26.8874L31.904 26.746ZM26.08 32.57L25.9386 32.7114L25.7972 32.57L25.9386 32.4286L26.08 32.57ZM27.406 33.896L27.5479 34.0369L27.4065 34.1793L27.2646 34.0374L27.406 33.896ZM34.46 26.59V24.978H34.86V26.59H34.46ZM34.5181 25.1189L27.2381 17.7869L27.5219 17.5051L34.8019 24.8371L34.5181 25.1189ZM27.5214 17.7874L26.2214 19.0874L25.9386 18.8046L27.2386 17.5046L27.5214 17.7874ZM26.2214 18.8046L32.0974 24.6806L31.8146 24.9634L25.9386 19.0874L26.2214 18.8046ZM31.956 25.022H16.98V24.622H31.956V25.022ZM17.18 24.822V26.746H16.78V24.822H17.18ZM16.98 26.546H31.904V26.946H16.98V26.546ZM32.0454 26.8874L26.2214 32.7114L25.9386 32.4286L31.7626 26.6046L32.0454 26.8874ZM26.2214 32.4286L27.5474 33.7546L27.2646 34.0374L25.9386 32.7114L26.2214 32.4286ZM27.2641 33.7551L34.5181 26.4491L34.8019 26.7309L27.5479 34.0369L27.2641 33.7551Z" fill="white"/>
-                                <circle r="25.5" transform="matrix(-1 0 0 1 26 26)" stroke="white"/>
-                            </svg>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.66 26.59V24.978L27.38 17.646L26.08 18.946L31.956 24.822H16.98V26.746H31.904L26.08 32.57L27.406 33.896L34.66 26.59Z" fill="white"/>
-                                <path d="M34.66 26.59H34.86V26.6724L34.8019 26.7309L34.66 26.59ZM34.66 24.978L34.8019 24.8371L34.86 24.8956V24.978H34.66ZM27.38 17.646L27.2386 17.5046L27.3805 17.3627L27.5219 17.5051L27.38 17.646ZM26.08 18.946L25.9386 19.0874L25.7972 18.946L25.9386 18.8046L26.08 18.946ZM31.956 24.822L32.0974 24.6806L32.4388 25.022H31.956V24.822ZM16.98 24.822H16.78V24.622H16.98V24.822ZM16.98 26.746V26.946H16.78V26.746H16.98ZM31.904 26.746V26.546H32.3868L32.0454 26.8874L31.904 26.746ZM26.08 32.57L25.9386 32.7114L25.7972 32.57L25.9386 32.4286L26.08 32.57ZM27.406 33.896L27.5479 34.0369L27.4065 34.1793L27.2646 34.0374L27.406 33.896ZM34.46 26.59V24.978H34.86V26.59H34.46ZM34.5181 25.1189L27.2381 17.7869L27.5219 17.5051L34.8019 24.8371L34.5181 25.1189ZM27.5214 17.7874L26.2214 19.0874L25.9386 18.8046L27.2386 17.5046L27.5214 17.7874ZM26.2214 18.8046L32.0974 24.6806L31.8146 24.9634L25.9386 19.0874L26.2214 18.8046ZM31.956 25.022H16.98V24.622H31.956V25.022ZM17.18 24.822V26.746H16.78V24.822H17.18ZM16.98 26.546H31.904V26.946H16.98V26.546ZM32.0454 26.8874L26.2214 32.7114L25.9386 32.4286L31.7626 26.6046L32.0454 26.8874ZM26.2214 32.4286L27.5474 33.7546L27.2646 34.0374L25.9386 32.7114L26.2214 32.4286ZM27.2641 33.7551L34.5181 26.4491L34.8019 26.7309L27.5479 34.0369L27.2641 33.7551Z" fill="white"/>
-                                <circle r="25.5" transform="matrix(-1 0 0 1 26 26)" stroke="white"/>
-                            </svg>        
-                        </div>
+          <!-- Articles -->
+          <div class="O_GameNote">
+            <div class="swiper article-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide 1  -->
+                <div class="swiper-slide">
+                  <div class="M_GameNoteCard M_GameNoteCard-MainCard">
+                    <h3 class="A_GameNoteCardTitle article-page__title--white">
+                      Tamagotchi
+                    </h3>
+                    <div class="W_GameNoteCardFooterWrapper">
+                      <p class="A_GameNoteCardFooterLogo">
+                        <picture>
+                          <source
+                            media="(min-width: 1728px)"
+                            srcset="../images/Q_Card_Game_Copyright-b.svg"
+                          />
+                          <source
+                            media="(min-width: 1512px)"
+                            srcset="../images/Q_Card_Game_Copyright-b_1512.svg"
+                          />
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="../images/Q_Card_Game_Copyright-b_768.svg"
+                          />
+                          <img
+                            src="../images/Q_Card_Game_Copyright-b_375.svg"
+                            alt="иероглиф"
+                          />
+                        </picture>
+                      </p>
+                      <p class="A_GameNoteCardFooterText">Настя Носкова</p>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        
-        <div class="W_MarqueeWrapper">
-            <span class="A_MarqueeText">почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще почитать еще</span>
-        </div>
+                <!-- Slide 2  -->
+                <div class="swiper-slide">
+                  <div class="M_GameNoteCard white">
+                    <h3 class="A_GameNoteCardTitle">Тамагочи</h3>
+                    <p class="A_GameNoteCardText">
+                      Тамагочи — это&nbsp;игрушка, виртуальный домашний питомец. Идея
+                      создания принадлежала компании Bandai — третьему 
+                      по&nbsp;величине производителю игрушек планеты.
+                    </p>
+                    <p class="A_GameNoteCardText">
+                      Слово произошло от&nbsp;двух слов: японского тамаго (яп.
+                      たまご, «яйцо») и&nbsp;англицизма уотти (яп. ウォッチ, 
+                      от&nbsp;«Watch» — часы).
+                    </p>
 
-        <section class="SO_GamesList">
-            <div class="W_GamesListWrapper">
-                <ul class="C_GamesList">
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                      <a class="w_GameListItemLink" href="#">
-                        <h3 class="Q_GameListItemTitle">The Sims</h3>
-                      </a>
-                    </li>
-                    <li class="A_GameListItem">
-                      <a class="w_GameListItemLink" href="#">
-                        <h3 class="Q_GameListItemTitle">SimCity</h3>
-                      </a>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Prince of Persia</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Pacman</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Sonic the Hedgehog</h3>
-                    </li>
-                    <!-- 6 -->
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Tetris</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Final Fantasy</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Castlevania</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Doom</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Civilization</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Super Mario</h3>
-                    </li>
-                    <!-- 12 -->
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                    <li class="A_GameListItem">
-                        <h3 class="Q_GameListItemTitle">Fallout</h3>
-                    </li>
-                </ul>
+                    <div class="Japan">
+                      <div class="JapanItem">
+                        <picture>
+                          <source
+                            media="(min-width: 1728px)"
+                            srcset="../images/Q_A_Card_Game_Japan-1.svg"
+                          />
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="../images/Q_A_Card_Game_Japan-1_768.svg"
+                          />
+                          <img
+                            src="../images/Q_A_Card_Game_Japan-1_375.svg"
+                            alt="иероглиф"
+                          />
+                        </picture>
+                        <p>тамаго — «яйцо»</p>
+                      </div>
+
+                      <div class="JapanItem">
+                        <picture>
+                          <source
+                            media="(min-width: 1728px)"
+                            srcset="../images/Q_A_Card_Game_Japan-2.svg"
+                          />
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="../images/Q_A_Card_Game_Japan-2_768.svg"
+                          />
+                          <img
+                            src="../images/Q_A_Card_Game_Japan-2_375.svg"
+                            alt="иероглиф"
+                          />
+                        </picture>
+                        <p>уотти — «часы»</p>
+                      </div>
+                    </div>
+
+                    <div class="W_GameNoteCardFooterWrapper">
+                      <p class="A_GameNoteCardFooterLogo">
+                        <picture>
+                          <source
+                            media="(min-width: 1728px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_1728.svg"
+                          />
+                          <source
+                            media="(min-width: 1512px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_1512.svg"
+                          />
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_768.svg"
+                          />
+                          <img
+                            src="../images/Q_Card_Game_Copyright-g_375.svg"
+                            alt="иероглиф"
+                          />
+                        </picture>
+                      </p>
+                      <p class="A_GameNoteCardFooterText">[2]</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3  -->
+                <div class="swiper-slide">
+                  <div class="M_GameNoteCard white">
+                    <h3 class="A_GameNoteCardTitle">История тамагочи</h3>
+                    <p class="A_GameNoteCardText">
+                      Появились тамагочи 23 ноября 1996 года.
+                    </p>
+                    <p class="A_GameNoteCardText">
+                      Смысл игры заключается в&nbsp;интерактивном наблюдении 
+                      за&nbsp;жизнью питомца, от&nbsp;вылупления из&nbsp;яйца и&nbsp;до смерти. 
+                      В&nbsp;первой версии были заложены основы игры: после «детской»
+                      стадии питомец вырастал в&nbsp;разных персонажей-подростков, 
+                      а&nbsp;затем и&nbsp;взрослых, в&nbsp;зависимости от&nbsp;того,&nbsp;насколько хорошо
+                      за&nbsp;ним&nbsp;ухаживают. Питомца можно было кормить, играть 
+                      с&nbsp;ним, следить за&nbsp;его&nbsp;здоровьем, убирать за&nbsp;ним, 
+                      то есть&nbsp;электронная игрушка напоминала взаимодействие с&nbsp;настоящим
+                      существом.
+                    </p>
+
+                    <div class="W_GameNoteCardFooterWrapper">
+                      <p class="A_GameNoteCardFooterLogo">
+                        <picture>
+                          <source
+                            media="(min-width: 1728px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_1728.svg"
+                          />
+                          <source
+                            media="(min-width: 1512px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_1512.svg"
+                          />
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="../images/Q_Card_Game_Copyright-g_768.svg"
+                          />
+                          <img
+                            src="../images/Q_Card_Game_Copyright-g_375.svg"
+                            alt="иероглиф"
+                          />
+                        </picture>
+                      </p>
+                      <p class="A_GameNoteCardFooterText">[3]</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.66 26.59V24.978L27.38 17.646L26.08 18.946L31.956 24.822H16.98V26.746H31.904L26.08 32.57L27.406 33.896L34.66 26.59Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M34.66 26.59H34.86V26.6724L34.8019 26.7309L34.66 26.59ZM34.66 24.978L34.8019 24.8371L34.86 24.8956V24.978H34.66ZM27.38 17.646L27.2386 17.5046L27.3805 17.3627L27.5219 17.5051L27.38 17.646ZM26.08 18.946L25.9386 19.0874L25.7972 18.946L25.9386 18.8046L26.08 18.946ZM31.956 24.822L32.0974 24.6806L32.4388 25.022H31.956V24.822ZM16.98 24.822H16.78V24.622H16.98V24.822ZM16.98 26.746V26.946H16.78V26.746H16.98ZM31.904 26.746V26.546H32.3868L32.0454 26.8874L31.904 26.746ZM26.08 32.57L25.9386 32.7114L25.7972 32.57L25.9386 32.4286L26.08 32.57ZM27.406 33.896L27.5479 34.0369L27.4065 34.1793L27.2646 34.0374L27.406 33.896ZM34.46 26.59V24.978H34.86V26.59H34.46ZM34.5181 25.1189L27.2381 17.7869L27.5219 17.5051L34.8019 24.8371L34.5181 25.1189ZM27.5214 17.7874L26.2214 19.0874L25.9386 18.8046L27.2386 17.5046L27.5214 17.7874ZM26.2214 18.8046L32.0974 24.6806L31.8146 24.9634L25.9386 19.0874L26.2214 18.8046ZM31.956 25.022H16.98V24.622H31.956V25.022ZM17.18 24.822V26.746H16.78V24.822H17.18ZM16.98 26.546H31.904V26.946H16.98V26.546ZM32.0454 26.8874L26.2214 32.7114L25.9386 32.4286L31.7626 26.6046L32.0454 26.8874ZM26.2214 32.4286L27.5474 33.7546L27.2646 34.0374L25.9386 32.7114L26.2214 32.4286ZM27.2641 33.7551L34.5181 26.4491L34.8019 26.7309L27.5479 34.0369L27.2641 33.7551Z"
+                    fill="white"
+                  />
+                  <circle
+                    r="25.5"
+                    transform="matrix(-1 0 0 1 26 26)"
+                    stroke="white"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-prev">
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.66 26.59V24.978L27.38 17.646L26.08 18.946L31.956 24.822H16.98V26.746H31.904L26.08 32.57L27.406 33.896L34.66 26.59Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M34.66 26.59H34.86V26.6724L34.8019 26.7309L34.66 26.59ZM34.66 24.978L34.8019 24.8371L34.86 24.8956V24.978H34.66ZM27.38 17.646L27.2386 17.5046L27.3805 17.3627L27.5219 17.5051L27.38 17.646ZM26.08 18.946L25.9386 19.0874L25.7972 18.946L25.9386 18.8046L26.08 18.946ZM31.956 24.822L32.0974 24.6806L32.4388 25.022H31.956V24.822ZM16.98 24.822H16.78V24.622H16.98V24.822ZM16.98 26.746V26.946H16.78V26.746H16.98ZM31.904 26.746V26.546H32.3868L32.0454 26.8874L31.904 26.746ZM26.08 32.57L25.9386 32.7114L25.7972 32.57L25.9386 32.4286L26.08 32.57ZM27.406 33.896L27.5479 34.0369L27.4065 34.1793L27.2646 34.0374L27.406 33.896ZM34.46 26.59V24.978H34.86V26.59H34.46ZM34.5181 25.1189L27.2381 17.7869L27.5219 17.5051L34.8019 24.8371L34.5181 25.1189ZM27.5214 17.7874L26.2214 19.0874L25.9386 18.8046L27.2386 17.5046L27.5214 17.7874ZM26.2214 18.8046L32.0974 24.6806L31.8146 24.9634L25.9386 19.0874L26.2214 18.8046ZM31.956 25.022H16.98V24.622H31.956V25.022ZM17.18 24.822V26.746H16.78V24.822H17.18ZM16.98 26.546H31.904V26.946H16.98V26.546ZM32.0454 26.8874L26.2214 32.7114L25.9386 32.4286L31.7626 26.6046L32.0454 26.8874ZM26.2214 32.4286L27.5474 33.7546L27.2646 34.0374L25.9386 32.7114L26.2214 32.4286ZM27.2641 33.7551L34.5181 26.4491L34.8019 26.7309L27.5479 34.0369L27.2641 33.7551Z"
+                    fill="white"
+                  />
+                  <circle
+                    r="25.5"
+                    transform="matrix(-1 0 0 1 26 26)"
+                    stroke="white"
+                  />
+                </svg>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="W_MarqueeWrapper">
+        <span class="A_MarqueeText"
+          >почитать еще почитать еще почитать еще почитать еще почитать еще
+          почитать еще почитать еще почитать еще почитать еще почитать еще
+          почитать еще почитать еще почитать еще почитать еще почитать еще
+          почитать еще почитать еще почитать еще</span
+        >
+      </div>
+
+      <section class="SO_GamesList">
+        <div class="W_GamesListWrapper">
+          <ul class="C_GamesList">
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <a class="w_GameListItemLink" href="#">
+                <h3 class="Q_GameListItemTitle">The Sims</h3>
+              </a>
+            </li>
+            <li class="A_GameListItem">
+              <a class="w_GameListItemLink" href="#">
+                <h3 class="Q_GameListItemTitle">SimCity</h3>
+              </a>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Prince of Persia</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Pacman</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Sonic the Hedgehog</h3>
+            </li>
+            <!-- 6 -->
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Tetris</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Final Fantasy</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Castlevania</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Doom</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Civilization</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Super Mario</h3>
+            </li>
+            <!-- 12 -->
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+            <li class="A_GameListItem">
+              <h3 class="Q_GameListItemTitle">Fallout</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="O_Footer">
-        <div class="W_FooterWrapper">
-                <div class="A_FooterFeedback">
-                    <h2 class="Q_FooterFeedbackTitle">Будем рады пообщаться!</h2>
-                    <a class="Q_FooterFeedbackLink" href="mailto:hello@np.com">hello@np.com</a>
-                </div>
+      <div class="W_WrapperFooter">
+        <div class="footer-inner-wrapper">
+          <div class="A_Footer_ContactUs">
+            <h2>Будем рады пообщаться!</h2>
+            <a href="mailto:hello@np.com">hello@np.com</a>
+          </div>
 
-                <div class="W_FooterRightColumnWrapper">
-                    <div class="W_FooterAuthorsWrapper">
-                        <h3 class="A_FooterAuthorsTitle">Дизайнили<br>и [ш]кодили</h3>
-                        <ul class="C_FooterAuthorsList">
-                            <li class="A_FooterAuthorsListAuthor">Ксюша Здоренко</li>
-                            <li class="A_FooterAuthorsListAuthor">Ира Рыбина</li>
-                            <li class="A_FooterAuthorsListAuthor">Оля Алешина</li>
-                        </ul>
-                    </div>
-                    <div class="W_FooterSocialListWrapper">
-                        <h3 class="A_FooterSocialTitle">Social media</h3>
-                        <ul class="C_FooterSocialList">
-                            <li class="W_FooterSocialListItemWrapper footer-column-list__item--big">
-                                <a class="A_FooterSocialListItemLink" href="#">
-                                    <svg width="56" height="51" viewBox="0 0 56 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.9" y="0.9" width="52.2" height="49.2" rx="9.1" stroke="white" stroke-width="1.8"/>
-                                        <rect x="43" y="14" width="13" height="31" fill="black"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2355 36.001C19.9993 36.001 14.7312 29.6691 14.5117 19.1328H19.1382C19.2902 26.8662 22.7009 30.1419 25.4025 30.8173V19.1328H29.759V25.8024C32.4268 25.5154 35.2294 22.4761 36.175 19.1328H40.5314C39.8053 23.2528 36.766 26.2921 34.6047 27.5416C36.766 28.5547 40.2276 31.2056 41.5447 36.001H36.7492C35.7192 32.7928 33.1529 30.3107 29.759 29.973V36.001H29.2355Z" fill="white"/>
-                                    </svg>                               
-                                    <span class="footer-column-list__item-name">VK group</span>
-                                </a>
-                            </li>
-                            <li class="W_FooterSocialListItemWrapper footer-column-list__item--big">
-                                <a class="A_FooterSocialListItemLink" href="#">
-                                    <svg width="58" height="51" viewBox="0 0 58 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.9" y="0.9" width="52.2" height="49.2" rx="9.1" stroke="white" stroke-width="1.8"/>
-                                        <path d="M37.8043 14.3292C37.3731 13.9484 36.6957 13.894 35.9954 14.1867H35.9942C35.2576 14.4945 15.1441 23.478 14.3253 23.845C14.1763 23.8989 12.8757 24.4042 13.0097 25.5298C13.1293 26.5447 14.1746 26.965 14.3023 27.0135L19.4158 28.8367C19.755 30.0126 21.0056 34.3511 21.2822 35.2779C21.4547 35.8557 21.7359 36.6149 22.2287 36.7712C22.6611 36.9448 23.0912 36.7861 23.3695 36.5586L26.4958 33.5392L31.5425 37.6375L31.6627 37.7124C32.0054 37.8705 32.3337 37.9495 32.6471 37.9495C32.8892 37.9495 33.1215 37.9022 33.3435 37.8076C34.0996 37.4843 34.402 36.7341 34.4337 36.649L38.2034 16.2458C38.4334 15.1561 38.1137 14.6017 37.8043 14.3292ZM23.9255 29.5659L22.2005 34.3559L20.4755 28.3685L33.7005 18.1899L23.9255 29.5659Z" fill="white"/>
-                                        <rect x="45" y="14" width="13" height="31" fill="black"/>
-                                    </svg>
-                                    <span class="footer-column-list__item-name">Telegram</span>
-                                </a>
-                            </li>
-                            <li class="W_FooterSocialListItemWrapper footer-column-list__item--big">
-                                <a class="A_FooterSocialListItemLink" href="#">
-                                    <svg width="61" height="51" viewBox="0 0 61 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.9" y="0.9" width="52.2" height="49.2" rx="9.1" stroke="white" stroke-width="1.8"/>
-                                        <rect x="48" y="14" width="13" height="31" fill="black"/>
-                                        <g clip-path="url(#clip0_1357_7)">
-                                        <path d="M26.9961 29.3872V27.0781H31.4335C31.4335 27.3046 31.4335 27.5038 31.4335 27.7031C31.4335 30.1913 31.4221 32.681 31.4421 35.1693C31.4464 35.7139 31.5006 36.2715 31.632 36.7975C32.0134 38.324 33.273 39.0665 34.8055 38.7196C36.2623 38.3899 37.5448 37.1229 37.6419 35.5606C37.7676 33.531 37.6733 31.4885 37.6733 29.3901H35.4296V27.0781H40.1927V38.3469H41.9993V40.5686H38.3631C38.2589 39.9107 38.1518 39.2385 38.0318 38.4845C37.919 38.6279 37.8361 38.7196 37.769 38.8228C36.6207 40.57 34.884 41.2982 32.8474 40.8868C30.8537 40.4826 29.5297 39.141 29.1541 37.0971C29.0584 36.5768 29.0213 36.0407 29.017 35.5118C29.0013 33.6757 29.0113 31.8382 29.0113 30.0021V29.3872H26.9961Z" fill="white"/>
-                                        <path d="M39.3455 20.0909C39.9625 20.5625 40.5438 21.0083 41.1579 21.4784C40.0053 23.0106 38.5286 23.9265 36.6691 24.2232C32.8372 24.8338 29.2324 22.3054 28.5012 18.4885C27.5729 13.6496 31.7518 9.32523 36.6148 10.0878C38.0044 10.3056 39.3141 10.7256 40.4109 11.6429C40.578 11.782 40.7166 12.0557 40.7237 12.2707C40.7566 13.2611 40.738 14.253 40.738 15.2735H38.4172C38.4172 14.6285 38.4415 13.9821 38.4029 13.3385C38.3915 13.145 38.2501 12.8784 38.0887 12.7881C35.8878 11.5555 33.0457 12.2478 31.7346 14.3118C30.2979 16.5736 30.8092 19.6581 32.8686 21.1487C34.7053 22.4774 37.3317 22.2022 38.9585 20.5095C39.0756 20.3876 39.1884 20.2601 39.3455 20.0909Z" fill="white"/>
-                                        <path d="M27.8352 10.3489V12.6666C27.2639 12.6666 26.7183 12.6953 26.1771 12.6566C25.7672 12.6279 25.5815 12.7684 25.4387 13.1597C24.1576 16.6484 22.8451 20.1242 21.5654 23.6129C21.4183 24.0142 21.2412 24.192 20.8042 24.149C20.2657 24.0959 19.5959 24.2866 19.216 24.0286C18.8575 23.7849 18.7904 23.0969 18.6133 22.5995C17.4993 19.4878 16.3767 16.3789 15.2913 13.2571C15.1242 12.777 14.8957 12.6236 14.4158 12.658C13.8588 12.6981 13.2961 12.6666 12.7148 12.6666V10.3489C13.8788 10.3489 15.0214 10.3833 16.1597 10.3346C16.7452 10.3088 17.0066 10.475 17.198 11.0613C18.162 14.0067 19.1874 16.9322 20.1915 19.8648C20.2443 20.0167 20.3029 20.1672 20.4028 20.4381C20.7656 19.3918 21.0912 18.4601 21.4126 17.5256C22.1795 15.291 22.9508 13.0565 23.7034 10.8162C23.8162 10.4779 23.9562 10.3274 24.3433 10.3374C25.4872 10.369 26.6327 10.3489 27.8366 10.3489H27.8352Z" fill="white"/>
-                                        <path d="M15.8826 38.37V29.1753H13.7031V27.0941H17.892C17.9435 27.8982 17.9963 28.7123 18.0577 29.6655C18.8075 28.5632 19.6516 27.7548 20.8099 27.3177C21.9738 26.8791 23.1692 27.0797 24.3875 27.0195V31.1432H22.1267V29.1423C21.2854 29.1294 20.5613 29.3831 19.9372 29.8934C18.8846 30.7548 18.3205 31.8713 18.3105 33.2445C18.3005 34.771 18.3076 36.2989 18.3076 37.8254C18.3076 37.9931 18.3076 38.1622 18.3076 38.3887H24.0633V40.5688H13.7031V38.3686H15.8826V38.37Z" fill="white"/>
-                                        <path d="M11.3023 40.6335H9V38.3086H11.3023V40.6335Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_1357_7">
-                                        <rect width="33" height="31" fill="white" transform="translate(9 10)"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <span class="footer-column-list__item-name">VC.ru</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="W_FooterDonateListWrapper">
-                        <h3 class="A_FooterDonateTitle">Donate</h3>
-                        <ul class="C_FooterDonateList">
-                            <li class="W_FooterDonateListItemWrapper footer-column-list__item--big">
-                                <a class="A_FooterDonateListItemLink" href="#">
-                                    <svg width="56" height="51" viewBox="0 0 56 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.9" y="0.9" width="52.2" height="49.2" rx="9.1" stroke="white" stroke-width="1.8"/>
-                                        <rect x="43" y="14" width="13" height="31" fill="black"/>
-                                        <path d="M19.2014 14.7617H15.1214C14.7454 14.7617 14.4414 15.0657 14.4414 15.4417V37.8817C14.4414 38.2578 14.7454 38.5617 15.1214 38.5617H19.2014C19.5774 38.5617 19.8814 38.2578 19.8814 37.8817V15.4417C19.8814 15.0657 19.5774 14.7617 19.2014 14.7617ZM30.0814 14.7617C27.7369 14.7617 25.4884 15.6931 23.8306 17.3509C22.1728 19.0087 21.2414 21.2572 21.2414 23.6017C21.2414 25.9462 22.1728 28.1947 23.8306 29.8525C25.4884 31.5104 27.7369 32.4417 30.0814 32.4417C32.4259 32.4417 34.6744 31.5104 36.3322 29.8525C37.9901 28.1947 38.9214 25.9462 38.9214 23.6017C38.9214 21.2572 37.9901 19.0087 36.3322 17.3509C34.6744 15.6931 32.4259 14.7617 30.0814 14.7617Z" fill="white"/>
-                                    </svg>
-                                    <span class="footer-column-list__item-name">Patreon</span>
-                                </a>
-                            </li>
-                            <li class="W_FooterDonateListItemWrapper footer-column-list__item--big">
-                                <a class="A_FooterDonateListItemLink" href="#">
-                                    <svg width="55" height="51" viewBox="0 0 55 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.9" y="0.9" width="52.2" height="49.2" rx="9.1" stroke="white" stroke-width="1.8"/>
-                                        <rect x="42" y="14" width="13" height="31" fill="black"/>
-                                        <g clip-path="url(#clip0_1357_9)">
-                                        <path d="M26.1247 29.3059H24.2394C24.1297 29.3064 24.0248 29.2648 23.951 29.1916C23.8772 29.1184 23.8413 29.0203 23.8523 28.9219L24.0187 27.2114C24.0349 27.0295 24.2036 26.8896 24.4059 26.8902H26.2912C26.4009 26.8897 26.5058 26.9312 26.5796 27.0045C26.6534 27.0777 26.6893 27.1757 26.6783 27.2742L26.5119 28.9847C26.4957 29.1665 26.327 29.3065 26.1247 29.3059ZM26.4269 25.9569H24.5065C24.2944 25.9569 24.1224 25.7903 24.1224 25.5848L24.6448 19.8059C24.6682 19.618 24.8335 19.4771 25.0289 19.4784H26.9493C27.1614 19.4784 27.3333 19.645 27.3333 19.8506L26.7956 25.6331C26.7712 25.814 26.6151 25.9511 26.4269 25.9569ZM37.7185 19.2179C37.9229 19.4567 38.0228 19.7676 37.9956 20.0807L37.245 28.6658C37.221 28.9467 37.0964 29.2094 36.8943 29.4058L30.7562 35.3677C30.5371 35.5798 30.2439 35.698 29.9389 35.6974H23.4045L17.6522 41L18.0977 35.6939H15.1724C14.8439 35.6941 14.5303 35.5564 14.3082 35.3144C14.0861 35.0723 13.9759 34.7481 14.0044 34.4208L15.7897 14.0521C15.851 13.4535 16.3559 12.9987 16.9577 13H31.854C32.1967 12.9999 32.5223 13.1498 32.7449 13.4103L37.7185 19.2179ZM33.1693 27.0281L33.6463 21.729C33.6649 21.4148 33.5561 21.1064 33.3447 20.8732L30.5387 17.6328C30.3164 17.3768 29.9939 17.2296 29.6548 17.2295H20.816C20.2142 17.2281 19.7092 17.683 19.648 18.2816L18.5957 30.2054C18.5715 30.5317 18.6832 30.8534 18.9044 31.0945C19.1256 31.3356 19.4366 31.4745 19.7637 31.4785H28.4553C28.7568 31.4792 29.047 31.3636 29.2655 31.1558L32.8186 27.7715C33.0215 27.5742 33.1461 27.3101 33.1693 27.0281Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_1357_9">
-                                        <rect width="24" height="28" fill="white" transform="translate(14 13)"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>  
-                                    <span class="footer-column-list__item-name">DonationAlerts</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="footer__right-column">
+            <div class="M_Footer_TextHeader">
+              <h3 class="A_Footer_Header">Дизайнили<br />и [ш]кодили</h3>
+              <ul class="footer-column-list">
+                <li class="A_Footer_Text">Ксюша Здоренко</li>
+                <li class="A_Footer_Text">Ира Рыбина</li>
+                <li class="A_Footer_Text">Оля Алешина</li>
+              </ul>
+            </div>
+
+            <div class="M_Footer_SocialMedia">
+              <h3 class="A_Footer_Header">Social media</h3>
+              <ul class="footer-column-list">
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="A_Footer_SocialMedia_Icon_Comment_VK" href="#">
+                    <svg
+                      viewBox="0 0 63 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.76149"
+                        y="1.82339"
+                        width="59.8495"
+                        height="56.4099"
+                        rx="10.4335"
+                        transform="rotate(0.230911 1.76149 1.82339)"
+                        stroke="white"
+                        stroke-width="2.06378"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M33.3807 42.1951C22.7912 42.1524 16.7804 34.8683 16.5774 22.7871L21.8818 22.8085C22.0203 31.6757 25.9157 35.4472 29.01 36.234L29.064 22.8374L34.0589 22.8576L34.0281 30.5045C37.0882 30.1877 40.3155 26.716 41.415 22.8872L46.4098 22.9073C45.5583 27.6276 42.0596 31.0983 39.5759 32.5209C42.0492 33.6924 46.0058 36.7478 47.4936 42.2519L41.9955 42.2298C40.8294 38.5468 37.8985 35.6891 34.0088 35.2862L33.9809 42.1975L33.3807 42.1951Z"
+                        fill="white"
+                      />
+                      <rect
+                        x="0.998047"
+                        y="1.28735"
+                        width="61.1485"
+                        height="57.7227"
+                        stroke="black"
+                      />
+                    </svg>
+                    <span class="A_Footer_Text">VK <span>group</span></span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="A_Footer_SocialMedia_Icon_Comment_Tg" href="#">
+                    <svg
+                      viewBox="0 0 63 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.76149"
+                        y="1.54605"
+                        width="59.8495"
+                        height="56.4099"
+                        rx="10.4335"
+                        transform="rotate(0.230911 1.76149 1.54605)"
+                        stroke="white"
+                        stroke-width="2.06378"
+                      />
+                      <path
+                        d="M44.046 16.0012C43.5533 15.5636 42.7769 15.4982 41.9726 15.8299L41.9713 15.8299C41.1254 16.1785 18.0231 26.362 17.0826 26.7781C16.9116 26.8391 15.418 27.4111 15.5664 28.6994C15.6989 29.8609 16.8955 30.3465 17.0416 30.4026L22.896 32.5118C23.2795 33.8585 24.6934 38.8272 25.0063 39.8887C25.2014 40.5504 25.5203 41.4202 26.0845 41.6013C26.5795 41.8019 27.0733 41.6224 27.3935 41.3634L30.9918 37.9238L36.7592 42.6354L36.8966 42.7215C37.2888 42.9039 37.6649 42.9959 38.0242 42.9973C38.3017 42.9984 38.5683 42.9454 38.8232 42.8382C39.6916 42.4718 40.0419 41.615 40.0785 41.5179L44.4947 18.1955C44.7634 16.95 44.3994 16.3143 44.046 16.0012ZM28.0632 33.3668L26.0633 38.8382L24.1132 31.9811L39.3231 20.3986L28.0632 33.3668Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="A_Footer_Text">Telegram</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="A_Footer_SocialMedia_Icon_Comment_VC" href="#">
+                    <svg
+                      viewBox="0 0 63 59"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.76149"
+                        y="1.2687"
+                        width="59.8495"
+                        height="56.4099"
+                        rx="10.4335"
+                        transform="rotate(0.230911 1.76149 1.2687)"
+                        stroke="white"
+                        stroke-width="2.06378"
+                      />
+                      <path
+                        d="M31.0423 33.5444L31.053 30.897L36.1406 30.9175C36.1396 31.1771 36.1387 31.4056 36.1377 31.634C36.1262 34.4868 36.1016 37.3413 36.1131 40.1943C36.1155 40.8188 36.1751 41.4583 36.3233 42.062C36.7535 43.8139 38.1943 44.671 39.9529 44.2804C41.6247 43.9092 43.101 42.4624 43.2196 40.6716C43.373 38.3451 43.2744 36.0029 43.2841 33.597L40.7116 33.5867L40.7223 30.9359L46.1833 30.958L46.1312 43.878L48.2026 43.8864L48.1924 46.4336L44.0233 46.4168C43.9068 45.662 43.7871 44.8908 43.6531 44.0258C43.5231 44.1896 43.4277 44.2944 43.3502 44.4124C42.0256 46.4104 40.0311 47.2372 37.6979 46.7561C35.4139 46.2835 33.9021 44.7392 33.4809 42.394C33.3736 41.797 33.3335 41.1822 33.331 40.5758C33.3215 38.4706 33.3415 36.3639 33.35 34.2587L33.3528 33.5537L31.0423 33.5444Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M45.2429 22.9426C45.9482 23.4861 46.6125 23.9999 47.3145 24.5417C45.986 26.2932 44.2886 27.3364 42.1552 27.668C37.759 28.3504 33.6377 25.4348 32.817 21.0552C31.775 15.5029 36.5862 10.5642 42.1583 11.461C43.7506 11.7172 45.2502 12.2047 46.5035 13.2616C46.6945 13.4217 46.852 13.7363 46.8592 13.9828C46.8923 15.1185 46.8665 16.2556 46.8617 17.4257L44.2008 17.415C44.2038 16.6755 44.2346 15.9344 44.1934 15.1964C44.1812 14.9745 44.0203 14.6681 43.8357 14.5639C41.318 13.1404 38.0563 13.921 36.5435 16.2814C34.8858 18.868 35.4577 22.4068 37.8121 24.1255C39.9117 25.6573 42.9243 25.3539 44.7972 23.4207C44.9321 23.2815 45.062 23.1358 45.2429 22.9426Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M32.0917 11.7196L32.0809 14.3769C31.426 14.3742 30.8003 14.4046 30.1799 14.3577C29.7101 14.323 29.4965 14.4832 29.331 14.9311C27.846 18.9251 26.3251 22.9042 24.8418 26.8982C24.6713 27.3577 24.4674 27.5607 23.9666 27.5093C23.3495 27.446 22.5806 27.6615 22.1463 27.364C21.7364 27.0829 21.6626 26.2938 21.4618 25.7227C20.199 22.1499 18.9263 18.5802 17.6962 14.996C17.5069 14.4447 17.2456 14.2678 16.6952 14.305C16.0564 14.3485 15.4114 14.3097 14.7449 14.307L14.7557 11.6497C16.0902 11.6551 17.4 11.6998 18.7053 11.6492C19.3768 11.6223 19.6757 11.8142 19.8924 12.4872C20.9841 15.8687 22.1463 19.2276 23.2839 22.5945C23.3438 22.7689 23.4102 22.9418 23.5236 23.2528C23.9443 22.0549 24.322 20.9882 24.6947 19.9182C25.5844 17.3597 26.479 14.8013 27.3523 12.2362C27.4832 11.8489 27.6444 11.677 28.0881 11.6903C29.3995 11.7317 30.7129 11.714 32.0933 11.7196L32.0917 11.7196Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M18.2564 43.7904L18.2989 33.2483L15.8001 33.2382L15.8097 30.8521L20.6124 30.8714C20.6677 31.7936 20.7245 32.7272 20.7905 33.8204C21.6553 32.5601 22.6268 31.6371 23.9568 31.1413C25.2934 30.6438 26.663 30.8794 28.06 30.816L28.041 35.5439L25.4489 35.5335L25.4581 33.2393C24.4937 33.2207 23.6623 33.5082 22.9444 34.0903C21.7336 35.0731 21.0816 36.3507 21.0638 37.925C21.0453 39.6751 21.0464 41.427 21.0394 43.1771C21.0386 43.3694 21.0378 43.5633 21.0368 43.823L27.6358 43.8496L27.6257 46.3491L15.7475 46.3013L15.7576 43.7787L18.2564 43.7888L18.2564 43.7904Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M12.9961 46.3673L10.3564 46.3567L10.3672 43.6912L13.0068 43.7018L12.9961 46.3673Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="A_Footer_Text">VC.ru</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="M_Footer_Donate">
+              <h3 class="A_Footer_Header">Donate</h3>
+              <ul class="footer-column-list">
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="A_Footer_Donate_Icon_Comment_Patreon" href="#">
+                    <svg
+                      width="63"
+                      height="60"
+                      viewBox="0 0 63 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.76149"
+                        y="1.56729"
+                        width="59.8495"
+                        height="56.4099"
+                        rx="10.4335"
+                        transform="rotate(0.230911 1.76149 1.56729)"
+                        stroke="white"
+                        stroke-width="2.06378"
+                      />
+                      <path
+                        d="M23.0655 17.5532L18.3877 17.5344C17.9565 17.5327 17.6066 17.8798 17.6049 18.3109L17.5012 44.0391C17.4995 44.4702 17.8466 44.8202 18.2777 44.8219L22.9556 44.8407C23.3867 44.8425 23.7366 44.4954 23.7383 44.0642L23.842 18.336C23.8438 17.9049 23.4967 17.555 23.0655 17.5532ZM35.5398 17.6035C32.8518 17.5927 30.2695 18.6501 28.3611 20.5432C26.4527 22.4363 25.3744 25.01 25.3636 27.698C25.3528 30.3861 26.4102 32.9684 28.3033 34.8768C30.1964 36.7852 32.7701 37.8634 35.4581 37.8742C38.1462 37.8851 40.7285 36.8276 42.6369 34.9345C44.5453 33.0415 45.6235 30.4678 45.6343 27.7797C45.6452 25.0917 44.5877 22.5094 42.6946 20.601C40.8015 18.6926 38.2279 17.6144 35.5398 17.6035Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="A_Footer_Text">Patreon</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-column-list__item footer-column-list__item--big"
+                >
+                  <a class="A_Footer_Donate_Icon_Comment_DA" href="#">
+                    <svg
+                      width="63"
+                      height="59"
+                      viewBox="0 0 63 59"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.76149"
+                        y="1.28994"
+                        width="59.8495"
+                        height="56.4099"
+                        rx="10.4335"
+                        transform="rotate(0.230911 1.76149 1.28994)"
+                        stroke="white"
+                        stroke-width="2.06378"
+                      />
+                      <g clip-path="url(#clip0_202_2026)">
+                        <path
+                          d="M30.3241 34.0052L28.1625 33.9965C28.0367 33.9965 27.9167 33.9484 27.8324 33.8641C27.7481 33.7798 27.7074 33.6672 27.7204 33.5544L27.9192 31.594C27.9386 31.3856 28.1326 31.226 28.3646 31.2276L30.5261 31.2363C30.652 31.2362 30.772 31.2843 30.8563 31.3686C30.9406 31.4529 30.9813 31.5655 30.9682 31.6783L30.7695 33.6387C30.7501 33.8471 30.556 34.0068 30.3241 34.0052ZM30.686 30.1668L28.4843 30.1579C28.2411 30.157 28.0447 29.9651 28.0456 29.7295L28.6712 23.1063C28.699 22.891 28.8891 22.7301 29.1131 22.7326L31.3149 22.7415C31.5581 22.7425 31.7545 22.9343 31.7535 23.1699L31.1103 29.7973C31.0815 30.0046 30.9018 30.1611 30.686 30.1668ZM43.6634 22.4926C43.8966 22.7673 44.0097 23.1241 43.9771 23.483L43.0769 33.3227C43.048 33.6446 42.904 33.9452 42.6713 34.1695L35.6062 40.9767C35.354 41.2188 35.0173 41.353 34.6677 41.3509L27.1757 41.3207L20.5561 47.3737L21.0913 41.2921L17.7374 41.2786C17.3607 41.2774 17.0019 41.1181 16.7483 40.8395C16.4948 40.5609 16.3699 40.1887 16.4041 39.8136L18.5452 16.4685C18.6182 15.7824 19.1992 15.2633 19.8892 15.2676L36.9683 15.3364C37.3612 15.3379 37.7338 15.5113 37.9878 15.811L43.6634 22.4926ZM38.4115 31.4261L38.9829 25.3527C39.0056 24.9926 38.8824 24.6385 38.641 24.3702L35.4388 20.642C35.1851 20.3474 34.8161 20.1772 34.4273 20.1755L24.2932 20.1346C23.6032 20.1303 23.0222 20.6495 22.9492 21.3355L21.6877 35.0017C21.6584 35.3757 21.785 35.7451 22.0375 36.0225C22.29 36.2999 22.6459 36.4607 23.021 36.4667L32.9861 36.5069C33.3318 36.5091 33.6651 36.3779 33.9166 36.1407L38.0059 32.2769C38.2395 32.0516 38.3835 31.7494 38.4115 31.4261Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_202_2026">
+                          <rect
+                            width="27.517"
+                            height="32.1032"
+                            fill="white"
+                            transform="translate(16.498 15.2539) rotate(0.230911)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="A_Footer_Text">DonationAlerts</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="W_Copyright">
-            <p class="A_CopyrightText">HSE Art, Design and Code | 2022</p>
+        <div class="copyright">
+          <p class="copyright__text">HSE Art, Design and Code | 2022</p>
+          <p class="copyright__text-mob">HSE ADC | 2022</p>
         </div>
+      </div>
     </footer>
 
+    <!-- меню -->
+    <script>
+      const nav = document.querySelector('.C_Navigation')
+      const burger = document.querySelector('.burger')
+      const closeMenuBtn = document.querySelector('.A_NavigationControlButton')
+
+      burger.addEventListener('click', () => {
+        nav.classList.add('open')
+      })
+
+      closeMenuBtn.addEventListener('click', () => {
+        nav.classList.remove('open')
+      })
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".article-slider", {
-        slidesPerView: "auto",
+      var swiper = new Swiper('.article-slider', {
+        slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 60,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
     </script>
-</body>
+  </body>
 </html>

@@ -4,6 +4,7 @@
 @import '../sass/basics.scss';
 @import '../sass/games.scss';
 @import '../sass/header.scss';
+@import '../sass/footer.scss';
 @import '../sass/components/qwarcs.scss';
 @import '../sass/components/atoms.scss';
 @import '../sass/components/molecules.scss';

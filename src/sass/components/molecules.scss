@@ -16,8 +16,16 @@
   margin: 0 0 51px 0;
 }
 
+.C_SummaryList--article .M_SummaryListItem {
+margin: 0 0 71px 0;
+}
+
 .M_SummaryListItem:last-child {
   margin-bottom: 0;
+}
+
+.M_SummaryListItem--column {
+  align-items: stretch;
 }
 
 .M_SummaryListItem .W_SummaryListItemWrapper {
@@ -32,6 +40,10 @@
   left: 0;
   position: absolute;
   border-bottom: 1px solid white;
+}
+
+.M_SummaryListItem--column .W_SummaryListItemWrapper::before {
+  top: calc(100% - 76px);
 }
 
 .M_GameNoteCard {
@@ -54,6 +66,37 @@
   opacity: 0.4;
 }
 
+ /* Article */
+
+ .M_ArticleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.M_GameNoteCard-MainCard--blue {
+  background-image: none;
+  background-color: #265BEE;
+}
+
+.M_GameNoteCard-MainCard--blue .A_GameNoteCardFooterText{
+  color: #ffffff;
+  opacity: 1;
+}
+
+.M_GameNoteCard.black {
+  background-color: #000000;
+  border: 1px solid #666666;
+}
+
+
+.M_GameNoteCard.black .A_GameNoteCardFooterText {
+color: #ffffff;
+opacity: 0.4;
+}
+
+
+
 /* Адаптив под 1512 */
 
 @media(max-width: 1512px) {
@@ -65,5 +108,77 @@
   margin: 0 0 49px 0;
 }
 
+.M_GameNoteCard {
+  padding: 47px 58px 43px 58px;
+  height: 726px;
+}
+
+.M_GameNoteCard-MainCard {
+  background-image: url(../images/M_Card_Game_1512.png);
+}
+
+.C_SummaryList--article .M_SummaryListItem {
+  margin: 0 0 60px 0;
+  }
+
+  .M_SummaryListItem--column .W_SummaryListItemWrapper::before {
+    top: calc(100% - 77px);
+  }
 
 }
+
+
+/* Адаптив под 768 */
+
+@media(max-width: 768px) {
+.M_GameNoteCard {
+  padding: 29px 30px 29px 30px;
+  border-radius: 10px;
+  height: 502px;
+}
+
+.M_GameNoteCard-MainCard {
+  background-image: url(../images/M_Card_Game_768.png);
+}
+
+.M_SummaryListItem {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1;
+  margin: 10px 65px 20px 0;
+}
+
+.M_SummaryListItem .W_SummaryListItemWrapper::before {
+  display: none;
+}
+
+.M_SummaryListItem .W_SummaryListItemWrapper {
+  flex: none;
+}
+
+}
+
+/* Адаптив под 375 */
+@media(max-width: 375px) {
+  .M_GameNoteCard {
+    padding: 14px 18px 14px 18px;
+    border-radius: 10px;
+    height: 476px;
+  }
+  
+  .M_GameNoteCard-MainCard {
+    background-image: url(../images/M_Card_Game_375.png);
+  }
+  
+  .M_SummaryListItem {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0px 0px 34px 0;
+  }
+
+}
+
+
+

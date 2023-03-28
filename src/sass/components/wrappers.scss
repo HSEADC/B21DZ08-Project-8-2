@@ -80,6 +80,86 @@
 
 }
 
+/* Article */
+
+.W_ArticlesListWrapper {
+  max-width: 1728px;
+  padding: 25px 22px;
+}
+
+.W_ArticleCardLink {
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 14px 26px 16px 24px;
+}
+
+.W_GameNoteCardPictureWrapper {
+  margin-top: 40px;
+}
+
+
+.W_ArticleCardLink:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 4;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(2) {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(3) {
+  grid-area: 1 / 5 / 3 / 6;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(4) {
+  grid-area: 1 / 6 / 2 / 7;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(6) {
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(7) {
+  grid-area: 2 / 4 / 4 / 5;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(8) {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(9) {
+  grid-area: 3 / 6 / 4 / 7;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(10) {
+  grid-area: 2 / 6 / 3 / 7;
+  background-color: #F0A1C1;
+}
+
+.W_ItemValueWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+
+
+
 
 /* Адаптив под 1512 */
 
@@ -90,7 +170,18 @@
 }
 
 .W_MarqueeWrapper {
-    padding: 20px 0 26px 0;
+    padding: 20px 0 20px 0;
+}
+
+/* Article */
+
+.W_ArticlesListWrapper {
+  max-width: 1512px;
+  padding: 21px 20px;
+}
+
+.W_ArticleCardLink {
+  padding: 12px 23px 15px 20px;
 }
 
 }
@@ -105,7 +196,158 @@
   }
   
   .W_MarqueeWrapper {
-      padding: 20px 0 26px 0;
+      padding: 16px 0 20px 0;
   }
+
+/* Article */
+
+.W_ArticlesListWrapper {
+  max-width: 768px;
+  padding: 21px 20px;
+}
+
+.W_ArticleCardLink {
+  padding: 12px 12px 10px 12px;
+}
+
+.W_ArticleCardLink:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(3) {
+  grid-area: 3 / 1 / 5 / 2;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(4) {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(5) {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(6) {
+  grid-area: 2 / 3 / 3 / 5;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(7) {
+  grid-area: 3 / 4 / 5 / 5;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(8) {
+  grid-area: 4 / 3 / 5 / 4;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(9) {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(10) {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #F0A1C1;
+}
+
+.W_ItemValueWrapper {
+  row-gap: 0px;
+}
+
+.W_GameNoteCardPictureWrapper {
+  margin-top: 24px;
+}
+
+}
+
+  /* Адаптив под 375 */
+
+@media(max-width: 375px) {
+    /*оболочка game_note*/
+    .W_GameWrapper {
+      max-width: 375px;
+      flex-direction: column-reverse;
+  }
+  
+  .W_MarqueeWrapper {
+      padding: 14px 0 20px 0;
+  }
+
+  .W_ItemValueWrapper {
+    row-gap: 0px;
+    flex-direction: row;
+}
+
+.W_ArticleSummaryButtonWrapper{
+  margin-top: 72px;
+}
+
+.W_ArticlesListWrapper {
+  max-width: 375px;
+  padding: 20px;
+}
+
+.W_ArticleCardLink {
+  padding: 8px 12px 10px 12px;
+}
+
+.W_ArticleCardLink:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(2) {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #E93323;
+}
+
+.W_ArticleCardLink:nth-child(3) {
+  grid-area: 5 / 1 / 7 / 2;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(4) {
+  grid-area: 7 / 1 / 8 / 2;
+  background-color: #F0A1C1;
+}
+
+.W_ArticleCardLink:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(6) {
+  grid-area: 4 / 1 / 5 / 3;
+  background-color: #265BEE;
+}
+
+.W_ArticleCardLink:nth-child(7) {
+  grid-area: 6 / 2 / 8 / 3;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(8) {
+  grid-area: 5 / 2 / 6 / 3;
+  background-color: #5ECD9C;
+}
+
+.W_ArticleCardLink:nth-child(9) {
+  display: none;
+}
+
+.W_ArticleCardLink:nth-child(10) {
+  display: none;
+}
+
   
   }

@@ -16,11 +16,23 @@
   border-right: 1px solid white;
 }
 
+/* Article */
+.O_GameSummary--article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 0px 70px 23px;
+  }
+
 .O_GameNote {
   padding: 64px 0 73px 0;
   width: 100%;
   width: 100%;
   max-width: 1120px;
+}
+
+.O_GameNote--article {
+  max-width: 1136px;
 }
 
 .O_Footer {
@@ -44,3 +56,60 @@
 }
 
 }
+
+/* Адаптив под 768 */
+
+@media(max-width: 768px) {
+  /*блок с саммари game_note*/
+  .O_GameSummary {
+    max-width: 768px;
+    padding: 25px 20px 50px 20px;
+    border-right: none;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .O_GameNote {
+    padding: 58px 0 58px 0;
+    width: 100%;
+    width: 100%;
+    max-width: 994px;
+  }
+
+  .O_GameSummary--article {
+    padding: 33px 21px 68px 21px;
+    flex-direction: row;
+  }
+  
+  
+  }
+
+  /* Адаптив под 375 */
+
+@media(max-width: 375px) {
+  /*блок с саммари game_note*/
+  .O_GameSummary {
+    max-width: 375px;
+    padding: 54px 21px 30px 20px;
+    border-right: none;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .O_GameSummary--article {
+    padding-top: 23px;
+    padding-bottom: 126px;
+  }
+
+  .O_GameNote {
+    padding: 28px 0 28px 0;
+    width: 100%;
+    max-width: 375px;
+  }
+
+
+
+}
+

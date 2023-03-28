@@ -17,7 +17,10 @@ module.exports = {
     fiveseven_minutes: './src/js/fiveseven_minutes.js',
     mailer: './src/js/mailer.js',
     header: './src/js/header.js',
-    footer: './src/js/footer.js'
+    footer: './src/js/footer.js',
+    console: './src/js/console.js',
+    gamehistory: './src/js/gamehistory.js',
+    studios: './src/js/studios.js'
   },
 
   output: {
@@ -113,6 +116,30 @@ module.exports = {
       template: './src/pages/games.html',
       filename: './games.html',
       chunks: ['games']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/gamehistory.html',
+      filename: './gamehistory.html',
+      chunks: ['gamehistory']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/console.html',
+      filename: './console.html',
+      chunks: ['console']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/studios.html',
+      filename: './studios.html',
+      chunks: ['studios']
     }),
 
     new HtmlWebpackPlugin({

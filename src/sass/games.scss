@@ -16,7 +16,7 @@ body {
 
 .O_GamesListCover {
   position: relative;
-  margin: 16px 0 0 20px;
+  margin: 16px 0 0 0;
 }
 
 .Q_GamesCoverImage {
@@ -32,9 +32,11 @@ body {
   white-space: nowrap;
 }
 
-.A_GamesListMarqueeText {
-  display:inline-block;
+/* анимация */
 
+
+.A_GamesListMarqueeText {
+  display: inline-block;
   font-family: 'TT Hoves';
   font-style: italic;
   font-weight: 275;
@@ -42,20 +44,52 @@ body {
   letter-spacing: 0.01em;
   color: #ffffff;
   margin: 0;
-
-  -webkit-animation: marquee 30s infinite linear;
-  animation: marquee 30s infinite linear;
+  transform: translate(100%, 0);
 }
 
-@-webkit-keyframes marquee {
-  0%{-webkit-transform: translate(0, 0);}
-  100%{-webkit-transform: translate(-100%, 0);}
+
+.W_GamesListMarqueeWrapper:nth-of-type(1) .A_GamesListMarqueeText {
+  animation-name: text;
+  animation-duration: 30s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
 }
 
-@keyframes marquee{
-  0%{transform: translate(0, 0);}
-  100%{transform: translate(-100%, 0)}
+.W_GamesListMarqueeWrapper:nth-of-type(2) .A_GamesListMarqueeText {
+  animation-name: text;
+  animation-duration: 30s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
 }
+
+.W_GamesListMarqueeWrapper:nth-of-type(3) .A_GamesListMarqueeText {
+  animation-name: text;
+  animation-duration: 30s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
+}
+
+.W_GamesListMarqueeWrapper:nth-of-type(4) .A_GamesListMarqueeText {
+  animation-name: text;
+  animation-duration: 30s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
+}
+
+@keyframes text {
+  0%{
+    transform: translate(100%, 0);
+  }
+  
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
+
 
 .Q_GamesListMarqueeSeparator {
   width: 100%;
@@ -104,7 +138,7 @@ body {
 
 .W_CardsListWrapper {
   max-width: 1120px;
-  margin: 20px 0 20px 20px;
+  margin: 20px 0 32px 20px;
 }
 
 .C_CardsList {
@@ -318,7 +352,7 @@ body {
 
 .C_CardsList.all-active .M_CardCover:nth-child(17)[data-genre="action"],
 .M_CardCover.active:nth-child(17)[data-genre="action"] { 
-  background-image: url(../images/Spider-man.png);
+  background-image: url(../images/Spider-man_1.png);
   border: none;
 }
 
@@ -439,7 +473,7 @@ li:nth-child(3) .A_FilterButton {
 
 .W_CardsListWrapper {
   max-width: 972px;
-  margin: 20px 0 20px 20px;
+  margin: 24px 0 40px 20px;
 }
 
 .C_CardsList {
@@ -621,7 +655,7 @@ li:nth-child(3) .A_FilterButton {
   height: 30px;
   background: transparent;
   border: none;
-  margin: 0px 4px 0 auto;
+  margin: 6px 12px 0 auto;
 }
 
 .A_GenresListControlButton svg {

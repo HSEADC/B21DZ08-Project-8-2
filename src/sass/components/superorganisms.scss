@@ -2,3 +2,11 @@
     padding: 0 0 29px 0;
     border-bottom: 1px solid #ffffff;
 }
+
+/* Адаптив под 768 */
+@media(max-width: 768px) {
+ .A_GameNoteCardTitle {
+    margin: 0 0 20px 0px;
+       
+}
+}
