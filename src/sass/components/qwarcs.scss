@@ -1,0 +1,59 @@
+.Q_NavListItemLink {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+
+.Q_GameListItemTitle {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.Q_FooterFeedbackTitle {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.Q_FooterFeedbackLink {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 23px 0 0 0;
+}
+
+
+/* Адаптив под 1512 */
+
+@media(max-width: 1512px) {
+.Q_GameListItemTitle {
+    font-size: 26px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+}
+
+@media(max-width: 768px) {
+    .Q_GameListItemTitle {
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+    
+    }

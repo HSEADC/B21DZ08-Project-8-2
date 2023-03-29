@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.article-page--main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #265bee;
+}
+
+.article-page__title--white {
+  color: #ffffff;
+}
+
+.article-page--no-title {
+  padding: 64px 58px 43px 58px;
+}
+
+.article-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.article-slider .swiper-slide {
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 829px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 52px !important;
+  height: 52px !important;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 74px;
+}
+
+.swiper-button-next {
+  right: 74px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '' !important;
+}
+
+.swiper-slide-prev {
+  transform: translate(-40px, 0) !important;
+}
+
+.swiper-slide-next {
+  transform: translate(24px, 0) !important;
+}
+
+/* Адаптив под 1512 */
+
+@media (max-width: 1512px) {
+  /*карточка game_note*/
+  .article-slider .swiper-slide {
+    max-width: 726px;
+  }
+
+  .swiper-button-prev {
+    left: 60px;
+  }
+
+  .swiper-button-next {
+    left: 880px;
+  }
+}
+
+/* Адаптив под 768 */
+
+@media (max-width: 768px) {
+  .article-slider .swiper-slide {
+    max-width: 502px;
+  }
+
+  .swiper-button-prev {
+    left: 67px;
+  }
+
+  .swiper-button-next {
+    left: 648px;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Адаптив под 375 */
+
+@media (max-width: 375px) {
+  .article-slider .swiper-slide {
+    max-width: 338px;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+}

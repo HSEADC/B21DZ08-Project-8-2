@@ -8,9 +8,22 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    index: './src/js/index.js',
+    page: './src/page.jsx',
+    game_note: './src/js/game_note.js',
+    games: './src/js/games.js',
+    about: './src/js/about.js',
+    article: './src/js/article.js',
+    fiveseven_minutes: './src/js/fiveseven_minutes.js',
+    mailer: './src/js/mailer.js',
+    header: './src/js/header.js',
+    footer: './src/js/footer.js',
+    console: './src/js/console.js',
+    gamehistory: './src/js/gamehistory.js',
+    studios: './src/js/studios.js',
+    authors: './src/js/authors.js'
   },
+
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
@@ -86,56 +99,96 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/fiveseven_minutes.html',
+      template: './src/pages/fiveseven_minutes.html',
       filename: './fiveseven_minutes.html',
-      chunks: ['index']
+      chunks: ['fiveseven_minutes']
     }),
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({ 
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/about.html',
+      template: './src/pages/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['about']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/games.html',
+      template: './src/pages/games.html',
       filename: './games.html',
-      chunks: ['index']
+      chunks: ['games']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/article.html',
+      template: './src/pages/gamehistory.html',
+      filename: './gamehistory.html',
+      chunks: ['gamehistory']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/console.html',
+      filename: './console.html',
+      chunks: ['console']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/studios.html',
+      filename: './studios.html',
+      chunks: ['studios']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article.html',
       filename: './article.html',
-      chunks: ['index']
+      chunks: ['article']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/mailer.html',
+      template: './src/pages/authors.html',
+      filename: './authors.html',
+      chunks: ['authors']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/game_note.html',
+      filename: './game_note.html',
+      chunks: ['game_note']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/mailer.html',
       filename: './mailer.html',
-      chunks: ['index']
+      chunks: ['mailer']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/fiveseven_minutes.html',
+      template: './src/pages/fiveseven_minutes.html',
       filename: './fiveseven_minutes.html',
-      chunks: ['index']
+      chunks: ['fiveseven_minutes']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/reach-us.html',
+      template: './src/pages/reach-us.html',
       filename: './reach-us.html',
-      chunks: ['index']
+      chunks: ['reach-us']
     }),
 
     // Internal pages

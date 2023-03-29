@@ -1,0 +1,9 @@
+@import '../sass/reset.scss';
+@import '../sass/vars.scss';
+@import '../sass/fonts.scss';
+@import '../sass/basics.scss';
+
+@import '../sass/header.scss';
+@import '../sass/footer.scss';
+@import '../sass/index.scss';
+
