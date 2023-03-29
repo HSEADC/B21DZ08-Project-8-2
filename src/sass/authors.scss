@@ -1,0 +1,497 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.W_AuthorsWrapper {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.C_AuthorsGuideList {
+  display: flex;
+  padding: 156px 30px 350px 29px;
+  counter-reset: item;
+}
+
+.M_Authorsguideitem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.M_Authorsguideitem::before {
+  position: absolute;
+  counter-increment: item; /* Увеличиваем значение счетчика вложенного списка */
+  content: counter(item); /* Выводим число */
+  top: 110px;
+  left: 17px;
+
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.M_Authorsguideitem:nth-of-type(1)::before {
+  top: 111px;
+  left: 20px;
+}
+
+.M_Authorsguideitem::after {
+  position: absolute;
+  content: '';
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  width: 52px;
+  height: 52px;
+  top: 107px;
+  left: 0px;
+}
+
+.M_Authorsguideitem:nth-child(1) {
+  margin-right: 49px;
+}
+
+.M_Authorsguideitem:nth-child(2) {
+  margin-right: 66px;
+}
+
+.M_Authorsguideitem:nth-child(1) picture {
+  padding-left: 82px;
+}
+
+.M_Authorsguideitem:nth-child(2) picture {
+  padding-left: 136px;
+}
+
+.M_Authorsguideitem:nth-child(3) picture {
+  padding-left: 123px;
+}
+
+.A_AuthorsGuideItemTitle {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 54px 0px 13px 0px;
+}
+
+.A_AuthorsGuideItemText {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 250;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 32px;
+  max-width: 506px;
+}
+
+.C_LetterContentList {
+  display: flex;
+  column-gap: 20px;
+  padding: 21px 20px 350px 20px;
+}
+
+.M_LetterContentItem img {
+  border-radius: 20px;
+}
+
+/* заголовок с линиями */
+.W_MainPageCover {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+// Main BLOCK
+
+.O_AuthorsInfo {
+  padding: 0 0 0 0;
+  position: relative;
+}
+
+.W_MainPageCover--authors {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-block__mobile-title {
+  display: none;
+}
+
+.A_MainTitle--authors {
+  font-family: 'TT Hoves';
+  font-style: italic;
+  font-weight: 275;
+  font-size: 196px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 223px;
+}
+
+.Q_MainTitleLine--authors {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(1) {
+  top: 84px;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(2) {
+  top: 182px;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(3) {
+  bottom: 137px;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(4) {
+  bottom: 38px;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(5) {
+  display: none;
+}
+
+.Q_MainTitleLine--authors:nth-of-type(6) {
+  display: none;
+}
+
+.A_AuthorsDescription {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 250;
+  font-size: 40px;
+  color: #ffffff;
+  margin: 314px 0px 354px 590px;
+  line-height: 50px;
+  max-width: 976px;
+}
+
+.C_OurAdvantagesList {
+  display: flex;
+  margin-left: 590px;
+  margin-bottom: 356px;
+}
+
+.M_OurAdvantagesItem:nth-child(2) {
+  margin-left: 66px;
+}
+
+.M_OurAdvantagesItem:nth-child(1) .A_AuthorsGuideItemTitle {
+}
+
+.M_OurAdvantagesItem:nth-child(1) .A_AuthorsGuideItemText {
+  max-width: 506px;
+}
+
+.O_Members {
+  max-width: 1728px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.C_MembersList {
+  padding: 20px 20px 292px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 407px);
+  grid-template-rows: repeat(2, 407px);
+  gap: 20px;
+}
+
+.M_Member {
+  border-radius: 20px;
+  background-size: contain;
+}
+
+.M_Member:nth-child(1) {
+  background-image: url(../images/member_1_1728.png);
+}
+
+.M_Member:nth-child(2) {
+  background-image: url(../images/member_2_1728.png);
+}
+
+.M_Member:nth-child(3) {
+  background-image: url(../images/member_3_1728.png);
+}
+
+.M_Member:nth-child(4) {
+  background-image: url(../images/member_4_1728.png);
+}
+
+.M_Member:nth-child(5) {
+  background-image: url(../images/member_5_1728.png);
+}
+
+.M_Member:nth-child(6) {
+  background-image: url(../images/member_6_1728.png);
+}
+
+.M_Member:nth-child(7) {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  padding: 24px 33px;
+}
+
+.A_MemberTitle {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  padding-bottom: 21px;
+  max-width: 229px;
+}
+
+.A_MemberText {
+  ont-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 250;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 32px;
+}
+
+.Q_MainTitleLine--authors2:nth-of-type(1) {
+  top: 84px;
+}
+
+.Q_MainTitleLine--authors2:nth-of-type(2) {
+  top: 182px;
+}
+
+.Q_MainTitleLine--authors2:nth-of-type(3) {
+  top: 307px;
+}
+
+.Q_MainTitleLine--authors2:nth-of-type(4) {
+  top: 406px;
+}
+
+.Q_MainTitleLine--authors2 {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.C_EditorsList {
+  display: flex;
+  padding: 0px 0px 297px 29px;
+}
+
+.O_AuthorsBigTitle {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.M_OurAdvantagesItem--editor:nth-child(2) {
+  margin-left: 48px;
+}
+
+.M_OurAdvantagesItem--editor:nth-child(3) {
+  margin-left: 66px;
+}
+
+.Q_MainTitleLine--authors3:nth-of-type(1) {
+  top: 84px;
+}
+
+.Q_MainTitleLine--authors3:nth-of-type(2) {
+  top: 182px;
+}
+
+.Q_MainTitleLine--authors3:nth-of-type(3) {
+  top: 307px;
+}
+
+.Q_MainTitleLine--authors3:nth-of-type(4) {
+  top: 406px;
+}
+
+.Q_MainTitleLine--authors3 {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+/* адаптив на 768 */
+@media (max-width: 768px) {
+  .W_AuthorsWrapper {
+    max-width: 768px;
+  }
+
+  .C_AuthorsGuideList {
+    padding: 119px 12px 168px 70px;
+  }
+
+  .M_Authorsguideitem::before {
+    top: 170px;
+    left: -38px;
+  
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .M_Authorsguideitem:nth-of-type(1)::before {
+    top: 170px;
+    left: -36px;
+  }
+  
+  .M_Authorsguideitem::after {
+    width: 29px;
+    height: 29px;
+    top: 166px;
+    left: -49px;
+  }
+
+  .M_Authorsguideitem:nth-child(1) {
+    margin-right: 50px;
+  }
+  
+  .M_Authorsguideitem:nth-child(2) {
+    margin-right: 50px;
+  }
+  
+  .M_Authorsguideitem:nth-child(1) picture {
+    padding-left: 0px;
+  }
+  
+  .M_Authorsguideitem:nth-child(2) picture {
+    padding-left: 0px;
+  }
+  
+  .M_Authorsguideitem:nth-child(3) picture {
+    padding-left: 0px;
+  }
+  
+  .A_AuthorsGuideItemTitle {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 25px 0px 18px 0px;
+  }
+  
+  .A_AuthorsGuideItemText {
+    font-weight: 250;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 195px;
+  }
+
+
+
+
+
+  .C_LetterContentList {
+    column-gap: 10px;
+    padding: 90px 20px 90px 20px;
+    flex-wrap: wrap;
+  }
+
+  .A_AuthorsGuideItemTitle--768 {
+    max-width: 278px;
+    }
+
+  .A_AuthorsGuideItemText--768 {
+  max-width: 343px;
+  margin-bottom: 84px;
+  }
+  
+  
+  // Main BLOCK
+  
+  
+  .W_MainPageCover--authors {
+    max-width: 768px;
+  }
+  
+  .main-block__mobile-title {
+    display: none;
+  }
+  
+  .A_MainTitle--authors {
+    font-weight: 275;
+    font-size: 102px;
+    line-height: 118px;
+    letter-spacing: 1%;
+  }
+  
+  .Q_MainTitleLine--authors {
+    height: 1px;
+  }
+
+
+  .Q_MainTitleLine--authors:nth-of-type(1) {
+    top: 44px;
+  }
+  
+  .Q_MainTitleLine--authors:nth-of-type(2) {
+    top: 96px;
+  }
+  
+  .Q_MainTitleLine--authors:nth-of-type(3) {
+    bottom: 191px;
+  }
+  
+  .Q_MainTitleLine--authors:nth-of-type(4) {
+    bottom: 140px;
+  }
+
+  .Q_MainTitleLine--authors:nth-of-type(5) {
+    bottom: 73px;
+    display: block;
+  }
+  
+  .Q_MainTitleLine--authors:nth-of-type(6) {
+    bottom: 21px;
+    display: block;
+  }
+  
+  .A_AuthorsDescription {
+    font-size: 26px;
+    color: #ffffff;
+    margin: 203px 0px 206px 264px;
+    line-height: 32px;
+    max-width: 394px;
+  }
+  
+  .C_OurAdvantagesList {
+    margin-left: 266px;
+    margin-bottom: 229px;
+  }
+  
+  .M_OurAdvantagesItem:nth-child(2) {
+    margin-left: 66px;
+  }
+
+/*  тут проблема  */
+
+  .A_AuthorsGuideItemTitle--768_2 {
+    max-width: 180px;
+  }
+
+  .A_AuthorsGuideItemText--768_2 {
+   max-width: 180px;
+  }
+
+
+}

@@ -20,7 +20,8 @@ module.exports = {
     footer: './src/js/footer.js',
     console: './src/js/console.js',
     gamehistory: './src/js/gamehistory.js',
-    studios: './src/js/studios.js'
+    studios: './src/js/studios.js',
+    authors: './src/js/authors.js'
   },
 
   output: {
@@ -148,6 +149,14 @@ module.exports = {
       template: './src/pages/article.html',
       filename: './article.html',
       chunks: ['article']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/authors.html',
+      filename: './authors.html',
+      chunks: ['authors']
     }),
 
     new HtmlWebpackPlugin({
