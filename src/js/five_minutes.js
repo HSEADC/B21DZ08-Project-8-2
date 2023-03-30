@@ -1,0 +1,1 @@
+import '../css/five_minutes.css'

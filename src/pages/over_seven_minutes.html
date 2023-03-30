@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- SEO тэги для поиска -->
+    <meta name="description" content="Медиа-сервис о ретро играх 80-00х" />
+    <meta
+      name="keywords"
+      content="медиа, игры, ретро игры, ретро, нулевые, восьмидесятые, соник, пакман, марио"
+    />
+    <!-- технические теги -->
+    <meta
+      name="Author"
+      content="Здоренко Ксения, Алешина Ольга, Рыбина Ирина"
+    />
+    <meta name="Copyright" content="HSE ADC AND Назад в пиксель" />
+    <!-- для социальных сетей -->
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Назад в пиксель — сдуваем пыль с ретро игр"
+    />
+    <meta
+      property="og:description"
+      content="Назад в пиксель — возможность окунуться в мир легкой непосредственности и знакомой ретро-атмосферы через настроение видео игр 80-00х."
+    />
+    <meta property="og:site_name" content="Назад в пиксель" />
+    <!-- отдельные мета теги для твиттера -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="Здоренко Ксения, Алешина Ольга, Рыбина Ирина"
+    />
+    <meta name="twitter:title" content="Назад в пиксель" />
+    <meta
+      name="twitter:description"
+      content="Назад в пиксель — возможность окунуться в мир легкой непосредственности и знакомой ретро-атмосферы через настроение видео игр 80-00х."
+    />
+    <!-- Cсылка на изображение -->
+
+    <!-- META TAGS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Главная</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="index">
+    <!-- шапка -->
+
+    <header class="O_header">
+      <div class="W_headerWrapper">
+        <a class="Q_Logo" href="#">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="../images/Q_Logo-375.svg"
+            />
+            <source
+              media="(max-width: 1512px)"
+              srcset="../images/Q_Logo-1512.svg"
+            />
+            <img src="../images/Q_Logo.svg" alt="Логого" />
+          </picture>
+        </a>
+        <nav class="C_Navigation">
+          <div class="M_NavigationControl">
+            <p class="A_NavigationControlText">меню</p>
+            <button class="A_NavigationControlButton" type="button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(0.707107 0.707107 -0.473633 0.880722 0 1)"
+                  stroke="white"
+                />
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(-0.707107 0.707107 0.473633 0.880722 16 1)"
+                  stroke="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="C_Nav_Text">
+            <li><a class="A_Nav_text" href="games.html">Игры</a></li>
+            <li>
+              <a class="A_Nav_text" href="gamehistory.html">История игр</a>
+            </li>
+            <li><a class="A_Nav_text" href="studios.html">Студии</a></li>
+            <li><a class="A_Nav_text" href="console.html">Приставки</a></li>
+          </ul>
+        </nav>
+
+        <button class="burger" type="button">
+          <svg
+            width="14"
+            height="9"
+            viewBox="0 0 14 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="14" y2="0.5" stroke="white" />
+            <line y1="4.5" x2="9" y2="4.5" stroke="white" />
+            <line y1="8.5" x2="12" y2="8.5" stroke="white" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- основное содержимое -->
+    <main>
+      <section class="timer-info">
+        <div class="wrapper">
+          <div class="timer-info__inner-wrapper">
+            <p class="timer-info__subtitle">идеальный тайминг прочтения</p>
+            <h1 class="timer-info__title">больше 7 минут</h1>
+            <button class="timer-info__button" type="button">
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(0 -1 0.957674 -0.287856 12.3145 21.9204)"
+                  stroke="white"
+                />
+                <line
+                  y1="-0.5"
+                  x2="21.2132"
+                  y2="-0.5"
+                  transform="matrix(1 0 0.287856 -0.957674 1 10.6069)"
+                  stroke="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="link-blocks">
+            <li class="link-blocks__item">
+              <a
+                class="link-blocks__link link-blocks__link--five-seven"
+                href="#"
+                >меньше 5 минут</a
+              >
+            </li>
+            <li class="link-blocks__item">
+              <a
+                class="link-blocks__link link-blocks__link--more-seven"
+                href="#"
+                >от 5 до 7 минут</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="wrapper">
+          <ul class="articles-list">
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Советский гейминг:во что играли во времена СССР
+                </span>
+              </a>
+            </li>
+            <!-- 2 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Namcot — интриги, скандалы, расследования. А что мы вообще
+                  знаем о Namco?
+                </span>
+              </a>
+            </li>
+            <!-- 3 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link articles-list__link--black" href="#">
+                <span class="articles-list__anons articles-list__anons--black">
+                  «Thousand Arms»: недооцененный шедевр или проходная игра с
+                  ужасной батлсистемой?
+                </span>
+              </a>
+            </li>
+            <!-- 4 -->
+            <li class="articles-list__article">
+              <a class="articles-list__image-link" href=""></a>
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Разбор официальных и пиратских версий «Аладдина»
+                </span>
+              </a>
+              </a>
+            </li>
+            <!-- 5 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Раздуло нереально! Bonk — забытый маскот PC Engine
+                </span>
+              </a>
+              <a class="articles-list__image-link" href="">
+              </a>
+            </li>
+            <!-- 6 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Игры в кино:что смотреть геймерам
+                </span>
+              </a>
+            </li>
+            <!-- 7 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Pitfall: The Mayan Adventure — одна из самых красивых игр для
+                  Genesis
+                </span>
+              </a>
+            </li>
+            <!-- 8 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  Выбор кинескопного телевизора (CRT) для ретрогейминга
+                </span>
+              </a>
+            </li>
+            <!-- 9 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  «Медок» и «сосунок»,или почему нельзя доверять переводчикам
+                </span>
+              </a>
+            </li>
+            <!-- 10 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">
+                  В тени Тетриса: как мышка погубила Minesweeper
+                </span>
+              </a>
+              <a class="articles-list__image-link" href="">
+              </a>
+            </li>
+            <!-- 11 -->
+            <li class="articles-list__article">
+              <a class="articles-list__link" href="#">
+                <span class="articles-list__anons">Стать<br />автором</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+            <!--footer-->
+
+            <footer class="O_Footer" style="background-color: #000000;">
+              <div class="W_WrapperFooter">
+                <div class="footer-inner-wrapper">
+        
+                  <div class="A_Footer_ContactUs">
+                    <h2>Будем рады пообщаться!</h2>
+                    <a href="mailto:hello@np.com">hello@np.com</a>
+                  </div>
+        
+                  <div class="footer__right-column">
+        
+                    <div class="M_Footer_TextHeader">
+                      <h3 class="A_Footer_Header ">Дизайнили<br />и [ш]кодили</h3>
+                      <ul class="footer-column-list">
+                        <li class="A_Footer_Text">Ксюша Здоренко</li>
+                        <li class="A_Footer_Text">Ира Рыбина</li>
+                        <li class="A_Footer_Text">Оля Алешина</li>
+                      </ul>
+                    </div>
+        
+                    <div class="M_Footer_SocialMedia">
+                      <h3 class="A_Footer_Header">Social media</h3>
+                      <ul class="footer-column-list">
+                        <li class="footer-column-list__item footer-column-list__item--big">
+                          <a class="A_Footer_SocialMedia_Icon_Comment_VK" href="#">
+                            <svg viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1.76149" y="1.82339" width="59.8495" height="56.4099" rx="10.4335" transform="rotate(0.230911 1.76149 1.82339)" stroke="white" stroke-width="2.06378"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M33.3807 42.1951C22.7912 42.1524 16.7804 34.8683 16.5774 22.7871L21.8818 22.8085C22.0203 31.6757 25.9157 35.4472 29.01 36.234L29.064 22.8374L34.0589 22.8576L34.0281 30.5045C37.0882 30.1877 40.3155 26.716 41.415 22.8872L46.4098 22.9073C45.5583 27.6276 42.0596 31.0983 39.5759 32.5209C42.0492 33.6924 46.0058 36.7478 47.4936 42.2519L41.9955 42.2298C40.8294 38.5468 37.8985 35.6891 34.0088 35.2862L33.9809 42.1975L33.3807 42.1951Z" fill="white"/>
+                              <rect x="0.998047" y="1.28735" width="61.1485" height="57.7227" stroke="black"/>
+                              </svg>
+                            <span class="A_Footer_Text">VK <span>group</span></span>
+                          </a>
+                        </li>
+                        <li class="footer-column-list__item footer-column-list__item--big">
+                          <a class="A_Footer_SocialMedia_Icon_Comment_Tg" href="#">
+                            <svg viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1.76149" y="1.54605" width="59.8495" height="56.4099" rx="10.4335" transform="rotate(0.230911 1.76149 1.54605)" stroke="white" stroke-width="2.06378"/>
+                              <path d="M44.046 16.0012C43.5533 15.5636 42.7769 15.4982 41.9726 15.8299L41.9713 15.8299C41.1254 16.1785 18.0231 26.362 17.0826 26.7781C16.9116 26.8391 15.418 27.4111 15.5664 28.6994C15.6989 29.8609 16.8955 30.3465 17.0416 30.4026L22.896 32.5118C23.2795 33.8585 24.6934 38.8272 25.0063 39.8887C25.2014 40.5504 25.5203 41.4202 26.0845 41.6013C26.5795 41.8019 27.0733 41.6224 27.3935 41.3634L30.9918 37.9238L36.7592 42.6354L36.8966 42.7215C37.2888 42.9039 37.6649 42.9959 38.0242 42.9973C38.3017 42.9984 38.5683 42.9454 38.8232 42.8382C39.6916 42.4718 40.0419 41.615 40.0785 41.5179L44.4947 18.1955C44.7634 16.95 44.3994 16.3143 44.046 16.0012ZM28.0632 33.3668L26.0633 38.8382L24.1132 31.9811L39.3231 20.3986L28.0632 33.3668Z" fill="white"/>
+                            </svg>
+                            <span class="A_Footer_Text">Telegram</span>
+                          </a>
+                        </li>
+                        <li class="footer-column-list__item footer-column-list__item--big">
+                          <a class="A_Footer_SocialMedia_Icon_Comment_VC" href="#">
+                            <svg viewBox="0 0 63 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1.76149" y="1.2687" width="59.8495" height="56.4099" rx="10.4335" transform="rotate(0.230911 1.76149 1.2687)" stroke="white" stroke-width="2.06378"/>
+                              <path d="M31.0423 33.5444L31.053 30.897L36.1406 30.9175C36.1396 31.1771 36.1387 31.4056 36.1377 31.634C36.1262 34.4868 36.1016 37.3413 36.1131 40.1943C36.1155 40.8188 36.1751 41.4583 36.3233 42.062C36.7535 43.8139 38.1943 44.671 39.9529 44.2804C41.6247 43.9092 43.101 42.4624 43.2196 40.6716C43.373 38.3451 43.2744 36.0029 43.2841 33.597L40.7116 33.5867L40.7223 30.9359L46.1833 30.958L46.1312 43.878L48.2026 43.8864L48.1924 46.4336L44.0233 46.4168C43.9068 45.662 43.7871 44.8908 43.6531 44.0258C43.5231 44.1896 43.4277 44.2944 43.3502 44.4124C42.0256 46.4104 40.0311 47.2372 37.6979 46.7561C35.4139 46.2835 33.9021 44.7392 33.4809 42.394C33.3736 41.797 33.3335 41.1822 33.331 40.5758C33.3215 38.4706 33.3415 36.3639 33.35 34.2587L33.3528 33.5537L31.0423 33.5444Z" fill="white"/>
+                              <path d="M45.2429 22.9426C45.9482 23.4861 46.6125 23.9999 47.3145 24.5417C45.986 26.2932 44.2886 27.3364 42.1552 27.668C37.759 28.3504 33.6377 25.4348 32.817 21.0552C31.775 15.5029 36.5862 10.5642 42.1583 11.461C43.7506 11.7172 45.2502 12.2047 46.5035 13.2616C46.6945 13.4217 46.852 13.7363 46.8592 13.9828C46.8923 15.1185 46.8665 16.2556 46.8617 17.4257L44.2008 17.415C44.2038 16.6755 44.2346 15.9344 44.1934 15.1964C44.1812 14.9745 44.0203 14.6681 43.8357 14.5639C41.318 13.1404 38.0563 13.921 36.5435 16.2814C34.8858 18.868 35.4577 22.4068 37.8121 24.1255C39.9117 25.6573 42.9243 25.3539 44.7972 23.4207C44.9321 23.2815 45.062 23.1358 45.2429 22.9426Z" fill="white"/>
+                              <path d="M32.0917 11.7196L32.0809 14.3769C31.426 14.3742 30.8003 14.4046 30.1799 14.3577C29.7101 14.323 29.4965 14.4832 29.331 14.9311C27.846 18.9251 26.3251 22.9042 24.8418 26.8982C24.6713 27.3577 24.4674 27.5607 23.9666 27.5093C23.3495 27.446 22.5806 27.6615 22.1463 27.364C21.7364 27.0829 21.6626 26.2938 21.4618 25.7227C20.199 22.1499 18.9263 18.5802 17.6962 14.996C17.5069 14.4447 17.2456 14.2678 16.6952 14.305C16.0564 14.3485 15.4114 14.3097 14.7449 14.307L14.7557 11.6497C16.0902 11.6551 17.4 11.6998 18.7053 11.6492C19.3768 11.6223 19.6757 11.8142 19.8924 12.4872C20.9841 15.8687 22.1463 19.2276 23.2839 22.5945C23.3438 22.7689 23.4102 22.9418 23.5236 23.2528C23.9443 22.0549 24.322 20.9882 24.6947 19.9182C25.5844 17.3597 26.479 14.8013 27.3523 12.2362C27.4832 11.8489 27.6444 11.677 28.0881 11.6903C29.3995 11.7317 30.7129 11.714 32.0933 11.7196L32.0917 11.7196Z" fill="white"/>
+                              <path d="M18.2564 43.7904L18.2989 33.2483L15.8001 33.2382L15.8097 30.8521L20.6124 30.8714C20.6677 31.7936 20.7245 32.7272 20.7905 33.8204C21.6553 32.5601 22.6268 31.6371 23.9568 31.1413C25.2934 30.6438 26.663 30.8794 28.06 30.816L28.041 35.5439L25.4489 35.5335L25.4581 33.2393C24.4937 33.2207 23.6623 33.5082 22.9444 34.0903C21.7336 35.0731 21.0816 36.3507 21.0638 37.925C21.0453 39.6751 21.0464 41.427 21.0394 43.1771C21.0386 43.3694 21.0378 43.5633 21.0368 43.823L27.6358 43.8496L27.6257 46.3491L15.7475 46.3013L15.7576 43.7787L18.2564 43.7888L18.2564 43.7904Z" fill="white"/>
+                              <path d="M12.9961 46.3673L10.3564 46.3567L10.3672 43.6912L13.0068 43.7018L12.9961 46.3673Z" fill="white"/>
+                            </svg>
+                            <span class="A_Footer_Text">VC.ru</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+        
+                    <div class="M_Footer_Donate">
+                      <h3 class="A_Footer_Header">Donate</h3>
+                      <ul class="footer-column-list">
+                        <li class="footer-column-list__item footer-column-list__item--big">
+                          <a class="A_Footer_Donate_Icon_Comment_Patreon" href="#">
+                            <svg width="63" height="60" viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1.76149" y="1.56729" width="59.8495" height="56.4099" rx="10.4335" transform="rotate(0.230911 1.76149 1.56729)" stroke="white" stroke-width="2.06378"/>
+                              <path d="M23.0655 17.5532L18.3877 17.5344C17.9565 17.5327 17.6066 17.8798 17.6049 18.3109L17.5012 44.0391C17.4995 44.4702 17.8466 44.8202 18.2777 44.8219L22.9556 44.8407C23.3867 44.8425 23.7366 44.4954 23.7383 44.0642L23.842 18.336C23.8438 17.9049 23.4967 17.555 23.0655 17.5532ZM35.5398 17.6035C32.8518 17.5927 30.2695 18.6501 28.3611 20.5432C26.4527 22.4363 25.3744 25.01 25.3636 27.698C25.3528 30.3861 26.4102 32.9684 28.3033 34.8768C30.1964 36.7852 32.7701 37.8634 35.4581 37.8742C38.1462 37.8851 40.7285 36.8276 42.6369 34.9345C44.5453 33.0415 45.6235 30.4678 45.6343 27.7797C45.6452 25.0917 44.5877 22.5094 42.6946 20.601C40.8015 18.6926 38.2279 17.6144 35.5398 17.6035Z" fill="white"/>
+                            </svg>
+                            <span class="A_Footer_Text">Patreon</span>
+                          </a>
+                        </li>
+                        <li class="footer-column-list__item footer-column-list__item--big">
+                          <a class="A_Footer_Donate_Icon_Comment_DA" href="#">
+                            <svg width="63" height="59" viewBox="0 0 63 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="1.76149" y="1.28994" width="59.8495" height="56.4099" rx="10.4335" transform="rotate(0.230911 1.76149 1.28994)" stroke="white" stroke-width="2.06378"/>
+                              <g clip-path="url(#clip0_202_2026)">
+                              <path d="M30.3241 34.0052L28.1625 33.9965C28.0367 33.9965 27.9167 33.9484 27.8324 33.8641C27.7481 33.7798 27.7074 33.6672 27.7204 33.5544L27.9192 31.594C27.9386 31.3856 28.1326 31.226 28.3646 31.2276L30.5261 31.2363C30.652 31.2362 30.772 31.2843 30.8563 31.3686C30.9406 31.4529 30.9813 31.5655 30.9682 31.6783L30.7695 33.6387C30.7501 33.8471 30.556 34.0068 30.3241 34.0052ZM30.686 30.1668L28.4843 30.1579C28.2411 30.157 28.0447 29.9651 28.0456 29.7295L28.6712 23.1063C28.699 22.891 28.8891 22.7301 29.1131 22.7326L31.3149 22.7415C31.5581 22.7425 31.7545 22.9343 31.7535 23.1699L31.1103 29.7973C31.0815 30.0046 30.9018 30.1611 30.686 30.1668ZM43.6634 22.4926C43.8966 22.7673 44.0097 23.1241 43.9771 23.483L43.0769 33.3227C43.048 33.6446 42.904 33.9452 42.6713 34.1695L35.6062 40.9767C35.354 41.2188 35.0173 41.353 34.6677 41.3509L27.1757 41.3207L20.5561 47.3737L21.0913 41.2921L17.7374 41.2786C17.3607 41.2774 17.0019 41.1181 16.7483 40.8395C16.4948 40.5609 16.3699 40.1887 16.4041 39.8136L18.5452 16.4685C18.6182 15.7824 19.1992 15.2633 19.8892 15.2676L36.9683 15.3364C37.3612 15.3379 37.7338 15.5113 37.9878 15.811L43.6634 22.4926ZM38.4115 31.4261L38.9829 25.3527C39.0056 24.9926 38.8824 24.6385 38.641 24.3702L35.4388 20.642C35.1851 20.3474 34.8161 20.1772 34.4273 20.1755L24.2932 20.1346C23.6032 20.1303 23.0222 20.6495 22.9492 21.3355L21.6877 35.0017C21.6584 35.3757 21.785 35.7451 22.0375 36.0225C22.29 36.2999 22.6459 36.4607 23.021 36.4667L32.9861 36.5069C33.3318 36.5091 33.6651 36.3779 33.9166 36.1407L38.0059 32.2769C38.2395 32.0516 38.3835 31.7494 38.4115 31.4261Z" fill="white"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_202_2026">
+                              <rect width="27.517" height="32.1032" fill="white" transform="translate(16.498 15.2539) rotate(0.230911)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <span class="A_Footer_Text">DonationAlerts</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="copyright">
+                  <p class="copyright__text">HSE Art, Design and Code | 2022</p>
+                  <p class="copyright__text-mob">HSE ADC | 2022</p>
+                </div>
+              </div>
+            </footer>
+
+    <script>
+      const nav = document.querySelector(".C_Navigation");
+      const burger = document.querySelector(".burger");
+      const closeMenuBtn = document.querySelector(".A_NavigationControlButton");
+
+      const title = document.querySelector(".timer-info__title");
+      const linkToFiveSeven = document.querySelector(
+        ".link-blocks__link--five-seven"
+      );
+      const linkToMoreSeven = document.querySelector(
+        ".link-blocks__link--more-seven"
+      );
+      const timerButton = document.querySelector(".timer-info__button");
+      const linkBlocks = document.querySelector(".link-blocks");
+
+      burger.addEventListener("click", () => {
+        nav.classList.add("open");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        nav.classList.remove("open");
+      });
+
+      timerButton.addEventListener("click", () => {
+        linkBlocks.classList.toggle("open");
+        timerButton.classList.toggle("open");
+      });
+
+      function changeText() {
+        if (window.innerWidth < 768) {
+          title.textContent = "Тайминг больше 7 минут";
+          linkToFiveSeven.textContent = "до 5 мин";
+          linkToMoreSeven.textContent = "5-7 мин";
+        } else {
+          title.textContent = "больше 7 минут";
+          linkToFiveSeven.textContent = "меньше 5 минут";
+          linkToMoreSeven.textContent = "от 5 до 7 минут";
+        }
+      }
+
+      changeText();
+      window.addEventListener("resize", changeText);
+    </script>
+  </body>
+</html>

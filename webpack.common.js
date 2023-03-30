@@ -21,6 +21,8 @@ module.exports = {
     console: './src/js/console.js',
     gamehistory: './src/js/gamehistory.js',
     studios: './src/js/studios.js',
+    five_minutes: './src/js/five_minutes.js',
+    over_seven_minutes: './src/js/over_seven_minutes.js',
     authors: './src/js/authors.js'
   },
 
@@ -181,6 +183,22 @@ module.exports = {
       template: './src/pages/fiveseven_minutes.html',
       filename: './fiveseven_minutes.html',
       chunks: ['fiveseven_minutes']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/five_minutes.html',
+      filename: './five_minutes.html',
+      chunks: ['five_minutes']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/over_seven_minutes.html',
+      filename: './over_seven_minutes.html',
+      chunks: ['over_seven_minutes']
     }),
 
     new HtmlWebpackPlugin({

@@ -259,7 +259,7 @@ body {
 }
 
 .A_MemberText {
-  ont-family: 'TT Hoves';
+  font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 250;
   font-size: 26px;
@@ -323,6 +323,10 @@ body {
 
 .Q_MainTitleLine--authors3:nth-of-type(4) {
   top: 406px;
+}
+
+.A_MainTitle .A_MainTitle--authorssm {
+  display:none;
 }
 
 .Q_MainTitleLine--authors3 {
@@ -480,18 +484,121 @@ body {
   }
   
   .M_OurAdvantagesItem:nth-child(2) {
-    margin-left: 66px;
+    margin-left: 54px;
   }
 
 /*  тут проблема  */
 
   .A_AuthorsGuideItemTitle--768_2 {
-    max-width: 180px;
+    max-width: 208px;
   }
 
   .A_AuthorsGuideItemText--768_2 {
    max-width: 180px;
   }
 
+  .C_EditorsList .A_AuthorsGuideItemText {
+    max-width: 204px;
+  }
 
+  .M_OurAdvantagesItem:nth-child(1) .A_AuthorsGuideItemText--768_2 {
+    max-width: 185px;
+  }
+
+  .O_Members {
+    max-width: 768px;
+  }
+  
+  .C_MembersList {
+    padding: 20px 20px 191px 20px;
+    grid-template-columns: repeat(3, 236px);
+    grid-template-rows: repeat(3, 236px);
+    gap: 10px;
+  }
+
+
+
+  .M_Member:nth-child(7) {
+    padding: 17px 18px;
+  }
+  
+  .A_MemberTitle {
+    font-size: 26px;
+    line-height: 28px;
+    padding-bottom: 21px;
+    max-width: 172px;
+  }
+  
+  .A_MemberText {
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .M_Member {
+    border-radius: 10px;
+  }
+  
+  .Q_MainTitleLine--authors2:nth-of-type(1) {
+    top: 44px;
+  }
+  
+  .Q_MainTitleLine--authors2:nth-of-type(2) {
+    top: 96px;
+  }
+  
+  .Q_MainTitleLine--authors2:nth-of-type(3) {
+    top: 162px;
+  }
+  
+  .Q_MainTitleLine--authors2:nth-of-type(4) {
+    top: 214px;
+  }
+  
+  .Q_MainTitleLine--authors2 {
+    height: 1px;
+  }
+  
+  .C_EditorsList {
+    padding: 0px 0px 196px 20px;
+  }
+
+  .M_OurAdvantagesItem:nth-child(1) .A_AuthorsGuideItemText {
+    max-width: 190px;
+  }
+  
+  .O_AuthorsBigTitle {
+    margin-bottom: 216px;
+  }
+
+  .M_OurAdvantagesItem--editor .A_AuthorsGuideItemTitle:nth-of-type(1){
+    max-width: 120px;
+  }
+
+
+  
+  .M_OurAdvantagesItem--editor:nth-child(2) {
+    margin-left: 48px;
+  }
+  
+  .M_OurAdvantagesItem--editor:nth-child(3) {
+    margin-left: 66px;
+  }
+  
+  .Q_MainTitleLine--authors3:nth-of-type(1) {
+    top: 43px;
+  }
+  
+  .Q_MainTitleLine--authors3:nth-of-type(2) {
+    top: 94px;
+  }
+  
+  .Q_MainTitleLine--authors3:nth-of-type(3) {
+    top: 162px;
+  }
+  
+  .Q_MainTitleLine--authors3:nth-of-type(4) {
+    top: 214px;
+  }
+  
 }

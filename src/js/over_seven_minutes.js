@@ -1,0 +1,1 @@
+import '../css/over_seven_minutes.css'
