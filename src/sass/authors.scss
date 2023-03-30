@@ -602,3 +602,10 @@ body {
   }
   
 }
+
+/* адаптив на 375 */
+@media (max-width: 375px) {
+  .W_AuthorsWrapper {
+    max-width: 768px;
+  }
+}
