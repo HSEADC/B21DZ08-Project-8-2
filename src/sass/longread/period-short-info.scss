@@ -1,0 +1,61 @@
+.period-short-info {
+    max-width: 426px;
+    font-family: $TTHoves;
+    font-style: italic;
+    font-weight: 300;
+    color: #FFFFFF;
+
+    padding: 205px 0 0 0;
+
+    &__year {
+        position: relative;
+        font-size: 196px;
+        font-style: italic;
+        line-height: 1;
+        margin: 0 0 7px -21px;
+        
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 99%;
+            height: 1px;
+            background-color: #ffffff;
+        }
+
+        &::before {
+            top: 71px;
+            left: 20px;
+        }
+
+        &::after {
+            bottom: 27px;
+            left: 20px;
+        }
+    }
+
+    &__image {
+        max-width: 407px;
+        margin: 0 0 31px auto;
+
+        
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+        font-style: normal;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        margin: 0 0 20px 0;
+    }
+
+    &__subtitle{
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        margin: 0;
+    }
+}

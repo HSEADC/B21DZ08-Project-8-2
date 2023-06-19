@@ -1,0 +1,89 @@
+.modern-console-list {
+    display: flex;
+    margin: 120px 0 0 auto;
+    gap: 20px;
+
+    font-family: $TTHoves;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 22px 0 0 0;
+    }
+
+    &__subtitle {
+        font-family: $TTHoves;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 20px 0 0 0;
+    }
+
+}
+
+#three-dimensional-games {
+    .stage-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 0 0 78px;
+
+        .period-short-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 0 284px 0;
+        }
+
+        .period-full-info {
+            justify-content: flex-start;
+        }
+
+        .period-full-info__image {
+            margin: 0 4px 77px auto;
+        }
+
+       
+        .period-full-info__description {
+            margin: 0 142px 85px auto;
+
+            &:not(:first-of-type) {
+                margin: 0 142px 70px auto;
+            }
+        }
+    }
+}
+
+#period-9 {
+    padding: 0 20px;
+    margin: 0 0 86px 0;
+
+    .period-short-info {
+        padding: 357px 0 0 0;
+    }
+
+    .period-full-info__description {
+        max-width: 990px;
+        margin: 0 128px 0 auto;
+    }
+
+    .modern-console-list {
+        margin: 85px 3px 0 auto;
+        gap: 30px;
+    }
+}

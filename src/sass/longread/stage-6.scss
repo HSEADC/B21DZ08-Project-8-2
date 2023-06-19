@@ -1,0 +1,117 @@
+.modern-console-list {
+    display: flex;
+    margin: 120px 0 0 auto;
+    gap: 20px;
+
+    font-family: $TTHoves;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 22px 0 0 0;
+    }
+
+    &__subtitle {
+        font-family: $TTHoves;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 20px 0 0 0;
+    }
+
+}
+
+#period-10 {
+    padding: 0 20px;
+    margin: 0 0 86px 0;
+
+    .period-short-info {
+        padding: 391px 0 0 0;
+    }
+
+    .period-full-info__description {
+        max-width: 900px;
+        margin: 0 217px 0 auto;
+    }
+
+}
+
+#period-11 {
+    padding: 0 20px;
+    margin: 0 0 87px 0;
+
+    .period-short-info {
+        padding: 204px 0 0 0;
+    }
+
+    .period-full-info__image {
+        margin: 85px 4px 0 auto;
+    }
+}
+
+#period-12 {
+    padding: 0 20px;
+    margin: 0 0 85px 0;
+
+    .period-short-info {
+        padding: 204px 0 0 0;
+    }
+
+    .period-full-info-images {
+        display: flex;
+        gap: 20px;
+        margin: 86px 5px 0 auto;
+    }
+}
+
+#period-13 {
+    padding: 0 20px;
+    margin: 0 0 87px 0;
+
+    .period-short-info {
+        padding: 463px 0 0 0;
+    }
+
+    .period-full-info{
+        &__description {
+            margin: 0 142px 70px auto;
+
+            &:last-of-type {
+                margin: 0 142px 0 auto;
+            }
+        }
+    }
+
+    .modern-console-list {
+        gap: 30px;
+        margin: 85px 4px 0 auto;
+    }
+}
+
+#period-14 {
+    padding: 0 20px;
+    margin: 0 0 85px 0;
+
+    .period-short-info {
+        padding: 165px 0 0 0;
+    }
+
+    .period-full-info__image {
+        margin: 86px 4px 0 auto;
+    }
+}

@@ -1,0 +1,209 @@
+.period-console-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1118px;
+    gap: 30px;
+    margin: 32px 4px 32px auto;
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 23px 0 0 0;
+    }
+
+    &__subtitle {
+        font-family: $TTHoves;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 18px 0 0 0;
+    }
+}
+
+.info {
+    margin: 74px 0 0 0;
+
+    .period-full-info {
+        margin: 0 0 0 auto;
+    }
+
+    .period-full-info__description {
+        margin: 0 auto 0 37px;
+    }
+}
+
+.info-game-list {
+    display: flex;
+    margin: 84px 0 0 33px;
+    gap: 27px;
+
+    &__item {
+        max-width: 355px;
+
+        &:last-child {
+            max-width: 455px;
+        }
+    }
+
+    &__image {
+        margin: 0 0 22px 0;
+    }
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        
+        color: #FFFFFF;
+        margin: 0 0 0 5px;
+    }
+
+    &__subtitle {
+        font-family: $TTHoves;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        
+        color: #FFFFFF;
+        margin: 20px 0 0 5px;
+    }
+}
+
+.info-movie-list {
+    display: flex;
+    margin: 84px 0 0 33px;
+    gap: 27px;
+
+
+
+    &__image {
+        margin: 0 0 22px 0;
+    }
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        
+        color: #FFFFFF;
+        margin: 0 0 0 5px;
+    }
+
+    &__subtitle {
+        font-family: $TTHoves;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        
+        color: #FFFFFF;
+        margin: 20px 0 0 5px;
+    }
+}
+
+#first-console-war  #first-fact {
+    margin: 86px 0 125px 33px;
+}
+
+#first-console-war  #second-fact {
+    margin: 100px 0 0 32px;
+}
+
+#first-console-war #first-fact .period-fact-inner {
+    width: 100%;
+    margin: 0;
+    padding: 29px 0 0 62px;
+    background-image: url(../images/index/fact-bg-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 834px;
+
+    &__text {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0;
+        background-image: none;
+        color: #FFFFFF;
+    }
+
+
+    &__memoji {
+        width: 330px;
+        height: 330px;
+        flex-shrink: 0;
+        margin: 117px 0 0 13px;
+    }
+}
+
+#first-console-war #second-fact .period-fact-inner {
+    width: 100%;
+    margin: 0;
+    padding: 26px 28px 0 41px;
+    background-image: url(../images/index/fact-bg-4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 834px;
+
+    &__text {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0;
+        background-image: none;
+        color: #FFFFFF;
+    }
+}
+
+#first-console-war #second-fact .period-fact__memoji {
+    width: 265px;
+    height: 260px;
+    flex-shrink: 0;
+    margin: 104px 0 0 23px;
+}
+
+#period-7 {
+    padding: 53px 20px 0;
+    margin: 0 0 36px 0;
+
+    .period-short-info {
+        padding: 0;
+    }
+
+    .period-full-info__image {
+        margin: 85px 0 0 auto;
+    }
+}
+
+#period-8 {
+    padding: 0 20px;
+
+    .period-short-info {
+        padding: 0;
+    }
+
+    .period-full-info__image {
+        margin: 32px 4px 0 auto;
+    }
+}

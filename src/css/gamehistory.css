@@ -2,13 +2,21 @@
 @import '../sass/vars.scss';
 @import '../sass/fonts.scss';
 @import '../sass/basics.scss';
-@import '../sass/gamehistory.scss';
-@import '../sass/header.scss';
+
+
 @import '../sass/footer.scss';
-@import '../sass/components/qwarcs.scss';
-@import '../sass/components/atoms.scss';
-@import '../sass/components/molecules.scss';
-@import '../sass/components/collections.scss';
-@import '../sass/components/organisms.scss';
-@import '../sass/components/superorganisms.scss';
-@import '../sass/components/wrappers.scss';
+@import '../sass/index.scss';
+
+@import "../sass/longread/wrapper.scss";
+@import "../sass/longread/header.scss";
+@import "../sass/longread/marque.scss";
+@import "../sass/longread/main-block.scss";
+@import "../sass/longread/articles-nav.scss";
+@import "../sass/longread/period-short-info.scss";
+@import "../sass/longread/stages.scss";
+@import "../sass/longread/stage-1.scss";
+@import "../sass/longread/stage-2.scss";
+@import "../sass/longread/stage-3.scss";
+@import "../sass/longread/stage-4.scss";
+@import "../sass/longread/stage-5.scss";
+@import "../sass/longread/stage-6.scss";

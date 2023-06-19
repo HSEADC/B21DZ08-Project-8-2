@@ -1,0 +1,91 @@
+#collapse-games {
+    .stage-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 0 0 78px;
+    }
+
+    .stage-info .period-short-info {
+        padding: 9px 0 0 0;
+    }
+
+}
+
+#collapse-games .stage-info .period-full-info__description {
+    margin: 0 142px 70px auto;
+}
+
+#collapse-games .stage-info .period-full-info__description:last-of-type {
+    margin: 0 142px 85px auto;
+}
+
+#collapse-games .period-fact-inner {
+    width: 100%;
+    margin: 0;
+    padding: 27px 0 102px 120px;
+    background-image: url(../images/index/fact-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 897px;
+
+    &__text {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0;
+        background-image: none;
+        color: #FFFFFF;
+    }
+
+
+    &__memoji {
+        width: 265px;
+        height: 260px;
+        flex-shrink: 0;
+        margin: 117px 0 0 13px;
+    }
+}
+
+#period-5 {
+    padding: 0 20px 0;
+    margin: 0 0 73px;
+
+    .period-short-info {
+        padding: 318px 0 0 0;
+    }
+
+    .period-full-info__image {
+        margin: 85px 4px 0 auto;
+    }
+}
+
+#period-6 {
+    padding: 0 20px;
+    margin: 0 0 52px 0;
+    
+    .period-short-info {
+        padding: 0;
+    }
+}
+
+.period-game-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1118px;
+    margin: 32px 0 32px auto;
+    gap: 29px;
+
+    &__title {
+        font-family: $TTHoves;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin: 23px 0 0 0;
+    }
+}

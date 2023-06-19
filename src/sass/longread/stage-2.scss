@@ -1,0 +1,87 @@
+.stage-info-block {
+    display: flex;
+    gap: 163px;
+    padding: 0 20px;
+
+    .period-short-info {
+        padding: 9px 0 0;
+    }
+}
+
+.stage-description-block {
+    max-width: 962px;
+    font-family: $TTHoves;        
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+
+    &__description {
+        margin: 0 0 70px 0;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+.period {
+    margin: 0 0 56px 0;
+}
+
+.period-full-info {
+    &__description {
+        max-width: 976px;
+        margin: 0 142px 0 auto;
+    }
+
+    &__image {
+        width: max-content;
+        margin: 85px 0 84px auto;
+    }
+}
+
+.period-full-info__list {
+    margin: 70px 0 0 0;
+    padding: 0 0 0 93px;
+
+    .period-full-info__list-item {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            left: -37px;
+            top: 16px;
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+#period-3 {
+    padding: 69px 20px 0;
+
+    .period-short-info {
+        padding: 504px 0 0 0;
+    }
+
+    .period-full-info__image {
+        margin: 86px 4px 0 auto;
+    }
+}
+
+#period-4 {
+    padding: 0 20px;
+
+    .period-short-info {
+        padding: 0;
+    }
+
+    .period-full-info__image {
+        margin: 29px 5px 0 auto;
+    }
+}
