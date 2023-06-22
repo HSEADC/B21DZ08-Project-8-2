@@ -23,7 +23,9 @@ module.exports = {
     studios: './src/js/studios.js',
     five_minutes: './src/js/five_minutes.js',
     over_seven_minutes: './src/js/over_seven_minutes.js',
-    authors: './src/js/authors.js'
+    authors: './src/js/authors.js',
+    article_second: './src/js/article_second.js',
+    article_third: './src/js/article_third.js',
   },
 
   output: {
@@ -199,6 +201,22 @@ module.exports = {
       template: './src/pages/over_seven_minutes.html',
       filename: './over_seven_minutes.html',
       chunks: ['over_seven_minutes']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_second.html',
+      filename: './article_second.html',
+      chunks: ['article_second']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_third.html',
+      filename: './article_third.html',
+      chunks: ['article_third']
     }),
 
     new HtmlWebpackPlugin({

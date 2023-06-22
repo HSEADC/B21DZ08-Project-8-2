@@ -2,6 +2,8 @@
 @import '../sass/vars.scss';
 @import '../sass/fonts.scss';
 @import '../sass/mailer.scss';
+@import '../sass/header.scss';
+@import '../sass/footer.scss';
 @import '../sass/components/qwarcs.scss';
 @import '../sass/components/atoms.scss';
 @import '../sass/components/molecules.scss';

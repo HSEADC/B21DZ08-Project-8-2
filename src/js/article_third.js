@@ -1,0 +1,1 @@
+import '../css/article_third.css'

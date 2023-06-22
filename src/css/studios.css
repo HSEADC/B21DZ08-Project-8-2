@@ -2,13 +2,21 @@
 @import '../sass/vars.scss';
 @import '../sass/fonts.scss';
 @import '../sass/basics.scss';
-@import '../sass/studios.scss';
-@import '../sass/header.scss';
+
+
 @import '../sass/footer.scss';
-@import '../sass/components/qwarcs.scss';
-@import '../sass/components/atoms.scss';
-@import '../sass/components/molecules.scss';
-@import '../sass/components/collections.scss';
-@import '../sass/components/organisms.scss';
-@import '../sass/components/superorganisms.scss';
-@import '../sass/components/wrappers.scss';
+@import '../sass/index.scss';
+
+@import "../sass/studios/wrapper.scss";
+@import "../sass/studios/header.scss";
+@import "../sass/studios/marque.scss";
+@import "../sass/studios/main-block.scss";
+@import "../sass/studios/articles-nav.scss";
+@import "../sass/studios/period-short-info.scss";
+@import "../sass/studios/stages.scss";
+@import "../sass/studios/stage-1.scss";
+@import "../sass/studios/stage-2.scss";
+@import "../sass/studios/stage-3.scss";
+@import "../sass/studios/stage-4.scss";
+@import "../sass/studios/stage-5.scss";
+@import "../sass/studios/stage-6.scss";

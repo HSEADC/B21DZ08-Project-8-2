@@ -1,0 +1,38 @@
+.main-marquee {
+    background: #E93323;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 23px 0 37px 0;
+    overflow: hidden;
+
+    &--black {
+        background-color: #000000;
+        padding: 22px 0 39px 0;
+    }
+
+    &__text {
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1;
+        color: #FFFFFF;
+        white-space: nowrap;
+
+        animation-name: text;
+        animation-duration: 15s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function:  linear;
+    }
+}
+
+@keyframes text {
+    0%{
+        transform: translate(100%, 0);
+    }
+
+    100%{
+        transform: translate(-100%, 0);
+    }
+}

@@ -1,0 +1,191 @@
+.stage {
+    position: relative;
+
+    &__title {
+        font-family: "TT Hoves";
+        font-style: italic;
+        font-weight: 300;
+        font-size: 196px;
+        line-height: 227px;
+        color: #FFFFFF;
+        margin: 0 0 73px 0;
+    }
+
+    &__description {
+        max-width: 979px;
+        font-family: "TT Hoves";        
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin: 0 159px 0 auto;
+    }
+}
+
+.period {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 56px 0;
+}
+
+.period-full-info {
+    width: 100%;
+    max-width: 1175px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    font-family: "TT Hoves";        
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+
+    &__description {
+        max-width: 976px;
+        margin: 0 142px 0 auto;
+    }
+
+    &__image {
+        width: max-content;
+        margin: 85px 4px 84px auto;
+    }
+}
+
+.period-fact {
+    display: flex;
+    margin: 0;
+
+    &__text {
+        max-width: 886px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        color: #FFFFFF;
+        padding: 26px 0 0 94px;
+        // background-image: url(../../images/index/fact-bg-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    &__memoji {
+        width: 265px;
+        height: 260px;
+        flex-shrink: 0;
+        margin: 173px 0 0 24px;
+    }
+}
+
+.period-full-info__list {
+    margin: 70px 0 0 0;
+    padding: 0 0 0 93px;
+
+    .period-full-info__list-item {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            left: -37px;
+            top: 16px;
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+#birth-games {
+    .stage__description {
+        margin: 73px 159px 0 auto;
+    }
+
+    .period:last-of-type {
+        margin: 0;
+    }
+}
+
+#period-1 {
+    padding: 70px 20px 0;
+
+    .period-full-info { 
+        max-width: 1175px;
+    }
+}
+
+#period-2 {
+    padding: 69px 20px 0;
+
+    .period-short-info {
+        padding: 695px 0 0 0;
+    }
+    
+    .period-full-info__image {
+        margin: 87px 4px 0 auto;
+    }
+}
+
+#period-1 .period-fact {
+    display: flex;
+    margin: 0;
+
+    &__text {
+        max-width: 886px;
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        color: #FFFFFF;
+        padding: 26px 0 0 94px;
+         background-image: url(../images/index/fact-bg-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    &__memoji {
+        width: 265px;
+        height: 260px;
+        flex-shrink: 0;
+        margin: 173px 0 0 24px;
+    }
+}
+
+#period-1 .period-fact-inner {
+    width: 100%;
+    margin: 0;
+    padding: 27px 0 102px 120px;
+    background-image: url(../images/index/fact-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 897px;
+
+    &__text {
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0;
+        background-image: none;
+        color: #FFFFFF;
+    }
+
+
+    &__memoji {
+        width: 265px;
+        height: 260px;
+        flex-shrink: 0;
+        margin: 117px 0 0 13px;
+    }
+}
+    
